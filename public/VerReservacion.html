@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./CSS/VerCitas.css">
     <title>Ver Reservaciones</title>
 </head>
-<body>
+<body onload="VerEstado();">
     <header>
         <h1>Ver Reservaciones</h1>
     </header>
@@ -35,6 +35,7 @@
                         <th>Mascota</th>
                         <th>check-in</th>
                         <th>check-out</th>
+                        <th>Estado</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,7 @@
                         <td class="infoTd">Baloo</td>
                         <td class="infoTd">20-05-2022</td>
                         <td class="infoTd">22-05-2022</td>
+                        <td class="infoTd Estado" >Pendiente</td>
                         <td><input type="button" class="btnVer" value="ver"></td>
                     </tr>
                     <tr>
@@ -50,20 +52,21 @@
                         <td class="infoTd">Baloo</td>
                         <td class="infoTd">20-05-2022</td>
                         <td class="infoTd">22-05-2022</td>
+                        <td class="infoTd Estado">Activa</td>
                         <td><input type="button" class="btnVer" value="ver"></td>
-                    </tr>
-                    <tr>
+                    </tr><tr>
                         <td class="infoTd">0025</td>
                         <td class="infoTd">Baloo</td>
                         <td class="infoTd">20-05-2022</td>
                         <td class="infoTd">22-05-2022</td>
+                        <td class="infoTd Estado">Finalizada</td>
                         <td><input type="button" class="btnVer" value="ver"></td>
-                    </tr>
-                    <tr>
+                    </tr><tr>
                         <td class="infoTd">0025</td>
                         <td class="infoTd">Baloo</td>
                         <td class="infoTd">20-05-2022</td>
                         <td class="infoTd">22-05-2022</td>
+                        <td class="infoTd Estado">Finalizada</td>
                         <td><input type="button" class="btnVer" value="ver"></td>
                     </tr>
                     
@@ -71,5 +74,6 @@
             </table> 
         </div>
     </div>
+<script src="./js/controllers/ControllerVerCitas.js"></script>
 </body>
 </html>
