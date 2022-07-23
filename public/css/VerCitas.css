@@ -70,20 +70,42 @@ th{
     text-align: center;
     
 }
-.btnVer{
-    border:1px solid var(--amarillo);
+
+.btn{
+    background-color: var(--blanco);
+    color: var(--naranja);
+    border: 2px solid var(--naranja);
+    padding: 5px 8px;
     border-radius: 25px;
-    width: 65px;
-    margin: 0 0px 0 0px;
-    padding: 3px;
-    background-color: var(--amarillo);
-    transition: all .2s ease;
-    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    width: fit-content;
+    margin: 0px;
 }
-.btnVer:hover{
+.btn:hover{
+    color: var(--blanco);
+}
+.btn::after{
+    content: '';
     background-color: var(--naranja);
-    border:1px solid var(--naranja);
-    transform: scale(1.05);
+    position: absolute;
+    z-index: -1;
+    padding: 5px 8px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0,0);
+    transition: all 0.4s ease;
+
+}
+.btn:hover::after{
+    transition: all 0.6s ease-out;
+    transform: scale(1,1);
 }
 thead{
     background-color: var(--silver);
@@ -114,7 +136,7 @@ tbody{
     color: var(--verdeagua);
 }
 .Pendiente{
-    color: var(--amarillo);
+    color: var(--naranja);
 }
 .Activa{
     color: var(--verdeagua);
