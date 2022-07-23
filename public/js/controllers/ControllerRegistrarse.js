@@ -93,23 +93,6 @@ function ValidarDatos(){
     }else{
         inputDireccion.classList.remove("error")
     }
-
-    if(!document.querySelector('input[name="rol"]:checked')) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Debe seleccionar el rol',
-        })
-        return false;
-    }
-    if(!document.querySelector('input[name="terminos"]:checked')) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Debe aceptar los terminos y condiciones',
-        })
-        return false;
-    }
     return true;
 }
 function MostrarError(){
