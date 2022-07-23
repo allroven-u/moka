@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
 }
 
 @font-face {
@@ -30,6 +30,11 @@ body{
     font-family: Roboto300;
     font-size: 17px;
     width: 100%;
+}
+
+a{
+    color: var(--blanco);
+    text-decoration: none;
 }
 
 :root{
