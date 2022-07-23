@@ -1,8 +1,7 @@
-/*--ACOMODANDO-MARGENES-PADDING--*/
+@import url(./estilosGenerales.css);
+
 *{
-    margin: 0px auto;
-    padding: 0px;
-    box-sizing: border-box;
+    font-family: Roboto300;  
 }
 header{
     text-align: center;
@@ -13,6 +12,7 @@ body{
 h1{
     margin-top: 15px;
     border-bottom: 2px solid black;
+    color: var(--verdeagua);
 }
 
 .cajaPrincipal{
@@ -52,20 +52,36 @@ border-radius: 10px;
     
 }
 th,.infoTd{
-    border: 1px solid black;
+    border: 1px solid var(--blanco);
     border-radius: 5px;
     width: 225px;
     text-align: center;
     padding: 3px;
+    background-color: var(--blanco);
+    cursor: default;
+    
+}
+th{
+    border: 5px solid var(--concreto);
 }
 .btnVer{
+    border:1px solid var(--amarillo);
     border-radius: 25px;
     width: 65px;
     margin: 0 35px 0 35px;
     padding: 3px;
+    background-color: var(--amarillo);
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.btnVer:hover{
+    background-color: var(--naranja);
+    border:1px solid var(--naranja);
+    transform: scale(1.05);
 }
 thead{
-    border: 2px solid black;
+    background-color: var(--silver);
+    border: 2px solid var(--concreto);
     border-radius: 10px;
     padding: 5px;
     margin-right: 140px;
@@ -73,18 +89,22 @@ thead{
 tbody{
     margin-top: 15px;
     padding: 5px;
+    
 }
 
 .tblCitas{
     margin-top: 25px;
-    border: 2px solid black;
+    border: 2px solid var(--silver);
     border-radius: 10px;
     min-height: 600px;
     padding: 15px;
+    background-color: var(--silver);
 }
 .tituloCaja{
-    border: 2px solid black;
+    background-color: var(--silver);
+    border: 2px solid var(--concreto);
     border-radius: 10px;
+    color: var(--verdeagua);
 }
 
 
