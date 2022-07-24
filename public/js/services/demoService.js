@@ -1,7 +1,7 @@
 'use strict'
  //Citas
 let listaCitas = [
-    ['idCliente','numCita','nameMascota','veterinario','fecha','estado','calif','observaciones'],['idCliente','0045','Baloo','Jorge Mendez','23/07/2022','Finalizada','calif','observaciones'],['idCliente','0095','Paquito','Macario Rodriguez','25/07/2022','Pendiente','calif','observaciones'],['idCliente','0128','Maximo','Alicia Solis','30/07/2022','Cancelada','calif','observaciones']
+    ['idCliente','0045','Baloo','Jorge Mendez','23/07/2022','Finalizada','calif','observaciones'],['idCliente','0095','Paquito','Macario Rodriguez','25/07/2022','Pendiente','calif','observaciones'],['idCliente','0128','Maximo','Alicia Solis','30/07/2022','Cancelada','calif','observaciones']
 ]
 
 function RegistrarCita(psId,pnCita,psMascota,psVeterinario,psFecha,psEstdo,pnCalif,psObservaciones){
@@ -18,7 +18,6 @@ function ObtenerListaCitas(){
 //Reservaciones
 
 let listaReservas = [
-    ['idCliente','numReserva','nameMascota','CheckIn','CheckOut','estado','calif','observaciones'],
     ['idCliente','0126','Maximo','20/07/2022','23/07/2022','Finalizada','calif','observaciones'],
     ['idCliente','0245','Baloo','25/07/2022','28/07/2022','Cancelada','calif','observaciones'],
     ['idCliente','0366','Maximo','29/07/2022','31/07/2022','Pendiente','calif','observaciones'],
