@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/estilosGenerales.css">
     <title>Ver citas</title>
 </head>
-<body onload="VerEstado();">
+<body onload="ImprimirListaCitas();" >
     <header>
         <h1>Ver citas</h1>
     </header>
@@ -39,44 +39,21 @@
                         <th>Estado</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="tbdCitas">
+                    <!-- <tr>
                         <td class="infoTd">0145</td>
                         <td class="infoTd">Baloo</td>
                         <td class="infoTd">Macario Rodriguez</td>
                         <td class="infoTd">22-05-2022</td>
                         <td class="infoTd Estado" >Pendiente</td>
                         <td><a href="#" class="btn">Detalle</a></td>
-                    </tr>
-                    <tr>
-                        <td class="infoTd">0145</td>
-                        <td class="infoTd">Baloo</td>
-                        <td class="infoTd">Macario Rodriguez</td>
-                        <td class="infoTd">22-05-2022</td>
-                        <td class="infoTd Estado" >Activa</td>
-                        <td><a href="#" class="btn">Detalle</a></td>
-                    </tr>
-                    <tr>
-                        <td class="infoTd">0145</td>
-                        <td class="infoTd">Baloo</td>
-                        <td class="infoTd">Macario Rodriguez</td>
-                        <td class="infoTd">22-05-2022</td>
-                        <td class="infoTd Estado" >Finalizada</td>
-                        <td><a href="#" class="btn">Detalle</a></td>
-                    </tr>
-                    <tr>
-                        <td class="infoTd">0145</td>
-                        <td class="infoTd">Baloo</td>
-                        <td class="infoTd">Macario Rodriguez</td>
-                        <td class="infoTd">22-05-2022</td>
-                        <td class="infoTd Estado">Finalizada</td>
-                        <td><a href="#" class="btn">Detalle</a></td>
-                    </tr>
+                    </tr> -->
                     
                 </tbody>
             </table> 
         </div>
     </div>
+    <script src="./js/services/demoService.js"></script>
     <script src="./js/controllers/ControllerVerCitas.js"></script>
 </body>
 </html>

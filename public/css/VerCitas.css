@@ -138,11 +138,11 @@ tbody{
 .Pendiente{
     color: var(--naranja);
 }
-.Activa{
-    color: var(--verdeagua);
+.Cancelada{
+    color: var(--Rojo2);
 }
 .Finalizada{
-    color: var(--Rojo2);
+    color: var(--verdeagua);
 }
 
 
