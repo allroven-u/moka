@@ -6,61 +6,50 @@
     <title>Crear Cita</title>
     <link rel="stylesheet" href="./css/CrearCita.css">
     <link rel="stylesheet" href="./css/estilosGenerales.css">
-    <link rel="stylesheet" href="./App.html">
+    
 
 </head>
 
 <body>
 
-    <div class="tituloPrincipal">
-        <h2>Crear Cita</h2>
-    </div>
-
     <div class="cuerpo">
+            
 
 
+            <form class="form">
 
-        <form class="form">
-
-            <h1 class="titulo">Nueva Cita</h1>
-
-
-
-
-            <input class="cajas" id="txtNombre" type="text" placeholder="Nombre de Mascota*" maxlength="30">Fecha
-            <input class="cajas" id="txtFecha" type="date" placeholder="Fecha*">Hora
-
-            <input class="cajas" id="txtHora" type="time" placeholder="Hora*">
-            <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Descripción de la Cita*"></textarea>
+                <h1 class="titulo">Nueva Cita</h1>
 
 
 
 
-            <div class="btns">
-                <input type="button" class="btnCancelar" value="Cancelar" onclick="location.href='./App.html'">
+                <input class="cajas" id="txtNombre" type="text" placeholder="Nombre de Mascota*" maxlength="30">
+                <input class="cajas" id="txtFecha" type="date" placeholder="Fecha*">
 
-                <input type="button" id="btnIniciar" class="btn" value="Crear Cita">
-            </div>
+                <input class="cajas" id="txtHora" type="time" placeholder="Hora*">
 
-        </form>
+                <select class="cajas select">
+                    <option value="">------Seleccionar Veterinario------</option>
+                    <option value="1" title="primerVeterinario">Luis</option>
+                    <option value="2" title="segundoVeterinario">Denis</option>
+                    <option value="3" title="tercerVeterinario">Allan</option>
+                    <option value="3" title="tercerVeterinario">Aleatorio</option>
+                </select>
 
-
-        <form class="Veterinario">
-
-            <h1 class="titulo">Veterinario</h1>
-
-            <select class="select">
-                <option value="">--Veterinario--</option>
-                <option value="1" title="primerVeterinario">Luis</option>
-                <option value="2" title="segundoVeterinario">Denis</option>
-                <option value="3" title="tercerVeterinario">Allan</option>
-            </select>
+                <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Descripción de la Cita*"></textarea>
 
 
 
-        </form>
 
-    </div>
+                <div class="btns">
+                    <input type="button" class="btnCancelar" value="Cancelar" onclick="location.href='./App.html'">
+
+                    <input type="button" id="btnIniciar" class="btn" value="Crear Cita">
+                </div>
+
+            </form>
+
+        </div>
     <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/controllers/ControllerRegistrarse.js"></script>
 
