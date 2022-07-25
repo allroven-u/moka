@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Reservación
+    </title>
+    <link rel="stylesheet" href="./css/CrearReservacion.css">
+    <link rel="stylesheet" href="./css/estilosGenerales.css">
+    <link rel="stylesheet" href="./App.html">
+
+</head>
+
+<body>
+
+    <div class="tituloPrincipal">
+        <h2>Crear Reservación</h2>
+    </div>
+
+    <div class="cuerpo">
+
+
+
+        <form class="form">
+
+            <h1 class="titulo">Nueva Reservación</h1>
+
+
+
+
+            <input class="cajas" id="txtNombre" type="text" placeholder="Nombre de Mascota*" maxlength="30"> Fecha de Entrada*
+            <input class="cajas" id="txtNombre" type="date" placeholder="Fecha de Entrada*"> Fecha de Salida*
+            <input class="cajas" id="txtNombre" type="date" placeholder="Fecha de Salida*">Hora de Entrada*
+            <input class="cajas" id="txtNombre" type="time" placeholder="Hora de Entrada*">Hora de Salida*
+            <input class="cajas" id="txtNombre" type="time" placeholder="Hora de Salida*">
+
+            <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Cuidados Especiales*"></textarea>
+
+
+
+
+            <div class="btns">
+                <input type="button" class="btnCancelar" value="Cancelar" onclick="location.href='./App.html'">
+
+                <input type="button" id="btnIniciar" class="btn" value="Crear Cita">
+            </div>
+
+        </form>
+
+
+
+    </div>
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/controllers/ControllerRegistrarse.js"></script>
+
+</body>
+
+</html>
