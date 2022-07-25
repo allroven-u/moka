@@ -1,10 +1,23 @@
 @import url(./estilosGenerales.css);
 
 *{
+<<<<<<< Updated upstream
     font-family: Roboto300;
     margin: 0px auto;  
     padding: 0px;
 }
+=======
+    font-family: Roboto300;  
+}
+
+
+
+/* .menuLateral{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+>>>>>>> Stashed changes
 .tblCitas{
     display: flex;
     flex-direction: column;
