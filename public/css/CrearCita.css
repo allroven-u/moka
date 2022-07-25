@@ -3,12 +3,12 @@
     font-family: Roboto;
 }
 
-.cuerpo {
+.cuerpoCita {
     display: flex;
     flex-wrap: wrap;
 }
 
-.form {
+.formCita {
     color: var(--verdeagua);
     width: 450px;
     padding: 30px;

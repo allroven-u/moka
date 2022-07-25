@@ -3,12 +3,12 @@
     font-family: Roboto300;
 }
 
-.cuerpo {
+.cuerpoReserva {
     display: flex;
     flex-wrap: wrap;
 }
 
-.form {
+.formReserva {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--verdeagua);
     width: 450px;
@@ -17,6 +17,7 @@
     margin-top: 25px;
     background-color: var(--blanco);
     border-radius: 5px;
+    
 }
 label{
     color: var(--gris);
@@ -73,6 +74,7 @@ label{
     border: none;
     border-left: 10px solid var(--silver);
     transition: all .5s ease;
+    color: gray;
 }
 
 .cajas:hover,
