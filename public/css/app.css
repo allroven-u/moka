@@ -150,6 +150,7 @@ display: flex;
 }
 
 .bodyContainer{
+width: 100%;
 display: flex;
 justify-content: space-between;
 }
