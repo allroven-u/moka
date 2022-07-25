@@ -1,34 +1,19 @@
 @import url(./estilosGenerales.css);
 
 *{
-<<<<<<< Updated upstream
     font-family: Roboto300;
     margin: 0px auto;  
     padding: 0px;
 }
-=======
-    font-family: Roboto300;  
-}
 
 
-
-/* .menuLateral{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-} */
->>>>>>> Stashed changes
 .tblCitas{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.cajaPrincipal{
-    margin: 10px;
-    width: 76%;
-    
-}
+
 
 .infoTd{
 
@@ -94,6 +79,7 @@
     border: 2px solid var(--concreto);
     border-radius: 10px;
     padding: 5px;
+    width: fit-content;
     
     
 }
@@ -119,7 +105,7 @@ tr{
     margin-top: 25px;
     border: 2px solid var(--silver);
     border-radius: 10px;
-    min-height: 900px;
+    height: fit-content;
     padding: 15px;
     background-color: var(--silver);
 }
@@ -128,6 +114,13 @@ tr{
     border: 2px solid var(--concreto);
     border-radius: 10px;
     color: var(--verdeagua);
+    
+}
+.tblCaja{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .Pendiente{
     color: var(--naranja);
