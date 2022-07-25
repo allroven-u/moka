@@ -1,0 +1,119 @@
+@import url(./estilosGenerales.css);
+* {
+    font-family: Roboto300;
+}
+
+.cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--verdeagua);
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: var(--silver);
+    border-radius: 10px;
+}
+
+.Veterinario {
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: var(--silver);
+    border-radius: 10px;
+}
+
+.select {
+    width: 250px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.tituloPrincipal {
+    margin: 10px 10px;
+    font-size: larger;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--silver);
+    border: 2px solid var(--concreto);
+    border-radius: 10px;
+    color: var(--verdeagua);
+}
+
+.titulo {
+    text-align: center;
+    color: var(--verdeagua);
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.cajas {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    border-left: 10px solid var(--blanco);
+    transition: all .5s ease;
+}
+
+.cajas:hover,
+.cajas:focus {
+    border-left: 10px solid var(--verdeagua);
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin: 20px 0;
+    width: 120px;
+    font-size: 15px;
+    background-color: var(--verdeagua);
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+    background-color: var(--turquesa);
+}
+
+.btnCancelar {
+    width: 100%;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    margin: 20px 0;
+    width: 120px;
+    font-size: 15px;
+    background-color: var(--Rojo2);
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btnCancelar:hover {
+    background-color: var(--Roj1);
+}
+
+.error {
+    border: 2px solid var(--Rojo2);
+}
