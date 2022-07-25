@@ -32,8 +32,8 @@ function ImprimirListaCitas(){
         celdaEstado.classList.add('infoTd');
         
         let Boton = document.createElement('a');
-        Boton.innerHTML = 'detalle';
-        Boton.setAttribute('href','./IniciarSesion.html')
+        Boton.innerHTML = 'Detalle';
+        Boton.setAttribute('href','#')
         Boton.classList.add('btn');
         celdaBoton.appendChild(Boton);
         
@@ -73,8 +73,8 @@ function ImprimirListaReservas(){
         celdaEstado.classList.add('infoTd');
         
         let Boton = document.createElement('a');
-        Boton.innerHTML = 'detalle';
-        Boton.setAttribute('href','./IniciarSesion.html')
+        Boton.innerHTML = 'Detalle';
+        Boton.setAttribute('href','#')
         Boton.classList.add('btn');
         celdaBoton.appendChild(Boton);
         

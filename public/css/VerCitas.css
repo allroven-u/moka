@@ -8,7 +8,7 @@
 
 .infoTd{
 
-    border: 1px solid var(--blanco);
+    border: 1px solid var(--silver);
     border-radius: 5px;
     text-align: center;
     padding: 3px;
@@ -19,35 +19,38 @@
     
 }
 .tblTitle{
-    border: 5px solid var(--concreto);
-    background-color: var(--blanco);
+    background-color: var(--azul2);
+    color: var(--blanco);
     cursor: default;
     border-radius: 5px;
     width: 180px;
     margin: 5px;
     text-align: center;
+    font-size: 18px;
     
 }
 
 .btn{
+    text-align: center;
     background-color: var(--blanco);
-    color: var(--naranja);
-    border: 2px solid var(--naranja);
-    padding: 5px 8px;
-    border-radius: 25px;
+    color: var(--turquesa);
+    border: 2px solid var(--turquesa);
+    padding: 2px 5px;
+    border-radius: 5px;
+    top: 2px;
     position: relative;
     z-index: 1;
     overflow: hidden;
     display: inline-block;
-    width: fit-content;
-    margin:5px 65px;
+    width: 180px;
+    
 }
 .btn:hover{
     color: var(--blanco);
 }
 .btn::after{
     content: '';
-    background-color: var(--naranja);
+    background-color: var(--turquesa);
     position: absolute;
     z-index: -1;
     padding: 5px 8px;
@@ -66,9 +69,10 @@
     transform: scale(1,1);
 }
 .thTitle{
-    background-color: var(--silver);
-    border: 2px solid var(--concreto);
-    border-radius: 10px;
+    
+    border: 1px solid var(--azul2);
+    background-color: var(--azul2);
+    border-radius: 0 0 5px 5px;
     padding: 5px;
     width: fit-content;
     
@@ -76,8 +80,6 @@
 }
 #tbdCitas{
     margin-top: 15px;
-    margin-left: 5px;
-    padding: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -86,8 +88,6 @@
 
 #tbdReservas{
     margin-top: 15px;
-    margin-left: 5px;
-    padding: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -98,6 +98,7 @@ tr{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    
    
 } 
 
@@ -106,20 +107,18 @@ tr{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-
-    margin-top: 25px;
-    border: 2px solid var(--silver);
-    border-radius: 10px;
-    padding: 15px;
-    background-color: var(--silver);
+    
+    border-radius: 5px;
+    
+    
     width: 100%;
 }
 .tituloCaja{
     text-align: center;
-    background-color: var(--silver);
-    border: 2px solid var(--concreto);
-    margin: 2px;
-    color: var(--verdeagua);
+    background-color: var(--azul2);
+    border: 1px solid var(--concreto);
+    border-radius: 0 0 5px 5px;
+    color: var(--blanco);
     width: 100%;
     
 }
@@ -133,13 +132,11 @@ tr{
     align-items: center;
 }
 .Pendiente{
-    color: var(--naranja);
+    background-color: var(--naranja);
 }
 .Cancelada{
-    color: var(--Rojo2);
+    background-color: var(--Rojo2);
 }
 .Finalizada{
-    color: var(--verdeagua);
+    background-color: var(--verdeagua);
 }
-
-
