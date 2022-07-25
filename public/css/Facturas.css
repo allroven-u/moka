@@ -1,0 +1,181 @@
+/*--ACOMODANDO-MARGENES-PADDING--*/
+@import url(./estilosGenerales.css);
+
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+}
+
+body{
+    max-width: 1440px;
+}
+
+h1{
+    margin-top: 15px;
+    border-bottom: 2px solid black;
+}
+
+.cajaPrincipal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tr{
+    padding: 10px;
+}
+
+.tblCitas{
+    margin: 30px;
+    text-align: left;
+    width: 1500px;
+    height: 150px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--azul2);
+
+  }
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin: 20px 0;
+    width: 120px;
+    font-size: 15px;
+    background-color: var(--naranja);
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btnEnviar{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin: 20px 0;
+    width: 120px;
+    font-size: 15px;
+    background-color: var(--turquesa);
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    background-color: var(--naranja) ;
+}
+
+.btnEnviar:hover{
+    background-color: var(--turquesa) ;
+}
+
+.btnCancelar{
+    width: 100%;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    margin: 20px 0;
+    width: 120px;
+    font-size: 15px;
+    background-color: var(--Rojo2) ;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btnCancelar:hover{
+    background-color: var(--Roj1);
+}
+  
+.tableTotales{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tblMontosTotales{
+    margin: 30px;
+    text-align: left;
+    width: 500px;
+}
+
+.tblinfo1{
+    text-align: left;
+    width: 400px;
+
+}
+
+.tblinfo2{
+    text-align: left;
+    width: 400px;
+}
+
+
+.cajaPrincipal{
+    margin: 50px;
+}
+
+.infoTd1{ 
+    background-color: rgb(53, 53, 53);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 225px;
+    text-align: center;
+    padding: 3px;
+}
+
+.infoTd2{
+    background-color: rgb(226, 224, 224);
+    width: 225px;
+    text-align: center;
+    padding: 5px;
+}
+
+.infoTotales{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+}
+
+th{ 
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 225px;
+    text-align: center;
+    padding: 3px;
+}
+
+tbody{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.tblCitas{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tblMontosTotales{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tblinfo1{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tblinfo2{
+    border: 2px solid black;
+    border-radius: 10px;
+}

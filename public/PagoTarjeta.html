@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="Estoy">
+<head>
+    <meta charset="UTF-8">
+    <title>Pago</title>
+    <link rel="stylesheet" href="./css/Registrarse.css">
+    <link rel="stylesheet" href="./css/estilosGenerales.css">
+</head>
+    <body>
+        <form class="form">
+            <h1 class="titulo">Pago</h1>
+            <img height="25" src="https://shoplineimg.com/assets/footer/card_visa.png" style="text-align: center; width: 10%">
+            <img height="25" src="https://shoplineimg.com/assets/footer/card_master.png" style="text-align: center; width: 10%">
+            <img height="25" src="https://shoplineimg.com/assets/footer/card_amex.png" style="text-align: center; width: 10%">
+            <input class="cajas" id="txtTitular" type="text" placeholder="Nombre de titular de la tarjeta*"  maxlength="60">
+            <input class="cajas" id="numTarjeta" type="text" placeholder="Número de tarjeta*"  maxlength="20">
+            <input class="cajas" id="txtCvv" type="password" placeholder="CVV*" maxlength="4">
+            <label for="mes_vencimiento">Mes de vencimiento:</label>
+                <select id="mes_vencimiento">
+                <option value="" selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                </select>
+
+            <label for="year_vencimiento">Año de vencimiento:</label>
+                <select id="year_vencimiento">
+                <option value="" selected></option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                </select>
+            <input type="button" class="btn" id="btnRegistrar" value="Pagar">
+            <p class="tengo-cuenta"><a href="./Factura.html" class="tengo-cuenta">Regresar</a></p>
+        </form>
+    </body>
+</html>

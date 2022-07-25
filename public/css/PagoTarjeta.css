@@ -1,0 +1,73 @@
+@import url(./estilosGenerales.css);
+*{
+  font-family: Roboto300;
+}
+.form{
+  width: 450px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 25px;
+  background-color: var(--silver);
+  border-radius: 10px;
+  ;
+
+}
+/*--TITULO-----------------------*/
+.titulo{
+  text-align: center;
+  color: var(--verdeagua);
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+
+}
+/*--CAJAS-DE-DATOS---------------*/
+.cajas{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  border-left: 10px solid var(--blanco);
+  transition: all .5s ease;
+  
+  
+  
+}
+
+.cajas:hover, .cajas:focus{
+  border-left: 10px solid var(--verdeagua);
+}
+
+/*--BOTON-DE-PAGO---------*/
+.btn{
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  margin: 20px 0;
+  font-size: 15px;
+  background-color: var(--verdeagua);
+  color: var(--blanco);
+  cursor: pointer;
+  transition: all .5s ease;
+  
+}
+.btn:hover{
+  background-color: var(--turquesa);
+}
+
+.tengo-cuenta{
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  
+
+}
+.tengo-cuenta:hover{
+  color: var(--turquesa);
+}
+.error{
+  border: 2px solid var(--Rojo2);
+}
