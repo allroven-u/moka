@@ -19,17 +19,17 @@ function cargaJson() {
 function buscaUsuario(pUsuario) {
   let result = null;
   for (let i = 0; i < usuariosArray.length; i++) {
-    if (usuariosArray[i].Usuario.toUpperCase() == pUsuario) {
+    if (usuariosArray[i].Usuario.toUpperCase() === pUsuario) {
       result = usuariosArray[i];
     }
-    return result;
   }
+  return result;
 }
 
 //Esta funcion valida si el login es correcto devuelve un booleano.
 function validarLogin(pUsuario, pClave) {
   let usuario = buscaUsuario(pUsuario);
-  if (usuario.Contrasenia == pClave) {
+  if (usuario.Contrasenia === pClave) {
     return true;
   } else {
     return false;
