@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VETERINARIA MOKA</title>
+    <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/estilosLanding.css">
+</head>
+
+<body>
+
+    <!--REGISTRARSE-->
+    <form class="rModal-form hidden">
+
+        <h1 class="rTitulo">Registrarse</h1>
+
+        <input class="rCajas" id="txtNombre" type="text" placeholder="Nombre*" maxlength="30">
+        <input class="rCajas" id="txtApellido" type="text" placeholder="Apellidos*" maxlength="30">
+        <input class="rCajas" id="numCedula" type="text" placeholder="Identificación*" maxlength="15">
+        <input class="rCajas" id="txtEmail" type="email" placeholder="Email*" maxlength="30">
+        <input class="rCajas" id="txtUsuario" type="text" placeholder="Nombre de Usuario*" maxlength="15">
+        <input class="rCajas" id="txtContrasenha" type="password" placeholder="Contraseña*" maxlength="12">
+        <input class="rCajas" id="txtContrasenha2" type="password" placeholder="Confirmar contraseña*" maxlength="12">
+        <textarea class="rCajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
+            placeholder="Dirección exacta*"></textarea>
+        <input type="button" class="rBtn" id="btnRegistrar" value="REGISTRAR">
+        <p class="rBtnCancelar">Ya tengo cuenta</p>
+    </form>
+
+    <!--INICIAR SESION-->
+    <form class="lModal-form hidden">
+        <h1 class="lTitulo">Iniciar Sesión</h1>
+
+        <input class="lCajas" id="txtUsuario-l" type="text" placeholder="Nombre de Usuario" required maxlength="15">
+        <input class="lCajas" id="txtContrasenha-l" type="password" placeholder="Contraseña" required maxlength="12">
+        <div class="lBtns">
+            <input type="button" class="lBtnCancelar" value="Cancelar">
+            <input type="button" id="btnIniciar" class="lBtn" value="Iniciar Sesion">
+        </div>
+    </form>
+
+    <div id="top-page"></div>
+
+    <nav id="nav-bar" class="">
+        <div class="main-nav-bar">
+            <a href="">
+                <img id="logo-nav" src="./assets/img/moka-logo-blanco.png" alt="Logo Moka" width="150">
+            </a>
+            <div class="nav-right">
+                <a class="show-modal-login">INICIAR SESION</a>
+                <a class="show-modal-signin">REGISTRARSE</a>
+                <!--<a href="">Sobre Nosotros</a>
+                <a href="">Contacto</a>-->
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div id="header">
+            <div class="info-header">
+                <p><span>Moka</span> la mejor amiga de tu mascota</p>
+                <button class="button-header">
+                    <a href="#nosotros">Sobre nosotros</a> </button>
+                <button class="button-header">
+                    <a href="#contacto">Contactanos</a> </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <div id="main-content">
+            <div class="main-info1 main-general">
+                <div class="info">
+                    <div class="container-info">
+                        <h2>Nuestros <span>Servicios</span></h2>
+                        <p>En la veterinaria Moka encontraras los mejores servicios para tu mascota, contamos con todo
+                            lo necesario y ofrecemos el mejor servicio para que tu mascota este tranquila y segura. En
+                            Moka te ofrecemos dos increibles servicios, que son, medica veterinaria y hotel para
+                            mascotas.</p>
+                    </div>
+                    <div class="container-info">
+                        <div class="info-img"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-info2 main-general">
+
+                <div class="info content-center">
+                    <div class="title-servicios">
+                        <h2>Contamos con...</h2>
+                    </div>
+                    <div class="servicios">
+                        <div class="vacunacion img-ser">
+                            <div class="icon"><i class="fa-solid fa-syringe"></i></div>
+                        </div>
+                        <h3>VACUNACIÓNES</h3>
+                    </div>
+                    <div class="servicios">
+                        <div class="operaciones img-ser">
+                            <div class="icon"><i class="fa-solid fa-book-medical"></i></div>
+                        </div>
+                        <h3>OPERACIONES</h3>
+                    </div>
+                    <div class="servicios">
+                        <div class="dentista img-ser">
+                            <div class="icon"><i class="fa-solid fa-tooth"></i></div>
+                        </div>
+                        <h3>DENTISTA</h3>
+                    </div>
+                    <div class="servicios">
+                        <div class="radiologia img-ser">
+                            <div class="icon"><i class="fa-solid fa-x-ray"></i></div>
+                        </div>
+                        <h3>RADIOLOGIAS</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-nosotros main-general" id="nosotros">
+                <div class="info content-center">
+                    <div class="title-team">
+                        <h2>Nuestro <span>Equipo</span></h2>
+                    </div>
+                    <div class="cards-teams">
+                        <div class="team-img1 pic-team">
+                            <div class="icon-especialidad"><i class="fa-solid fa-user-nurse"></i></div>
+                        </div>
+                        <div class="team-description">
+                            <h4>Citología, Cirugía</h4>
+                            <h3>Sofia Montes</h3>
+                            <p>Vivamus sapien ligula, tempus ac ipsum ac, mattis luctus magna. Donec eros massa, gravida
+                                ac lectus et, pharetra.</p>
+                        </div>
+                    </div>
+                    <div class="cards-teams">
+                        <div class="team-img2 pic-team">
+                            <div class="icon-especialidad"><i class="fa-solid fa-briefcase-medical"></i></div>
+                        </div>
+                        <div class="team-description">
+                            <h4>Medicina de emergencia</h4>
+                            <h3>Maria Jimenez</h3>
+                            <p>Vivamus sapien ligula, tempus ac ipsum ac, mattis luctus magna. Donec eros massa, gravida
+                                ac lectus et, pharetra.</p>
+                        </div>
+                    </div>
+                    <div class="cards-teams">
+                        <div class="team-img3 pic-team">
+                            <div class="icon-especialidad"><i class="fa-solid fa-stethoscope"></i></div>
+                        </div>
+                        <div class="team-description">
+                            <h4>Medicina diagnóstica</h4>
+                            <h3>Laura Murillo</h3>
+                            <p>Vivamus sapien ligula, tempus ac ipsum ac, mattis luctus magna. Donec eros massa, gravida
+                                ac lectus et, pharetra.</p>
+                        </div>
+                    </div>
+                    <div class="cards-teams">
+                        <div class="team-img4 pic-team">
+                            <div class="icon-especialidad"><i class="fa-solid fa-user-doctor"></i></div>
+                        </div>
+                        <div class="team-description">
+                            <h4>Cirugía, Ortopedia</h4>
+                            <h3>Camila Calderon</h3>
+                            <p>Vivamus sapien ligula, tempus ac ipsum ac, mattis luctus magna. Donec eros massa, gravida
+                                ac lectus et, pharetra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-contacto main-general" id="contacto">
+                <div class="info content-center">
+                    <div class="title-contact">
+                        <div>
+                            <h2>Contactenos</h2>
+                        </div>
+                        <div class="social-contact">
+                            <span> <i class="fa-brands fa-facebook-square"></i>
+                                Facebook&nbsp;&nbsp;</span>
+                            <span> <i class="fa-brands fa-twitter-square"></i>
+                                Twitter&nbsp;&nbsp;</span>
+                            <span> <i class="fa-solid fa-square-phone"></i>
+                                +506 8301-2543</span>
+                        </div>
+                    </div>
+                    <div class="form-contact">
+                        <form action="" id="formulario-contancto">
+                            <div class="box-form">
+                                <label for="">Nombre:</label>
+                                <input type="text" name="" id="cont-name">
+                            </div>
+                            <div class="box-form">
+                                <label for="">Correo Electronico:
+                                </label>
+                                <input type="text" name="" id="cont-mail">
+                            </div>
+                            <div class="box-form">
+                                <label for="">Numero de telefono:</label>
+                                <input type="text" name="" id="cont-phone">
+                            </div>
+                            <div class="box-form">
+                                <label for="">Descripcion:</label>
+                                <textarea id="cont-descrip"></textarea>
+                            </div>
+                            <div class="box-form">
+                                <button type="button" id="btn-contact" class="button">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="img-contact"></div>
+
+                </div>
+            </div>
+            <div class="main-maps main-general">
+                <div class="info">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6296.802981103994!2d-84.04117616864028!3d9.913520585145035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scr!4v1658861476582!5m2!1sen!2scr"
+                        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="overlay hidden"></div>
+
+
+
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <p>Moka <span>&#169;</span>2022 all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/controllers/controllerLanding.js"></script>
+</body>
+
+</html>
