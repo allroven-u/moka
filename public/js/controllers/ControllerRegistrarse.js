@@ -1,5 +1,6 @@
 'use strict'
 
+// VALIDAR DATOS REGISTRO
 
 let btnRegistrar = document.getElementById("btnRegistrar");
 let inputNombre = document.getElementById("txtNombre");
@@ -106,8 +107,10 @@ function ConfirmarDatos(){
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Registrado!',
+        title: 'Registro exitoso!',
         showConfirmButton: false,
         timer: 1500
       })
 }
+
+// FIN VALIDAR DATOS REGISTRO

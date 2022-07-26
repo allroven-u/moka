@@ -1,46 +1,47 @@
 "use strict";
 let btnIniciar = document.getElementById("btnIniciar");
-let inputUsuario = document.getElementById("txtUsuario");
-let inputContrasenha1 = document.getElementById("txtContrasenha");
+let inputUsuarioLogin = document.getElementById("txtUsuario-l");
+let inputContrasenha1Login = document.getElementById("txtContrasenha-l");
 
-document.addEventListener("load",cargaJson());
+document.addEventListener("load", cargaJson());
 
 btnIniciar.addEventListener("click", IniciarSesion);
 
 function IniciarSesion() {
-  if (ValidarDatos()) {
-    if (validarLogin(inputUsuario.value.toUpperCase(), inputContrasenha1.value) == true) {
-      ConfirmarDatos();
-    }else{
-        ErrorDatos();
+  if (ValidarDatosLogin()) {
+    if (validarLogin(inputUsuarioLogin.value.toUpperCase(), inputContrasenha1Login.value) == true) {
+      ConfirmarDatosLogin();
+    } else {
+      ErrorDatosLogin();Login
     }
   }
 }
-function ValidarDatos() {
-  let sUsuario = inputUsuario.value;
-  let pwContrasenha = inputContrasenha1.value;
+
+function ValidarDatosLogin() {
+  let sUsuario = inputUsuarioLogin.value;
+  let pwContrasenha = inputContrasenha1Login.value;
   if (sUsuario == null || sUsuario == undefined || sUsuario == "") {
-    inputUsuario.classList.add("error");
-    MostrarError();
+    inputUsuarioLogin.classList.add("error");
+    MostrarErrorLogin();
     return false;
   } else {
-    inputUsuario.classList.remove("error");
+    inputUsuarioLogin.classList.remove("error");
   }
   if (
     pwContrasenha == null ||
     pwContrasenha == undefined ||
     pwContrasenha == ""
   ) {
-    inputContrasenha1.classList.add("error");
-    MostrarError();
+    inputContrasenha1Login.classList.add("error");
+    MostrarErrorLogin();
     return false;
   } else {
-    inputContrasenha1.classList.remove("error");
+    inputContrasenha1Login.classList.remove("error");
   }
   return true;
 }
 
-function MostrarError() {
+function MostrarErrorLogin() {
   Swal.fire({
     icon: "error",
     title: "Oops...",
@@ -48,7 +49,7 @@ function MostrarError() {
   });
 }
 
-function ConfirmarDatos() {
+function ConfirmarDatosLogin() {
   Swal.fire({
     position: "center",
     icon: "success",
@@ -58,12 +59,12 @@ function ConfirmarDatos() {
   });
 }
 
-function ErrorDatos() {
-    Swal.fire({
-      position: "center",
-      icon: "error",
-      title: "Usuario o contaseña incorrectos!",
-      showConfirmButton: false,
-      timer: 1500,
-    });
-  }
+function ErrorDatosLogin() {
+  Swal.fire({
+    position: "center",
+    icon: "error",
+    title: "Usuario o contaseña incorrectos!",
+    showConfirmButton: false,
+    timer: 1500,
+  });
+}
