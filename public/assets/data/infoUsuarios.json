@@ -5,14 +5,14 @@
         "Identificación": "113000436",
         "Email": "arodriguezv@ucenfotec.ac.cr",
         "Usuario": "allroven",
-        "contrasenia": "Patito123",
-        "contrasenia2": "Patito123",
-        "direccion": "Curridabat, San Jose",
+        "Contrasenia": "Patito123",
+        "Contrasenia2": "Patito123",
+        "Direccion": "Curridabat, San Jose",
         "NumeroTarjeta":"1111222233334444",
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
 
     },
 
@@ -23,14 +23,14 @@
         "Identificación": "206790172",
         "Email": "dsalazarc@ucenfotec.ac.cr",
         "Usuario": "dns2690",
-        "contrasenia": "Baloo2022",
-        "contrasenia2": "Baloo2022",
-        "direccion": "San Carlos, Alajuela",
+        "Contrasenia": "Baloo2022",
+        "Contrasenia2": "Baloo2022",
+        "Direccion": "San Carlos, Alajuela",
         "NumeroTarjeta":"1111222233334444",
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
     },
 
     {
@@ -40,14 +40,14 @@
         "Identificación": "206690526",
         "Email": "lmurillos@ucenfotec.ac.cr",
         "Usuario": "lms0690",
-        "contrasenia": "Gala9001",
-        "contrasenia2": "Gala9001",
-        "direccion": "Sarchi, Alajuela",
+        "Contrasenia": "Gala9001",
+        "Contrasenia2": "Gala9001",
+        "Direccion": "Sarchi, Alajuela",
         "NumeroTarjeta":"1111222233334444",
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
     },
 
     {
@@ -64,7 +64,7 @@
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
     },
 
     {
@@ -74,14 +74,14 @@
         "Identificación": "115270194",
         "Email": "lromanj@ucenfotec.ac.cr",
         "Usuario": "lromanj",
-        "contrasenia": "Atun123",
-        "contrasenia2": "Atun123",
+        "Contrasenia": "Atun123",
+        "Contrasenia2": "Atun123",
         "Direccion": "Santo Domingo, Heredia",
         "NumeroTarjeta":"1111222233334444",
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
     },
 
     {
@@ -98,7 +98,7 @@
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
     },
 
     {
@@ -115,7 +115,7 @@
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
     },
 
     {
@@ -132,7 +132,7 @@
         "MesVenceTarjeta": "03",
         "AnioVenceTarjeta": "03",
         "CalificacionPromedio": 5,
-        "foto":""
+        "Foto":""
     }
 
 
