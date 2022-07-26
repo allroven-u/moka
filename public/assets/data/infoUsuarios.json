@@ -1,0 +1,104 @@
+[
+    {
+        "nombre": "Allan",
+        "Apellido1": "Rodriguez",
+        "Apellido2": "Venegas",
+        "Identificación": "113000436",
+        "Email": "arodriguezv@ucenfotec.ac.cr",
+        "Usuario": "allroven",
+        "contrasenia": "Patito123",
+        "contrasenia2": "Patito123",
+        "direccion": "Curridabat, San Jose"
+    },
+
+    {
+        "nombre": "Denis",
+        "Apellido1": "",
+        "Apellido2": "",
+        "Identificación": "",
+        "Email": "",
+        "Usuario": "",
+        "contrasenia": "",
+        "contrasenia2": "",
+        "direccion": ""
+    },
+
+    {
+        "nombre": "Laura",
+        "Apellido1": "",
+        "Apellido2": "",
+        "Identificación": "",
+        "Email": "",
+        "Usuario": "",
+        "contrasenia": "",
+        "contrasenia2": "",
+        "direccion": ""
+    },
+
+    {
+        "nombre": "Jose",
+        "Apellido1": "",
+        "Apellido2": "",
+        "Identificación": "",
+        "Email": "",
+        "Usuario": "",
+        "contrasenia": "",
+        "contrasenia2": "",
+        "direccion": ""
+    },
+
+    {
+        "nombre": "Luis Daniel",
+        "Apellido1": "",
+        "Apellido2": "",
+        "Identificación": "",
+        "Email": "",
+        "Usuario": "",
+        "contrasenia": "",
+        "contrasenia2": "",
+        "direccion": ""
+    }
+    ,
+
+    {
+        "nombre": "Luis",
+        "Apellido1": "",
+        "Apellido2": "",
+        "Identificación": "",
+        "Email": "",
+        "Usuario": "",
+        "contrasenia": "",
+        "contrasenia2": "",
+        "direccion": ""
+    }
+    ,
+
+    {
+        "nombre": "doctor",
+        "Apellido1": "Mora",
+        "Apellido2": "",
+        "Identificación": "100220030",
+        "Email": "doctor1@moka.com",
+        "Usuario": "doctor1",
+        "contrasenia": "12345678",
+        "contrasenia2": "12345678",
+        "direccion": " San Jose"
+    }
+    ,
+
+    {
+        "nombre": "Doctor",
+        "Apellido1": "Ramirez",
+        "Apellido2": "",
+        "Identificación": "602930000",
+        "Email": "doctor2@moka.com",
+        "Usuario": "doctor2",
+        "contrasenia": "12345678",
+        "contrasenia2": "12345678",
+        "direccion": "San Jose"
+    }
+
+
+
+]
+
