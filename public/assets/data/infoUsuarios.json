@@ -24,14 +24,14 @@
 
     {
         "nombre": "Laura",
-        "Apellido1": "",
-        "Apellido2": "",
-        "Identificación": "",
-        "Email": "",
-        "Usuario": "",
-        "contrasenia": "",
-        "contrasenia2": "",
-        "direccion": ""
+        "Apellido1": "Murillo",
+        "Apellido2": "Salazar",
+        "Identificación": "206690526",
+        "Email": "lmurillos@ucenfotec.ac.cr",
+        "Usuario": "lms0690",
+        "contrasenia": "Gala9001",
+        "contrasenia2": "Gala9001",
+        "direccion": "Sarchi, Alajuela"
     },
 
     {
