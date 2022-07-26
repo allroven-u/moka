@@ -1,5 +1,4 @@
-[
-    {
+[{
         "nombre": "Allan",
         "Apellido1": "Rodriguez",
         "Apellido2": "Venegas",
@@ -49,16 +48,15 @@
 
     {
         "nombre": "Luis Daniel",
-        "Apellido1": "",
-        "Apellido2": "",
-        "Identificación": "",
-        "Email": "",
-        "Usuario": "",
-        "contrasenia": "",
-        "contrasenia2": "",
-        "direccion": ""
-    }
-    ,
+        "Apellido1": "Roman",
+        "Apellido2": "Jara",
+        "Identificación": "115270194",
+        "Email": "lromanj@ucenfotec.ac.cr",
+        "Usuario": "lromanj",
+        "contrasenia": "Atun123",
+        "contrasenia2": "Atun123",
+        "direccion": "Santo Domingo, Heredia"
+    },
 
     {
         "nombre": "Luis",
@@ -70,8 +68,7 @@
         "contrasenia": "",
         "contrasenia2": "",
         "direccion": ""
-    }
-    ,
+    },
 
     {
         "nombre": "doctor",
@@ -83,8 +80,7 @@
         "contrasenia": "12345678",
         "contrasenia2": "12345678",
         "direccion": " San Jose"
-    }
-    ,
+    },
 
     {
         "nombre": "Doctor",
@@ -101,4 +97,3 @@
 
 
 ]
-
