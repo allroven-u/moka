@@ -11,8 +11,9 @@ function IniciarSesion() {
   if (ValidarDatosLogin()) {
     if (validarLogin(inputUsuarioLogin.value.toUpperCase(), inputContrasenha1Login.value) == true) {
       ConfirmarDatosLogin();
+      location.href = './App.html'
     } else {
-      ErrorDatosLogin();Login
+      ErrorDatosLogin();
     }
   }
 }
