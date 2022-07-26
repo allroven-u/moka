@@ -1,19 +1,31 @@
 'use strict'
 
-let inputNombreMascota = document.getElementById('txtNombre');
+let inputNombreMascota = document.querySelector('#selectMacota');
 let inputFecha = document.getElementById('txtFecha');
 let inputTipoIdentificacion = document.querySelector('#selectVeterinario');
 let inputDireccion = document.getElementById('txtDireccion');
 
 let btnCrear = document.getElementById('btnIniciar');
 btnCrear.addEventListener('click',CrearCita);
+var numCita= 0;//guardar base de datos
 
 function CrearCita(){
     if(ValidarDatos() ==true){
         ConfirmarDatos();
+        numCita++;
+        let pendID= 206790172;
+        let pendCalif = 3;
+        let EstadoInicial = "Pendiete";
+        let sNombreMascota = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
+        let dFecha = inputFecha.value;
+        let sIdentificacion = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
+        let sDireccion = inputDireccion.value; 
+        RegistrarCita(pendID,numCita,sNombreMascota,sIdentificacion,dFecha,EstadoInicial,pendCalif,sDireccion);
+        console.log(ObtenerListaCitas());
     }
 }
 function ValidarDatos(){
+    console.log(ObtenerListaCitas());
     let sNombreMascota = inputNombreMascota.value;
     let dFecha = inputFecha.value;
     let sIdentificacion = inputTipoIdentificacion.value;
@@ -68,3 +80,29 @@ function ConfirmarDatos(){
         timer: 1500
       })
 }
+
+
+//carga Mascotas
+function ImprimirListaMascotas(){
+    let Select = document.getElementById('selectMacota');
+    let idCliente = 206790172;
+    let listaMascotas = ObtenerListaMascotas();
+    let opcion;
+    let valor;
+
+
+    for (let i = 0; i < listaMascotas.length; i++) {
+        
+        if(idCliente == listaMascotas[i][0]){
+            opcion = document.createElement('option');
+            valor = (i+1);
+            opcion.value = valor;
+            opcion.text = listaMascotas[i][1];
+            Select.appendChild(opcion);
+            }
+        }
+        opcion = document.createElement('option');
+        opcion.value = valor+2;
+        opcion.text = 'Otro' ;
+        Select.appendChild(opcion);
+    }

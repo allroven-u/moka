@@ -31,11 +31,38 @@ function ImprimirListaCitas(){
         celdaEstado.classList.add('Estado');
         celdaEstado.classList.add('infoTd');
         
+        // let Boton = document.createElement('a');
+        // Boton.innerHTML = 'Detalle';
+        // Boton.setAttribute('href','#')
+        // Boton.classList.add('btn');
+        // celdaBoton.appendChild(Boton);
+        let BotonV = document.createElement('a');
+        BotonV.setAttribute('href','#')
+        let iconoV =document.createElement('i');
+        iconoV.classList.add("fa-solid")
+        iconoV.classList.add("fa-eye")
+        iconoV.classList.add("btnV")
+        BotonV.appendChild(iconoV);
+        celdaBoton.appendChild(BotonV);
+        
+
         let Boton = document.createElement('a');
-        Boton.innerHTML = 'Detalle';
         Boton.setAttribute('href','#')
-        Boton.classList.add('btn');
+        let icono =document.createElement('i');
+        icono.classList.add("fa-solid")
+        icono.classList.add("fa-pen-to-square")
+        icono.classList.add("btn")
+        Boton.appendChild(icono);
         celdaBoton.appendChild(Boton);
+
+        let BotonC = document.createElement('a');
+        BotonC.setAttribute('href','#')
+        let iconoC =document.createElement('i');
+        iconoC.classList.add("fa-solid")
+        iconoC.classList.add("fa-circle-xmark")
+        iconoC.classList.add("btnC")
+        BotonC.appendChild(iconoC);
+        celdaBoton.appendChild(BotonC);
         
     }
     let EstadoCita = document.querySelectorAll('.Estado');

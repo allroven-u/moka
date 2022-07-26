@@ -52,7 +52,6 @@
 
     {
         "Nombre": "Jose",
-<<<<<<< Updated upstream
         "Apellido1": "Jimenez",
         "Apellido2": "Abarca",
         "Identificación": "118360868",
@@ -60,22 +59,7 @@
         "Usuario": "jjimenez",
         "Contrasenia": "admin1234",
         "Contrasenia2": "admin1234",
-        "Direccion": "Escazu, San Jose",
-=======
-        "Apellido1": "",
-        "Apellido2": "",
-        "Identificacion": "",
-        "Email": "",
-        "Usuario": "",
-        "Contrasenia": "",
-        "Contrasenia2": "",
-        "Direccion": "",
->>>>>>> Stashed changes
-        "NumeroTarjeta":"1111222233334444",
-        "MesVenceTarjeta": "03",
-        "AnioVenceTarjeta": "03",
-        "CalificacionPromedio": 5,
-        "Foto":""
+        "Direccion": "Escazu, San Jose"
     },
 
     {

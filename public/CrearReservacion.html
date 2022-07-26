@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body onload="ImprimirListaMascotas();">
 
 
 
@@ -22,7 +22,10 @@
         <form class="formReserva">
             <h1 class="titulo">Nueva Reservación</h1>
 
-            <input class="cajas" id="txtNombre" type="text" placeholder="Nombre de Mascota*" maxlength="30">
+            <select class="cajas select" id="selectMacota" >
+                <option value="">------Seleccionar mascota------</option>
+                
+            </select>
             <div>
                 <label for="dateCheckIn">Fecha de ingreso</label>
                 <input class="cajas" id="dateCheckIn" type="datetime-local" value="" />
@@ -55,6 +58,7 @@
 
     </div>
     <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/services/demoService.js"></script>
     <script src="./js/controllers/CrearReservaController.js" ></script>
 
 </body>

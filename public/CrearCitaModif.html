@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="ImprimirListaMascotas();">
 
     <div class="cuerpoCita">
             
@@ -22,8 +22,10 @@
 
 
 
-
-                <input class="cajas" id="txtNombre" type="text" placeholder="Nombre de Mascota*" maxlength="30">
+                <select class="cajas select" id="selectMacota" >
+                    <option value="">------Seleccionar mascota------</option>
+                    
+                </select>
 
                 <input class="cajas" id="txtFecha" type="datetime-local" value="" />
 
