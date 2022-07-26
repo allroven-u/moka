@@ -1,5 +1,5 @@
 [{
-        "nombre": "Allan",
+        "Nombre": "Allan",
         "Apellido1": "Rodriguez",
         "Apellido2": "Venegas",
         "Identificación": "113000436",
@@ -7,11 +7,17 @@
         "Usuario": "allroven",
         "contrasenia": "Patito123",
         "contrasenia2": "Patito123",
-        "direccion": "Curridabat, San Jose"
+        "direccion": "Curridabat, San Jose",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
+
     },
 
     {
-        "nombre": "Denis",
+        "Nombre": "Denis",
         "Apellido1": "Salazar",
         "Apellido2": "Chacon",
         "Identificación": "206790172",
@@ -19,11 +25,16 @@
         "Usuario": "dns2690",
         "contrasenia": "Baloo2022",
         "contrasenia2": "Baloo2022",
-        "direccion": "San Carlos, Alajuela"
+        "direccion": "San Carlos, Alajuela",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
     },
 
     {
-        "nombre": "Laura",
+        "Nombre": "Laura",
         "Apellido1": "Murillo",
         "Apellido2": "Salazar",
         "Identificación": "206690526",
@@ -31,23 +42,33 @@
         "Usuario": "lms0690",
         "contrasenia": "Gala9001",
         "contrasenia2": "Gala9001",
-        "direccion": "Sarchi, Alajuela"
+        "direccion": "Sarchi, Alajuela",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
     },
 
     {
-        "nombre": "Jose",
+        "Nombre": "Jose",
         "Apellido1": "",
         "Apellido2": "",
         "Identificación": "",
         "Email": "",
         "Usuario": "",
-        "contrasenia": "",
-        "contrasenia2": "",
-        "direccion": ""
+        "Contrasenia": "",
+        "Contrasenia2": "",
+        "Direccion": "",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
     },
 
     {
-        "nombre": "Luis Daniel",
+        "Nombre": "Luis Daniel",
         "Apellido1": "Roman",
         "Apellido2": "Jara",
         "Identificación": "115270194",
@@ -55,43 +76,63 @@
         "Usuario": "lromanj",
         "contrasenia": "Atun123",
         "contrasenia2": "Atun123",
-        "direccion": "Santo Domingo, Heredia"
+        "Direccion": "Santo Domingo, Heredia",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
     },
 
     {
-        "nombre": "Luis",
+        "Nombre": "Luis",
         "Apellido1": "",
         "Apellido2": "",
         "Identificación": "",
         "Email": "",
         "Usuario": "",
-        "contrasenia": "",
-        "contrasenia2": "",
-        "direccion": ""
+        "Contrasenia": "",
+        "Contrasenia2": "",
+        "Direccion": "",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
     },
 
     {
-        "nombre": "doctor",
+        "Nombre": "doctor",
         "Apellido1": "Mora",
         "Apellido2": "",
         "Identificación": "100220030",
         "Email": "doctor1@moka.com",
         "Usuario": "doctor1",
-        "contrasenia": "12345678",
-        "contrasenia2": "12345678",
-        "direccion": " San Jose"
+        "Contrasenia": "12345678",
+        "Contrasenia2": "12345678",
+        "Direccion": "San Jose",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
     },
 
     {
-        "nombre": "Doctor",
+        "Nombre": "Doctor",
         "Apellido1": "Ramirez",
         "Apellido2": "",
         "Identificación": "602930000",
         "Email": "doctor2@moka.com",
         "Usuario": "doctor2",
-        "contrasenia": "12345678",
-        "contrasenia2": "12345678",
-        "direccion": "San Jose"
+        "Contrasenia": "12345678",
+        "Contrasenia2": "12345678",
+        "Direccion": "San Jose",
+        "NumeroTarjeta":"1111222233334444",
+        "MesVenceTarjeta": "03",
+        "AnioVenceTarjeta": "03",
+        "CalificacionPromedio": 5,
+        "foto":""
     }
 
 
