@@ -12,14 +12,14 @@
 
     {
         "nombre": "Denis",
-        "Apellido1": "",
-        "Apellido2": "",
-        "Identificación": "",
-        "Email": "",
-        "Usuario": "",
-        "contrasenia": "",
-        "contrasenia2": "",
-        "direccion": ""
+        "Apellido1": "Salazar",
+        "Apellido2": "Chacon",
+        "Identificación": "206790172",
+        "Email": "dsalazarc@ucenfotec.ac.cr",
+        "Usuario": "dns2690",
+        "contrasenia": "Baloo2022",
+        "contrasenia2": "Baloo2022",
+        "direccion": "San Carlos, Alajuela"
     },
 
     {
