@@ -3,37 +3,34 @@
     font-family: Roboto300;
 }
 
-.cuerpo {
+.cuerpoReserva {
     display: flex;
     flex-wrap: wrap;
 }
 
-.form {
+.formReserva {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--verdeagua);
     width: 450px;
     padding: 30px;
     margin: auto;
     margin-top: 25px;
-    background-color: var(--silver);
-    border-radius: 10px;
+    background-color: var(--blanco);
+    border-radius: 5px;
+    
+}
+label{
+    color: var(--gris);
 }
 
-.Veterinario {
-    width: 450px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 25px;
-    background-color: var(--silver);
-    border-radius: 10px;
-}
+
 
 .select {
     width: 250px;
     padding: 30px;
     margin: auto;
     margin-top: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     display: flex;
 }
@@ -42,14 +39,14 @@
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     border-left: 10px solid var(--blanco);
     transition: all .5s ease;
     font-size: large;
 }
 
-.tituloPrincipal {
+/* .tituloPrincipal {
     margin: 10px 10px;
     font-size: larger;
     border-radius: 5px;
@@ -59,13 +56,13 @@
     border: 2px solid var(--concreto);
     border-radius: 10px;
     color: var(--verdeagua);
-}
+} */
 
 .titulo {
     text-align: center;
     color: var(--verdeagua);
     margin-bottom: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--silver);
 }
 
 .cajas {
@@ -73,10 +70,11 @@
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    border-left: 10px solid var(--blanco);
+    border-left: 10px solid var(--silver);
     transition: all .5s ease;
+    color: gray;
 }
 
 .cajas:hover,
@@ -92,7 +90,7 @@
 .btn {
     width: 100%;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 5px;
     border: none;
     margin: 20px 0;
     width: 120px;
@@ -110,7 +108,7 @@
 .btnCancelar {
     width: 100%;
     padding: 5px;
-    border-radius: 25px;
+    border-radius: 5px;
     border: none;
     margin: 20px 0;
     width: 120px;
