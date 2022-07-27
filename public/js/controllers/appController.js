@@ -1,7 +1,12 @@
 let listElements = document.querySelectorAll('.list__button--click');
+let xxx = document.getElementById('sessionUserTxt');
+
 const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
       toggle = body.querySelector("toggle");
+
+
+      document.addEventListener("load", usuarioLogueado());
 
 listElements.forEach(listElement => {
     listElement.addEventListener('click', ()=>{
@@ -30,6 +35,11 @@ function cerrar(){
         sidebar.classList.add("navClose");
     }
     
+    
+}
+
+function usuarioLogueado(){
+    console.log(sessionUser);
     
 }
 

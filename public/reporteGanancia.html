@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moka Veterinaria App</title>
+    <title>Reporte de Ganancias</title>
+    <link rel="stylesheet" href=".//css/reporteGanancia.css">
+    <link rel="stylesheet" href="./css/estilosGenerales.css">
     <link rel="stylesheet" href="./css/app.css">
-    <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="ImprimirListaCitas();">
     <header>
         <div class="menuBars">
             <a href="#" class="menuBars logo" >
@@ -21,16 +22,11 @@
         </div>
 
         <div class="profile">
-            <a id="sessionUserTxt" class="name" href="#"> </a>
-            <a class="logout" href="/public/landing.html">
-                <i class="fa-solid fa-right-to-bracket fa-2x "></i>
-            </a>
-            
+            <a class="name" href="#"></a>
         </div>
 
-
-
     </header>
+    <div class="bodyContainer">
     <nav class="nav">
 
         <ul class="list">
@@ -65,9 +61,7 @@
                             Mis Mascotas</a>
                     </li>
                 </ul>
-
             </li>
-
 
             <li class="list__item list__item--click">
                    <div class="list__button list__button--click">
@@ -79,7 +73,7 @@
                 <ul class="list__show">
                     <li class="list__inside">
                         
-                        <a href="./CrearCita copy.html" class="nav__link nav__link--inside">
+                        <a href="#" class="nav__link nav__link--inside">
                             <i class="fa-solid fa-plus list__arrow"></i>
                             Crear nueva Cita</a>
                     </li>
@@ -90,7 +84,6 @@
                             Ver Citas</a>
                     </li>
                 </ul>
-
 
             </li>
 
@@ -150,30 +143,91 @@
                         <a href="#" class="nav__link nav__link--inside">Reporte 6</a>
                     </li>
                 </ul>
-
             </li>
-
-            <li class="list__item">
-                <div class="list__button">
-                    <i class="fa-solid fa-right-from-bracket fa-2x list__img"></i>
-                    <a href="/public/landing.html" class="nav__link">Logout</a>
-                    
-                </div>
-            </li>
-
         </ul>
     </nav>
+    <div class="tblCaja">
+        <div class="tituloCaja">
+            <h2>Reporte de Ganancias</h2>
 
-        <div class="home">
-            <h1> Moka Veterinaria </h1> 
+            <span>Fecha Inicio</span> 
+            <input type="date">
+
+            <span>Fecha Final</span> 
+            <input type="date">
+
+            <span>Mascota</span> 
+            <input type="text">
+
+            <span>Usuario</span> 
+            <input type="text">
+
+            <button>Filtrar</button>
+
         </div>
-    
-
-    <div class="app_container">
-
+        <table class="tblReporte">
+            <thead class="thTitle">
+                <tr>
+                    <th class="tblTitulo">No.de Factura</th>
+                    <th class="tblTitulo">Nombre del Cliente</th>
+                    <th class="tblTitulo">Servicio</th>
+                    <th class="tblTitulo">Mes</th>
+                    <th class="tblTitulo">Fecha</th>
+                    <th class="tblTitulo">Venta</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tblContenido">001</td>
+                    <td class="tblContenido"> Luis Salazar</td>
+                    <td class="tblContenido">Veterinaria</td>
+                    <td class="tblContenido">Julio</td>
+                    <td class="tblContenido">25/7/2022</td>
+                    <td class="tblContenido">₡25000</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tblContenido">002</td>
+                    <td class="tblContenido">Jorge Morales</td>
+                    <td class="tblContenido">Veterinaria</td>
+                    <td class="tblContenido">Julio</td>
+                    <td class="tblContenido">20/7/2022</td>
+                    <td class="tblContenido">₡20000</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tblContenido">003</td>
+                    <td class="tblContenido">Isabel Mena</td>
+                    <td class="tblContenido">Veterinaria</td>
+                    <td class="tblContenido">Julio</td>
+                    <td class="tblContenido">15/7/2022</td>
+                    <td class="tblContenido">₡30000</td>   
+                </tr>    
+            </tbody>
+        </table>
+        <div class="tblCajaSecundaria">
+            <table class="tblTotales">
+                <thead class="thTitle2">
+                    <tr>
+                        <th class="tblCajaTotal">SubTotal</th>
+                        <th class="tblCajaTotal">Deducciones</th>
+                        <th class="tblCajaTotal">IVA</th>
+                        <th class="tblCajaTotal">Total de ganancias</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tblInfoTotal">₡75000</td>
+                        <td class="tblInfoTotal">₡25000</td>
+                        <td class="tblInfoTotal">₡9750</td>
+                        <td class="tblInfoTotal">₡40250</td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>                   
     </div>
-    <script src="./js/services/UsuarioService.js"></script>
-    <script src="./js/controllers/appController.js"></script>
+
     
 </body>
-</html>
+</html> 
