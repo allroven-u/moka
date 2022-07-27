@@ -78,20 +78,70 @@ h2 {
     cursor: pointer;
 }
 
-.left-nav-mobile{
-    display: none;
+
+#nav-bar-left {
+    background-color: var(--blanco);
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
 }
 
-.nav-line{
+#logo-nav-left {
+    border-bottom: 2px solid var(--silver);
+    padding-bottom: 15px;
+    margin: 20px 0px;
+}
+
+.content-left-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-left a {
+    color: var(--gris);
+    margin: 10px 0px;
+    font-family: Roboto400;
+}
+
+.nav-left a:hover {
+    color: var(--verdeagua);
+}
+
+.btn-leftNav2 {
+    position: relative;
+    left: 100%;
+    margin: 20px 10px;
+}
+
+.btn-leftNav {
+    display: none;
+    position: relative;
+    left: 0%;
+    margin: 0px;
+}
+
+.nav-line {
     display: flex;
     margin-bottom: 6px;
     width: 35px;
     height: 1px;
     border: 3px solid var(--blanco);
 }
-.nav-line-verdeagua{
+
+.nav-line-verdeagua {
     border: 3px solid var(--verdeagua)
 }
+
+
+
 
 #header {
     display: flex;
@@ -204,7 +254,7 @@ h2 {
 
 .servicios {
     width: 255px;
-    margin-top: 30px;
+    margin: 30px 20px 0px 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -293,7 +343,7 @@ h2 {
 
 
 .cards-teams {
-    margin-top: 30px;
+    margin: 30px 20px 0px 20px;
     overflow: hidden;
     width: 280px;
     height: 520px;
@@ -494,7 +544,7 @@ h2 {
     height: 300px;
     background-image: url('../assets/img/mascotas-portada.png');
     background-size: cover;
-   
+
 }
 
 .main-maps iframe {
@@ -573,7 +623,7 @@ textarea {
     margin: auto;
     margin-top: 50px;
     background-color: var(--blanco);
-    border-radius: 10px;
+    border-radius: 5px;
     animation: modal-login 500ms ease;
 }
 
