@@ -1,0 +1,144 @@
+@import url('estilosLanding.css');
+
+
+
+
+@media screen and (max-width: 1674px){
+    .form-contact{
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1320px){
+    .container-info{
+        width: 100%;
+        margin: 0px 20px;
+    }
+    .social-contact {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .info-maps{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .horario-moka{
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 917px){
+    .box-form input,
+    .box-form textarea,
+    .form-contact {
+        width: 100%;
+    }
+    .img-contact{
+        background-position-x: -50px;
+    }
+
+}
+@media screen and (max-width: 835px){
+    .title-contact{
+        justify-content: center;
+    }
+    .social-contact{
+        display: none;
+        
+    }
+
+  
+}
+
+@media screen and (max-height: 800px){
+    .rModal-form{
+        height: 500px;
+        overflow: scroll;
+        border: 20px solid var(--blanco);
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    .lModal-form{
+        width: 100%;
+    }
+    .rModal-form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 695px) {
+
+    .info,
+    #header,
+    .main-nav-bar {
+        width: 100%;
+    }
+
+    #header {
+        justify-content: center;
+    }
+
+    .info-header {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .info h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .main-general,
+    #header {
+        padding: 80px 20px;
+    }
+
+    .main-nav-bar {
+        padding: 10px 10px;
+    }
+
+    .info-header {
+        width: 300px;
+    }
+
+    .box-form input,
+    .box-form textarea,
+    .form-contact {
+        width: 100%;
+    }
+
+    .form-contact{
+        justify-content: center;
+    }
+
+    .img-contact{
+        display: none;
+    }
+    .horario-moka{
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .nav-right{
+        display: none;
+    }
+    .button-header{
+        display: none;
+    }
+    .main-nav-bar {
+      width: 90%;
+    }
+    .left-nav-mobile{
+        display: block;
+    }
+}
+
+
