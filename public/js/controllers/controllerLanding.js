@@ -5,15 +5,22 @@ window.addEventListener("scroll", function () {
   let logoNav = document.querySelector("#logo-nav");
   let navRight = document.querySelector(".nav-right");
   let body = document.querySelector('body');
+  let navLeft = document.querySelectorAll('.nav-line');
 
   body.classList.toggle('background-animation', window.scrollY > 0);
   navBar.classList.toggle("nav-bar-scroll", window.scrollY > 0);
+
+  for(let i = 0; i < navLeft.length; i++){
+    navLeft[i].classList.toggle('nav-line-verdeagua', window.scrollY > 0);
+  }
+ 
+  
 
   if (window.scrollY > 0) {
     logoNav.setAttribute("src", "./assets/img/moka-logo.png");
   } else {
     logoNav.setAttribute("src", "./assets/img/moka-logo-blanco.png");
-  }
+  };
 
   navRight.classList.toggle("nav-right-scroll", window.scrollY > 0);
 });
