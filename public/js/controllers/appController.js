@@ -1,10 +1,17 @@
 let listElements = document.querySelectorAll('.list__button--click');
+let  txtUsuarioLogueado = document.getElementById(TxtUsuarioLogueado);
 const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
       toggle = body.querySelector("toggle");
 
+      window.addEventListener('load', function() {
+        let usuarioSession = GetSesion();
+       
+        console.log(usuarioSession.Nombre + ' ' + usuarioSession.Apellido1)
+    });
+
 listElements.forEach(listElement => {
-    listElement.addEventListener('click', ()=>{
+    listElement.addEventListeer('click', ()=>{
         
         listElement.classList.toggle('arrow');
 
@@ -19,19 +26,6 @@ listElements.forEach(listElement => {
     })
 });
 
-function cerrar(){
-   
-    if(sidebar.classList.contains(navClose)){
-        sidebar.classList.remove("navClose");
-    sidebar.classList.add("nav");
-    }
-    else{
-        sidebar.classList.remove("nav");
-        sidebar.classList.add("navClose");
-    }
-    
-    
-}
 
 
 //MOSTRAR LOS MODALES
