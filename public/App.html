@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
 
@@ -8,52 +9,40 @@
     <link rel="stylesheet" href="./css/app.css">
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="menuBars">
-            <a href="#" class="menuBars logo" >
-                <!-- <i class="fa-solid fa-shield-dog fa-2x"></i> -->
-                <img src="../public/assets/img/logo.png" alt="">
+            <a href="App.html" class="menuBars logo">
+                <img src="../public/assets/img/moka-logo.png" alt="">
             </a>
-            <a href="#" class="menuBars bars">
-                <i id="toggle" onclick="cerrar()" class="fa-solid fa-bars fa-xl "></i>
-            </a>
+            <div class="profile">
+                <a class="name" href="#"> Allan Rodriguez</a>
+                <a class="logout" href="./landing.html">
+                    <i class="fa-solid fa-right-to-bracket fa-2x "></i>
+                </a>
+            </div>
         </div>
-
-        <div class="profile">
-            <a id="sessionUserTxt" class="name" href="#"> </a>
-            <a class="logout" href="/public/landing.html">
-                <i class="fa-solid fa-right-to-bracket fa-2x "></i>
-            </a>
-            
-        </div>
-
-
-
     </header>
     <nav class="nav">
-
         <ul class="list">
 
             <li class="list__item">
                 <div class="list__button">
                     <i class="fa-solid fa-angle-right fa-2x list__img "></i>
-                    <a href="#" class="nav__link">Inicio</a>
-                    
+                    <a href="App.html" class="nav__link">Inicio</a>
                 </div>
             </li>
 
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
-                    <i class="fa-solid fa-user list__img" ></i>
+                    <i class="fa-solid fa-user list__img"></i>
                     <a href="#" class="nav__link">Cuenta</a>
                     <i class="fa-solid fa-angle-right list__arrow "></i>
-                    
                 </div>
 
                 <ul class="list__show">
                     <li class="list__inside">
-                        
                         <a href="#" class="nav__link nav__link--inside">
                             <i class="fa-solid fa-address-card" list__arrow></i>
                             Mi perfil</a>
@@ -68,9 +57,8 @@
 
             </li>
 
-
             <li class="list__item list__item--click">
-                   <div class="list__button list__button--click">
+                <div class="list__button list__button--click">
                     <i class="fa-solid fa-house-chimney-medical list__img"></i>
                     <a href="#" class="nav__link">Veterinaria</a>
                     <i class="fa-solid fa-angle-right list__arrow "></i>
@@ -78,14 +66,14 @@
 
                 <ul class="list__show">
                     <li class="list__inside">
-                        
-                        <a href="./CrearCita copy.html" class="nav__link nav__link--inside">
+
+                        <a href="CrearCita.html" class="nav__link nav__link--inside" id="show-crear-cita">
                             <i class="fa-solid fa-plus list__arrow"></i>
                             Crear nueva Cita</a>
                     </li>
 
                     <li class="list__inside">
-                        <a href="/public/VerCitas.html" class="nav__link nav__link--inside">
+                        <a href="AppVerCitas.html" class="nav__link nav__link--inside">
                             <i class="fa-solid fa-rectangle-list list__arrow"></i>
                             Ver Citas</a>
                     </li>
@@ -103,28 +91,25 @@
 
                 <ul class="list__show">
                     <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
+                        <a href="CrearReservacion.html" class="nav__link nav__link--inside" id="show-crear-reservacion">
                             <i class="fa-solid fa-plus list__arrow"></i>
                             Crear Reservación</a>
                     </li>
 
                     <li class="list__inside">
-                        
-                        <a href="/public/VerReservacion.html" class="nav__link nav__link--inside">
+
+                        <a href="AppVerReservas.html" class="nav__link nav__link--inside">
                             <i class="fa-solid fa-list-check list__arrow"></i>
                             Reservaciones</a>
                     </li>
                 </ul>
-
             </li>
-
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
                     <i class="fa-solid fa-file-contract list__img"></i>
                     <a href="#" class="nav__link">Reportes</a>
                     <i class="fa-solid fa-angle-right list__arrow "></i>
                 </div>
-
                 <ul class="list__show">
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">Reporte 1</a>
@@ -152,28 +137,21 @@
                 </ul>
 
             </li>
-
-            <li class="list__item">
-                <div class="list__button">
-                    <i class="fa-solid fa-right-from-bracket fa-2x list__img"></i>
-                    <a href="/public/landing.html" class="nav__link">Logout</a>
-                    
-                </div>
-            </li>
-
         </ul>
     </nav>
 
-        <div class="home">
-            <h1> Moka Veterinaria </h1> 
-        </div>
-    
+    <div class="home">
+        <h1> Moka Veterinaria </h1>
+    </div>
+
 
     <div class="app_container">
 
     </div>
-    <script src="./js/services/UsuarioService.js"></script>
+
+
+
     <script src="./js/controllers/appController.js"></script>
-    
 </body>
+
 </html>

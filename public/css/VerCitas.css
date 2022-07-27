@@ -101,7 +101,7 @@
     
     border: 1px solid var(--azul2);
     background-color: var(--azul2);
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     padding: 5px;
     width: fit-content;
     
@@ -136,25 +136,24 @@ tr{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    
     border-radius: 5px;
-    
-    
     width: 100%;
 }
 .tituloCaja{
+    width: 80%;
     text-align: center;
-    background-color: var(--azul2);
-    border: 1px solid var(--concreto);
+    margin-bottom: 10px;
+    background-color: var(--verdeagua);
     border-radius: 0 0 5px 5px;
     color: var(--blanco);
-    width: 100%;
-    
+}
+
+.tituloCaja h2{
+    padding: 10px;
 }
 .tblCaja{
     display: flex;
     width: 100%;
-    margin: 0 100px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
