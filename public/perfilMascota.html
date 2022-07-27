@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Mascota</title>
+    <link rel="stylesheet" href="./css/perfilMascota.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/estilosGenerales.css">
+
+    <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
+</head>
+
+    <body>
+        <header>
+            <div class="menuBars">
+                <a href="#" class="menuBars logo" >
+                    <!-- <i class="fa-solid fa-shield-dog fa-2x"></i> -->
+                    <img src="../public/assets/img/logo.png" alt="">
+                </a>
+                <a href="#" class="menuBars bars">
+                    <i id="toggle" onclick="cerrar()" class="fa-solid fa-bars fa-xl "></i>
+                </a>
+            </div>
+    
+            <div class="profile">
+                <a class="name" href="#"> Allan Rodriguez</a>
+            </div>
+    
+    
+        </header>
+        <div class="bodyContainer">
+            <nav class="nav">
+
+                <ul class="list">
+    
+                    <li class="list__item">
+                        <div class="list__button">
+                            <i class="fa-solid fa-angle-right fa-2x list__img "></i>
+                            <a href="#" class="nav__link">Inicio</a>
+                            
+                        </div>
+                    </li>
+    
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <i class="fa-solid fa-user list__img" ></i>
+                            <a href="#" class="nav__link">Cuenta</a>
+                            <i class="fa-solid fa-angle-right list__arrow "></i>
+                            
+                        </div>
+    
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                
+                                <a href="#" class="nav__link nav__link--inside">
+                                    <i class="fa-solid fa-address-card" list__arrow></i>
+                                    Mi perfil</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">
+                                    <i class="fa-solid fa-paw" list__arrow></i>
+                                    Mis Mascotas</a>
+                            </li>
+                        </ul>
+    
+                    </li>
+    
+    
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <i class="fa-solid fa-house-chimney-medical list__img"></i>
+                            <a href="#" class="nav__link">Veterinaria</a>
+                            <i class="fa-solid fa-angle-right list__arrow "></i>
+                        </div>
+    
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                
+                                <a href="#" class="nav__link nav__link--inside">
+                                    <i class="fa-solid fa-plus list__arrow"></i>
+                                    Crear nueva Cita</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                <a href="/public/VerCitas.html" class="nav__link nav__link--inside">
+                                    <i class="fa-solid fa-rectangle-list list__arrow"></i>
+                                    Ver Citas</a>
+                            </li>
+                        </ul>
+    
+    
+                    </li>
+    
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <i class="fa-solid fa-hotel list__img"></i>
+                            <a href="#" class="nav__link">Hotel</a>
+                            <i class="fa-solid fa-angle-right list__arrow "></i>
+                        </div>
+    
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">
+                                    <i class="fa-solid fa-plus list__arrow"></i>
+                                    Crear Reservación</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                
+                                <a href="/public/VerReservacion.html" class="nav__link nav__link--inside">
+                                    <i class="fa-solid fa-list-check list__arrow"></i>
+                                    Reservaciones</a>
+                            </li>
+                        </ul>
+    
+                    </li>
+    
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <i class="fa-solid fa-file-contract list__img"></i>
+                            <a href="#" class="nav__link">Reportes</a>
+                            <i class="fa-solid fa-angle-right list__arrow "></i>
+                        </div>
+    
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Reporte 1</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Reporte 2</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Reporte 3</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Reporte 4</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Reporte 5</a>
+                            </li>
+    
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Reporte 6</a>
+                            </li>
+                        </ul>
+    
+                    </li>
+    
+                    
+    
+                </ul>
+            </nav>
+
+            <div class="cajaPrincipal">
+                <div>
+                    <img height="350" src="./assets/img/perro-img.jpg" style="text-align: center; width: 400px; border: 2px solid black">
+                        
+                    <div class="usuario">
+                        <b>Nombre Mascota</b> 
+                    </div> 
+
+                    <div class="btns">
+                        <div>
+                            <input type="button" class="btnAnadir" value="Añadir Otra Mascota" onclick="location.href='./PagoTarjeta.html'">
+                            <input type="button" class="btnRemover" value="Remover Mascota" onclick="location.href='./IniciarSesion.html'">
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="tblinfo1">
+                    <table class="infoTd5Class">
+                        <caption class="historialPagos">Nombre De Mascota</caption>
+                        <caption class="ultimasCitas">Informacion General</caption>
+                        <tr>
+                            <td class="infoTd8">Dueño</td>
+                            <td class="infoTd9">Nombre de Dueño</td>
+                        </tr>  
+                        <tr>
+                            <td class="infoTd8">Direccion</td>
+                            <td class="infoTd9">Residencial Montelimar #2, Guapiles</td>
+
+                        </tr> 
+                        <tr>
+                            <td class="infoTd8">Edad</td>
+                            <td class="infoTd9">5</td>
+                        </tr> 
+                        <tr>
+                            <td class="infoTd8">Calificacion</td>
+                            <td class="infoTd9">&#x2B50&#x2B50&#x2B50&#x2B50&#x26AA</td>
+                        </tr>
+                        <tr>
+                            <td class="infoTdObervaciones8">Observaciones</td>
+                            <td class="infoTdObervaciones9">Adulto Saludable</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="infoTd3Class">
+                    <table class="infoTd5Class">
+                        <caption class="historialPagos">Historial de Citas de Mascota</caption>
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 20/7/2022 8:00AM</td>
+                        </tr>
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 21/7/2022 10:00AM</td>
+                        </tr> 
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 22/7/2022 9:30AM</td>
+                        </tr> 
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 23/7/2022 5:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 24/7/2022 12:05PM</td>
+                        </tr>
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 25/7/2022 6:00AM</td>
+                        </tr>  
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 26/7/2022 8:00AM</td>
+                        </tr> 
+                        <tr>
+                            <td>&#x25BA</td>
+                            <td class="infoTd6Class">Cita Medica con la veterinaria Laura Murillo 26/7/2022 5:00PM</td>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/controllers/appController.js"></script>
+        
+    </body>
+</html>
