@@ -17,7 +17,7 @@ function CancelarCita() {
     document.getElementById('nombreCitaCancelar').innerHTML=nombreMascota;
 
 
-       for (let i = 0; i < listaCitas.length; i++) {
+    for (let i = 0; i < listaCitas.length; i++) {
            if(listaCitas[i][1]==numCita){
                listaCitas[i][5]= "Cancelar"
            }
