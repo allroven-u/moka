@@ -24,6 +24,11 @@ function CrearCita(){
         console.log(ObtenerListaCitas());
     }
 }
+
+
+
+
+
 function ValidarDatos(){
     console.log(ObtenerListaCitas());
     let sNombreMascota = inputNombreMascota.value;
@@ -106,3 +111,4 @@ function ImprimirListaMascotas(){
         opcion.text = 'Otro' ;
         Select.appendChild(opcion);
     }
+
