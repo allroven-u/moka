@@ -1,4 +1,5 @@
-[{
+[
+    {
         "Nombre": "Allan",
         "Apellido1": "Rodriguez",
         "Apellido2": "Venegas",
@@ -11,8 +12,66 @@
         "CalificacionPromedio": 3,
         "Foto":"",
         "Activo":1
-    }
+    },
 
+    {
+        "Nombre": "Denis",
+        "Apellido1": "Salazar",
+        "Apellido2": "Chacon",
+        "Identificacion": "206790172",
+        "Email": "dsalazarc@ucenfotec.ac.cr",
+        "Usuario": "dns2690",
+        "Contrasenia": "Baloo2022",
+        "Contrasenia2": "Baloo2022",
+        "Direccion": "San Carlos, Alajuela",
+        "CalificacionPromedio": 3,
+        "Foto":"",
+        "Activo":1
+    },
+
+    {
+        "Nombre": "Laura",
+        "Apellido1": "Murillo",
+        "Apellido2": "Salazar",
+        "Identificacion": "206690526",
+        "Email": "lmurillos@ucenfotec.ac.cr",
+        "Usuario": "lms0690",
+        "Contrasenia": "Gala9001",
+        "Contrasenia2": "Gala9001",
+        "Direccion": "Sarchi, Alajuela",
+        "CalificacionPromedio": 3,
+        "Foto":"",
+        "Activo":1
+    },
+
+    {
+        "Nombre": "Jose",
+        "Apellido1": "Jimenez",
+        "Apellido2": "Abarca",
+        "Identificación": "118360868",
+        "Email": "jjimeneza03@ucenfotec.ac.cr",
+        "Usuario": "jjimenez",
+        "Contrasenia": "admin1234",
+        "Contrasenia2": "admin1234",
+        "Direccion": "Escazu, San Jose",
+        "CalificacionPromedio": 3,
+        "Foto":"",
+        "Activo":1
+    },
+    {
+        "Nombre": "Luis Daniel",
+        "Apellido1": "Roman",
+        "Apellido2": "Jara",
+        "Identificacion": "115270194",
+        "Email": "lromanj@ucenfotec.ac.cr",
+        "Usuario": "lromanj",
+        "Contrasenia": "Atun123",
+        "Contrasenia2": "Atun123",
+        "Direccion": "Santo Domingo, Heredia",
+        "CalificacionPromedio": 3,
+        "Foto":"",
+        "Activo":1
+    }
 
 
 ]
