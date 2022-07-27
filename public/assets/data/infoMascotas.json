@@ -1,8 +1,31 @@
 [
     {
-        "Identificacion": "729387493284",
+        "IdentificacionDuenio": "113000436",
         "NombreMascota": "Pinto",
-        "CalificacionPromedio":4,
-        "":""
+        "CalificacionPromedio":3,
+        "Activo":"S",
+        "Estado":"A",
+        "Latitud":"",
+        "Longitud":""
+    },
+    {
+        "IdentificacionDuenio": "113000436",
+        "NombreMascota": "Pancho",
+        "CalificacionPromedio":2,
+        "Activo":"S",
+        "Estado":"A",
+        "Latitud":"",
+        "Longitud":""
+    },
+    {
+        "IdentificacionDuenio": "113000436",
+        "NombreMascota": "Negro",
+        "CalificacionPromedio":3,
+        "Activo":"S",
+        "Estado":"A",
+        "Latitud":"",
+        "Longitud":""
     }
+
+
 ]
