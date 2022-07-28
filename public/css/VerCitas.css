@@ -151,12 +151,12 @@ tr{
     justify-content: flex-start;
     align-items: center;
 }
-.Pendiente{
+.AGENDADA{
     background-color: var(--naranja);
 }
-.Cancelada{
+.CANCELADA{
     background-color: var(--Rojo2);
 }
-.Finalizada{
+.FINALIZADA{
     background-color: var(--verdeagua);
 }
