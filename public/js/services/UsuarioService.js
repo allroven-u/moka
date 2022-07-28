@@ -30,6 +30,7 @@ function buscaUsuario(pUsuario) {
 function validarLogin(pUsuario, pClave) {
   let usuario = buscaUsuario(pUsuario);
   if (usuario.Contrasenia === pClave) {
+    SetSesion(usuario);
     return true;
   } else {
     return false;
