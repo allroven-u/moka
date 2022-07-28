@@ -132,7 +132,7 @@ tr{
     width: 100%;
 }
 .tituloCaja{
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin-bottom: 10px;
     background-color: var(--verdeagua);
@@ -145,7 +145,7 @@ tr{
 }
 .tblCaja{
     display: flex;
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -159,4 +159,15 @@ tr{
 }
 .FINALIZADA{
     background-color: var(--verdeagua);
+}
+
+.filtro{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+
+    padding: 20px;
+    background-color: var(--silver);
+    border-radius: 5px 5px 5px 5px;
+    color: var(--blanco);
 }

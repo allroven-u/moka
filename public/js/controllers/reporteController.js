@@ -3,7 +3,8 @@
 var listaCitas;
 
 window.addEventListener('load', () =>{
-     cargaJsonCitas();   
+     cargaJsonCitas();
+     cargaJson();   
 });
 
 
@@ -11,14 +12,13 @@ function ImprimirListaCitas(){
 
     listaCitas = getCitasArray();
     let tbody = document.getElementById('tbdCitas');
-    //console.log(listaCitas);
+
     tbody.innerHTML = '';
 
     for (let i = 0; i < listaCitas.length; i++) {
 
       let  cita = listaCitas[i];
-        
-        // console.log(cita);
+      let veterinario = buscaUsuario(cita.IdentificacionVeterinario);
 
         let fila = tbody.insertRow();
         let celdaNumCita = fila.insertCell();
@@ -28,21 +28,17 @@ function ImprimirListaCitas(){
         let celdaEstado = fila.insertCell();
         let celdaBoton = fila.insertCell();
 
-        
-
          celdaNumCita.innerHTML = cita.NumeroCita;
          celdaNumCita.classList.add('infoTd');
          celdaMascota.innerHTML = cita.NombreMascota;
          celdaMascota.classList.add('infoTd');
-         celdaVeterinario.innerHTML = cita.IdentificacionVeterinario;
+         celdaVeterinario.innerHTML = veterinario.Nombre + ' ' + veterinario.Apellido1;
          celdaVeterinario.classList.add('infoTd');
          celdaFecha.innerHTML = cita.FechaHora;
          celdaFecha.classList.add('infoTd');
          celdaEstado.innerHTML = cita.Estado;
          celdaEstado.classList.add('Estado');
          celdaEstado.classList.add('infoTd');
-        
-
         
     }
      let EstadoCita = document.querySelectorAll('.Estado');
