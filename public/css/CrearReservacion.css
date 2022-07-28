@@ -1,11 +1,12 @@
 @import url(./estilosGenerales.css);
+
 * {
     font-family: Roboto300;
 }
 
 .cuerpoReserva {
-    display: flex;
-    flex-wrap: wrap;
+    height: 650px;
+    z-index: 11;
 }
 
 .formReserva {
@@ -17,9 +18,13 @@
     margin-top: 25px;
     background-color: var(--blanco);
     border-radius: 5px;
-    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-label{
+
+label {
     color: var(--gris);
 }
 
@@ -82,12 +87,12 @@ label{
     border-left: 10px solid var(--verdeagua);
 }
 
-.btns {
+.btnsR {
     display: flex;
     justify-content: space-around;
 }
 
-.btn {
+.btnR {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -101,11 +106,11 @@ label{
     transition: all .5s ease;
 }
 
-.btn:hover {
+.btnR:hover {
     background-color: var(--turquesa);
 }
 
-.btnCancelar {
+.btnCancelarR {
     width: 100%;
     padding: 5px;
     border-radius: 5px;
@@ -119,7 +124,7 @@ label{
     transition: all .5s ease;
 }
 
-.btnCancelar:hover {
+.btnCancelarR:hover {
     background-color: var(--Roj1);
 }
 

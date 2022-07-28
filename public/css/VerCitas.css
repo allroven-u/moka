@@ -7,7 +7,6 @@
 }
 
 .infoTd{
-
     border: 1px solid var(--silver);
     border-radius: 5px;
     text-align: center;
@@ -69,31 +68,24 @@
     transform: scale(1,1);
 } */
 
-.btnV{
+.btnV, .btnEd, .btnCa{
     color: var(--turquesa);
-    margin: 15px;
+    margin: 21px;
     transform: scale(1.5);
+    transition: all 200ms linear;
+
 }
-.btnV:hover{
-    transform: scale(2);
+.btnV:hover, .btnEd:hover, .btnCa:hover{
+    transform: scale(1.6);
 }
 
-.btn{
+.btnEd{
     color: var(--naranja);
-    margin: 15px;
-    transform: scale(1.5);
-}
-.btn:hover{
-    transform: scale(2);
 }
 
-.btnC{
+.btnCa{
     color: var(--Rojo2);
-    margin: 15px;
-    transform: scale(1.5);
-}
-.btnC:hover{
-    transform: scale(2);
+
 }
 
 
@@ -153,7 +145,7 @@ tr{
 }
 .tblCaja{
     display: flex;
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;

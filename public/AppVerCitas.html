@@ -6,9 +6,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moka Veterinaria Citas</title>
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./CSS/VerCitas.css">
-    <link rel="stylesheet" href="./css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/VerCitas.css">
+    <link rel="stylesheet" href="css/CrearCita.css">
+    <link rel="stylesheet" href="css/CrearReservacion.css">
+    <link rel="stylesheet" href="css/estilosGenerales.css">
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -70,7 +72,7 @@
                     <ul class="list__show">
                         <li class="list__inside">
 
-                            <a href="CrearCita.html" class="nav__link nav__link--inside" id="show-crear-cita">
+                            <a class="nav__link nav__link--inside" id="show-crear-cita">
                                 <i class="fa-solid fa-plus list__arrow"></i>
                                 Crear nueva Cita</a>
                         </li>
@@ -94,8 +96,7 @@
 
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="CrearReservacion.html" class="nav__link nav__link--inside"
-                                id="show-crear-reservacion">
+                            <a class="nav__link nav__link--inside" id="show-crear-reservacion">
                                 <i class="fa-solid fa-plus list__arrow"></i>
                                 Crear Reservación</a>
                         </li>
@@ -143,6 +144,7 @@
                 </li>
             </ul>
         </nav>
+        
         <div class="tblCaja">
             <div class="tituloCaja">
                 <h2>Mis citas</h2>
@@ -163,6 +165,79 @@
                 </tbody>
             </table>
         </div>
+        <div class="home">
+            <!-------------CREAR CITA--------->
+            <div class="cuerpoCita hidden">
+                <form class="formCita">
+                    <h1 class="titulo">Nueva Cita</h1>
+                    <select class="cajas select" id="selectMacota" >
+                        <option value="">------Seleccionar mascota------</option>
+                        
+                    </select>
+    
+                    <input class="cajas" id="txtFecha" type="datetime-local" value="" />
+    
+                    <select class="cajas select" id="selectVeterinario">
+                        <option value="">------Seleccionar Veterinario------</option>
+                        <option value="1" title="primerVeterinario">Luis</option>
+                        <option value="2" title="segundoVeterinario">Denis</option>
+                        <option value="3" title="tercerVeterinario">Allan</option>
+                        <option value="3" title="tercerVeterinario">Aleatorio</option>
+                    </select>
+    
+                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Descripción de la Cita*"></textarea>
+    
+    
+    
+    
+                    <div class="btnsC">
+                        <input type="button" class="btnCancelarC" value="Cancelar" onclick="location.href='./App.html'">
+    
+                        <input type="button" id="btnIniciar" class="btnC" value="Crear Cita">
+                    </div>
+    
+                </form>
+    
+            </div>
+    
+           <!---------------CREAR RESERVACION------------------------>
+            <div class="cuerpoReserva hidden">
+                <form class="formReserva">
+                    <h1 class="titulo">Nueva Reservación</h1>
+        
+                    <select class="cajas select" id="selectMacota" >
+                        <option value="">------Seleccionar mascota------</option>
+                        
+                    </select>
+                    <div>
+                        <label for="dateCheckIn">Fecha de ingreso</label>
+                        <input class="cajas" id="dateCheckIn" type="datetime-local" value="" />
+                    </div>
+                   
+                    <div>
+                        <label for="dateCheckOut">Fecha de Salida</label>
+                        <input class="cajas" id="dateCheckOut" type="datetime-local" value="" />
+                    </div>
+                    
+                    
+                    
+                    
+                    
+        
+                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Cuidados Especiales*"></textarea>
+        
+        
+        
+        
+                    <div class="btnsR">
+                        <input type="button" class="btnCancelarR" value="Cancelar" onclick="location.href='./App.html'">
+        
+                        <input type="button" id="btnIniciar" class="btnR" value="Crear Cita">
+                    </div>
+        
+                </form>
+        </div>
+     <div class="overlay hidden"></div>
     </div>
 
     <script src="./js/services/demoService.js"></script>

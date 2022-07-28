@@ -90,7 +90,7 @@ function ConfirmarDatos(){
 //carga Mascotas
 function ImprimirListaMascotas(){
     let Select = document.getElementById('selectMacota');
-    let pendIdCliente = 206790172;
+    let idCliente = 206790172;
     let listaMascotas = ObtenerListaMascotas();
     let opcion;
     let valor;
@@ -98,7 +98,7 @@ function ImprimirListaMascotas(){
 
     for (let i = 0; i < listaMascotas.length; i++) {
         
-        if(pendIdCliente == listaMascotas[i][0]){
+        if(idCliente == listaMascotas[i][0]){
             opcion = document.createElement('option');
             valor = (i+1);
             opcion.value = valor;

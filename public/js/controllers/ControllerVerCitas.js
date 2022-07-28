@@ -53,7 +53,7 @@ function ImprimirListaCitas(){
         let icono =document.createElement('i');
         icono.classList.add("fa-solid")
         icono.classList.add("fa-pen-to-square")
-        icono.classList.add("btn")
+        icono.classList.add("btnEd")
         Boton.appendChild(icono);
         celdaBoton.appendChild(Boton);
 
@@ -62,7 +62,7 @@ function ImprimirListaCitas(){
         let iconoC =document.createElement('i');
         iconoC.classList.add("fa-solid")
         iconoC.classList.add("fa-circle-xmark")
-        iconoC.classList.add("btnC")
+        iconoC.classList.add("btnCa")
         BotonC.appendChild(iconoC);
         celdaBoton.appendChild(BotonC);
         }else{
@@ -132,7 +132,7 @@ function ImprimirListaReservas(){
         let icono =document.createElement('i');
         icono.classList.add("fa-solid")
         icono.classList.add("fa-pen-to-square")
-        icono.classList.add("btn")
+        icono.classList.add("btnEd")
         Boton.appendChild(icono);
         celdaBoton.appendChild(Boton);
 
@@ -141,7 +141,7 @@ function ImprimirListaReservas(){
         let iconoC =document.createElement('i');
         iconoC.classList.add("fa-solid")
         iconoC.classList.add("fa-circle-xmark")
-        iconoC.classList.add("btnC")
+        iconoC.classList.add("btnCa")
         BotonC.appendChild(iconoC);
         celdaBoton.appendChild(BotonC);
         }else{

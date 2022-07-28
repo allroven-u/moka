@@ -1,14 +1,19 @@
 @import url(./estilosGenerales.css);
+
 * {
     font-family: Roboto;
 }
 
 .cuerpoCita {
-    display: flex;
-    flex-wrap: wrap;
+    height: 600px;
+    z-index: 11;
 }
 
 .formCita {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--verdeagua);
     width: 450px;
     padding: 30px;
@@ -75,12 +80,12 @@
     border-left: 10px solid var(--verdeagua);
 }
 
-.btns {
+.btnsC {
     display: flex;
     justify-content: space-around;
 }
 
-.btn {
+.btnC {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -94,11 +99,11 @@
     transition: all .5s ease;
 }
 
-.btn:hover {
+.btnC:hover {
     background-color: var(--turquesa);
 }
 
-.btnCancelar {
+.btnCancelarC {
     width: 100%;
     padding: 5px;
     border-radius: 5px;
@@ -112,12 +117,10 @@
     transition: all .5s ease;
 }
 
-.btnCancelar:hover {
+.btnCancelarC:hover {
     background-color: var(--Roj1);
 }
 
 .error {
     border: 2px solid var(--Rojo2);
 }
-
-
