@@ -16,7 +16,7 @@
 }
 .tblCaja {
     display: flex;
-    width: 100%;
+    width: 80%;
     margin: 0 100px;
     flex-direction: column;
     flex-wrap: wrap;
