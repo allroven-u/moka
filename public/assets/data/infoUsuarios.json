@@ -71,6 +71,20 @@
         "CalificacionPromedio": 3,
         "Foto":"",
         "Activo":1
+    },
+    {
+        "Nombre": "Luis Felipe",
+        "Apellido1": "Solano",
+        "Apellido2": "Marin",
+        "Identificacion": "116100306",
+        "Email": "lsolanoma@ucenfotec.ac.cr",
+        "Usuario": "lsolano",
+        "Contrasenia": "Atun123",
+        "Contrasenia2": "Atun123",
+        "Direccion": "Guapiles, Limon",
+        "CalificacionPromedio": 3,
+        "Foto":"",
+        "Activo":1
     }
 
 

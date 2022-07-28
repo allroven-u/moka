@@ -2,6 +2,7 @@ let listElements = document.querySelectorAll('.list__button--click');
 const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
       toggle = body.querySelector("toggle");
+let txtUsuarioLogueado = document.getElementById('TxtUsuarioLogueado');
 
 listElements.forEach(listElement => {
     listElement.addEventListener('click', ()=>{
@@ -17,6 +18,12 @@ listElements.forEach(listElement => {
         menu.style.height = `${height}px`;
 
     })
+});
+
+window.addEventListener('load', () =>{
+    let usuario = GetSesion();
+    console.log(usuario.Nombre +' '+ usuario.Apellido1);
+    txtUsuarioLogueado.textContent = usuario.Nombre +' '+ usuario.Apellido1;
 });
 
 function cerrar(){
