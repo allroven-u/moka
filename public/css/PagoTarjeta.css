@@ -2,7 +2,7 @@
 *{
   font-family: Roboto300;
 }
-.form{
+.form-pago-tarjeta{
   width: 450px;
   padding: 30px;
   margin: auto;
@@ -61,7 +61,7 @@
 }
 
 /*--BOTON-DE-PAGO---------*/
-.btn{
+.btn-pago-tarjeta{
   width: 100%;
   padding: 15px;
   border-radius: 5px;
@@ -74,7 +74,7 @@
   transition: all .5s ease;
   
 }
-.btn:hover{
+.btn-pago-tarjeta:hover{
   background-color: var(--turquesa);
 }
 

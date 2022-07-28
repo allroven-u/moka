@@ -1,12 +1,12 @@
 'use strict'
 
-let inputNombreMascota = document.querySelector('#selectMacota');
+let inputNombreMascotaReserva = document.querySelector('#selectMacota');
 let inputEntrada = document.getElementById('dateCheckIn');
 let inputSalida = document.getElementById('dateCheckOut');
-let inputDireccion = document.getElementById('txtDireccion');
+let inputDireccionReserva = document.getElementById('txtDireccion');
 
-let btnCrear = document.getElementById('btnIniciar');
-btnCrear.addEventListener('click',CrearReserva);
+let btnCrearReserva = document.getElementById('btnIniciar');
+btnCrearReserva.addEventListener('click',CrearReserva);
 var numReserva = 0;
 function CrearReserva(){
     if(ValidarDatos() ==true){
@@ -15,10 +15,10 @@ function CrearReserva(){
         let pendID= 206790172;
         let pendCalif = 0;
         let EstadoInicial = "Pendiete";
-        let sNombreMascota = inputNombreMascota.options[inputNombreMascota.selectedIndex].text;
+        let sNombreMascota = inputNombreMascotaReserva.options[inputNombreMascotaReserva.selectedIndex].text;
         let dFechaE = inputEntrada.value;
         let dFechaS = inputSalida.value;
-        let sDireccion = inputDireccion.value; 
+        let sDireccion = inputDireccionReserva.value; 
         RegistrarReserva(pendID,numReserva,sNombreMascota,dFechaE,dFechaS,EstadoInicial,pendCalif,sDireccion);
         console.log(ObtenerListaReservas());
     }
@@ -27,17 +27,17 @@ function CrearReserva(){
 
 function ValidarDatos(){
     console.log(ObtenerListaReservas());
-    let sNombreMascota = inputNombreMascota.value;
+    let sNombreMascota = inputNombreMascotaReserva.value;
     let dFechaEnt = inputEntrada.value;
     let dFechaSalida = inputSalida.value;
-    let sDireccion = inputDireccion.value;
+    let sDireccion = inputDireccionReserva.value;
 
     if (sNombreMascota == null || sNombreMascota == undefined || sNombreMascota == ""){
-        inputNombreMascota.classList.add("error")
+        inputNombreMascotaReserva.classList.add("error")
         MostrarError();
         return false;
     }else{
-        inputNombreMascota.classList.remove("error")
+        inputNombreMascotaReserva.classList.remove("error")
     }
 
     if (dFechaEnt == null || dFechaEnt == undefined || dFechaEnt == ""){
@@ -57,11 +57,11 @@ function ValidarDatos(){
     }
 
     if (sDireccion == null || sDireccion == undefined || sDireccion == ""){
-        inputDireccion.classList.add("error")
+        inputDireccionReserva.classList.add("error")
         MostrarError();
         return false;
     }else{
-        inputDireccion.classList.remove("error")
+        inputDireccionReserva.classList.remove("error")
     }
     return true;
 }

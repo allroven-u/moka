@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/CancelarCita.css">
-    <title>Document</title>
+    <title>Cancelar Cita</title>
 </head>
-<body onload="CancelarCita();">
+<body >
     <!--FORMULARIO---->
     <form class="form">
         
@@ -29,9 +29,10 @@
         </div>
 
         <!--BOTON-DE-Cancelar-------------------------->
-        <input type="button" class="btn" id="btnRegistrar" value="Cancelar">
+        <input type="button" class="btn" id="btnRegistrar" value="Cancelar" onclick="CancelarCita();">
 
-    </form>  
+    </form> 
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <script src="./js/services/demoService.js"></script>
     <script src="./js/controllers/CancelarControler.js"></script>
 

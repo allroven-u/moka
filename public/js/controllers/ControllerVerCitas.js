@@ -58,7 +58,7 @@ function ImprimirListaCitas(){
         celdaBoton.appendChild(Boton);
 
         let BotonC = document.createElement('a');
-        BotonC.setAttribute('href','./CancelarCita.html')
+        BotonC.setAttribute('onclick','ShowModalCancelFunct()');
         let iconoC =document.createElement('i');
         iconoC.classList.add("fa-solid")
         iconoC.classList.add("fa-circle-xmark")
@@ -137,7 +137,7 @@ function ImprimirListaReservas(){
         celdaBoton.appendChild(Boton);
 
         let BotonC = document.createElement('a');
-        BotonC.setAttribute('href','#')
+        BotonC.setAttribute('onclick','ShowModalCancelReservaFunct()');
         let iconoC =document.createElement('i');
         iconoC.classList.add("fa-solid")
         iconoC.classList.add("fa-circle-xmark")
