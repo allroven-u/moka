@@ -2,7 +2,7 @@
 *{
   font-family: Roboto300;
 }
-.form-cancelar-cita{
+.form-cancelar-reserva{
   width: 450px;
   padding: 30px;
   margin: auto;
@@ -60,7 +60,7 @@ width: 100%;
     border-left: 10px solid var(--verdeagua);
   }
 
-.btn-cancelar-cita{
+.btn-cancelar-reserva{
     width: 100%;
     padding: 15px;
     border-radius: 5px;
@@ -73,7 +73,7 @@ width: 100%;
     transition: all .5s ease;
     
   }
-  .btn-cancelar-cita:hover{
+  .btn-cancelar-reserva:hover{
     background-color: var(--Roj1);
   }
  

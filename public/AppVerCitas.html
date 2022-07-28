@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/CrearCita.css">
     <link rel="stylesheet" href="css/CrearReservacion.css">
     <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/CancelarCita.css">
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,7 +22,7 @@
                 <img src="../public/assets/img/moka-logo.png" alt="">
             </a>
             <div class="profile">
-                <a class="name" href="#"> Allan Rodriguez</a>
+                <a id="TxtUsuarioLogueado" class="name" href="#"> </a>
                 <a class="logout" href="./landing.html">
                     <i class="fa-solid fa-right-to-bracket fa-2x "></i>
                 </a>
@@ -49,13 +50,13 @@
 
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">
+                            <a href="MiPerfil.html" class="nav__link nav__link--inside">
                                 <i class="fa-solid fa-address-card" list__arrow></i>
                                 Mi perfil</a>
                         </li>
 
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">
+                            <a href="perfilMascota.html" class="nav__link nav__link--inside">
                                 <i class="fa-solid fa-paw" list__arrow></i>
                                 Mis Mascotas</a>
                         </li>
@@ -145,7 +146,7 @@
                 </li>
             </ul>
         </nav>
-        
+
         <div class="tblCaja">
             <div class="tituloCaja">
                 <h2>Mis citas</h2>
@@ -169,18 +170,18 @@
 
 
         <div class="home">
-            
+
             <!-------------CREAR CITA--------->
             <div class="cuerpoCita hidden">
                 <form class="formCita">
                     <h1 class="titulo">Nueva Cita</h1>
-                    <select class="cajas select" id="selectMacota" >
+                    <select class="cajas select" id="selectMacota">
                         <option value="">------Seleccionar mascota------</option>
-                        
+
                     </select>
-    
+
                     <input class="cajas" id="txtFecha" type="datetime-local" value="" />
-    
+
                     <select class="cajas select" id="selectVeterinario">
                         <option value="">------Seleccionar Veterinario------</option>
                         <option value="1" title="primerVeterinario">Luis</option>
@@ -188,57 +189,86 @@
                         <option value="3" title="tercerVeterinario">Allan</option>
                         <option value="3" title="tercerVeterinario">Aleatorio</option>
                     </select>
-    
-                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Descripción de la Cita*"></textarea>
-    
-    
-    
-    
+
+                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
+                        placeholder="Descripción de la Cita*"></textarea>
+
+
+
+
                     <div class="btnsC">
-                        <input type="button" class="btnCancelarC" value="Cancelar" onclick="location.href='./App.html'">
-    
+                        <input type="button" class="btnCancelarC" value="Cancelar">
+
                         <input type="button" id="btnIniciar" class="btnC" value="Crear Cita">
                     </div>
-    
+
                 </form>
-    
+
             </div>
-    
-           <!---------------CREAR RESERVACION------------------------>
+
+            <!---------------CREAR RESERVACION------------------------>
             <div class="cuerpoReserva hidden">
                 <form class="formReserva">
                     <h1 class="titulo">Nueva Reservación</h1>
-        
-                    <select class="cajas select" id="selectMacota" >
+
+                    <select class="cajas select" id="selectMacota">
                         <option value="">------Seleccionar mascota------</option>
-                        
+
                     </select>
                     <div>
                         <label for="dateCheckIn">Fecha de ingreso</label>
                         <input class="cajas" id="dateCheckIn" type="datetime-local" value="" />
                     </div>
-                   
+
                     <div>
                         <label for="dateCheckOut">Fecha de Salida</label>
                         <input class="cajas" id="dateCheckOut" type="datetime-local" value="" />
                     </div>
-                         
-                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Cuidados Especiales*"></textarea>
-        
+
+                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
+                        placeholder="Cuidados Especiales*"></textarea>
+
                     <div class="btnsR">
-                        <input type="button" class="btnCancelarR" value="Cancelar" onclick="location.href='./App.html'">
-        
+                        <input type="button" class="btnCancelarR" value="Cancelar">
+
                         <input type="button" id="btnIniciar" class="btnR" value="Crear Cita">
                     </div>
-        
+
                 </form>
             </div>
-         <div class="overlay hidden"></div>
+              <!--FORMULARIO---->
+              <form class="form-cancelar-cita hidden">
+                <!--TITULO------------------------>
+                <h1 class="titulo">Cancelar Cita</h1>
+
+                <div class="Cita">
+                    <label for="numCitaCancelar">No.Cita</label>
+                    <output class="cajasOut" id="numCitaCancelar" name="NumeroCita" for="mostarNum"></output>
+                </div>
+                <div class="Cita">
+                    <label for="nombreCitaCancelar">Mascota</label>
+                    <output class="cajasOut" id="nombreCitaCancelar" name="nombreMascotaCancelar"
+                        for="mostrarNombre"></output>
+                </div>
+                <div>
+                    <textarea class="cajas" id="motivoCancelar" cols="30" rows="10"
+                        placeholder="Motivo de cancelacion"></textarea>
+                </div>
+
+                <!--BOTON-DE-Cancelar-------------------------->
+                <input type="button" class="btn-cancelar-cita" id="btnRegistrar" value="Cancelar" onclick="CancelarCita();">
+            </form>
+            <div class="overlay hidden"></div>
         </div>
     </div>
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/services/demoService.js"></script>
+    <script src="./js/controllers/CrearCitaController.js"></script>
+    <script src="./js/controllers/CrearReservaController.js"></script>
     <script src="./js/controllers/ControllerVerCitas.js"></script>
     <script src="./js/controllers/appController.js"></script>
+    <script src="./js/services/SessionService.js"></script>
+    <script src="./js/controllers/CancelarControler.js"></script>
 </body>
 
 </html>
