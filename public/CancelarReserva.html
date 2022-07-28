@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/CancelarCita.css">
-    <title>Document</title>
+    <title>Cancelar Reserva</title>
 </head>
-<body onload="CancelarCita();">
+<body>
     <!--FORMULARIO---->
     <form class="form">
         
@@ -15,12 +15,12 @@
         <h1 class="titulo">Cancelar Reserva</h1>
 
         <div class="Cita">
-            <label for="numCitaCancelar">No.Reserva</label>
-            <output class="cajasOut" id="numCitaCancelar" name="NumeroCita" for="mostarNum"></output>
+            <label for="numReservaCancelar">No.Reserva</label>
+            <output class="cajasOut" id="numReservaCancelar" name="NumeroReserva" for="mostarNum"></output>
         </div>
         <div class="Cita">
-            <label for="nombreCitaCancelar">Mascota</label>
-            <output class="cajasOut" id="nombreCitaCancelar" name="nombreMascotaCancelar" for="mostrarNombre"></output>
+            <label for="nombreReservaCancelar">Mascota</label>
+            <output class="cajasOut" id="nombreReservaCancelar" name="nombreMascotaCancelar" for="mostrarNombre"></output>
             
             
         </div>
@@ -29,9 +29,10 @@
         </div>
 
         <!--BOTON-DE-Cancelar-------------------------->
-        <input type="button" class="btn" id="btnRegistrar" value="Cancelar">
+        <input type="button" class="btn" id="btnRegistrar" value="Cancelar" onclick="CancelarReserva()">
 
-    </form>  
+    </form> 
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <script src="./js/services/demoService.js"></script>
     <script src="./js/controllers/CancelarControler.js"></script>
 

@@ -4,13 +4,14 @@ function CancelarCita() {
     let listaCitas = ObtenerListaCitas();
     let numCita = 0;
     let nombreMascota = 'bobo';
-    let inputCancelar = document.getElementById(motivoCancelar).value;
-    if (motivoCancelar == null || motivoCancelar == undefined || motivoCancelar == "") {
+    let inputCancelar = document.getElementById('motivoCancelar');
+    let sMotivoCancelar = inputCancelar.value;
+    if (sMotivoCancelar == null || sMotivoCancelar == undefined || sMotivoCancelar == "") {
         inputCancelar.classList.add("error")
         MostrarError();
         return false;
     } else {
-        inputNombreMascota.classList.remove("error")
+        inputCancelar.classList.remove("error")
         ConfirmarDatos();
     }
 
@@ -33,26 +34,27 @@ function CancelarCita() {
 
 //Cancelar Reserva
 function CancelarReserva() {
-    let listaReservas = listaReservas();
-    let numCita = 0;//llamar datos
+    let listaReservas = ObtenerListaReservas();
+    let numReserva = 0;//llamar datos
     let nombreMascota = 'bobo';//llamar datos
-    let inputCancelar = document.getElementById(motivoCancelar).value;
-    if (motivoCancelar == null || motivoCancelar == undefined || motivoCancelar == "") {
+    let inputCancelar = document.getElementById('motivoCancelar');
+    let sMotivoCancelar = inputCancelar.value;
+    if (sMotivoCancelar == null || sMotivoCancelar == undefined || sMotivoCancelar == "") {
         inputCancelar.classList.add("error")
         MostrarError();
         return false;
     } else {
-        inputNombreMascota.classList.remove("error")
+        inputCancelar.classList.remove("error")
         ConfirmarDatos();
     }
 
 
-    document.getElementById('numCitaCancelar').innerHTML = numCita;
-    document.getElementById('nombreCitaCancelar').innerHTML = nombreMascota;
+    document.getElementById('numReservaCancelar').innerHTML = numReserva;
+    document.getElementById('nombreReservaCancelar').innerHTML = nombreMascota;
 
 
-    for (let i = 0; i < listaCitas.length; i++) {
-        if (listaCitas[i][1] == numCita) {
+    for (let i = 0; i < listaReservas.length; i++) {
+        if (listaCitas[i][1] == numReserva) {
             listaCitas[i][5] = "Cancelar"
         }
 
@@ -63,7 +65,7 @@ function MostrarError() {
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Debe ingresar Observación',
+        text: 'Debe ingresar motivo de cancelación',
     })
 }
 function ConfirmarDatos() {
