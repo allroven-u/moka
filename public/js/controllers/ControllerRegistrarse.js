@@ -32,50 +32,50 @@ function ValidarDatos(){
     
 
     if (sNombre == null || sNombre == undefined || sNombre == ""){
-        inputNombre.classList.add("error")
+        inputNombre.classList.add("rError")
         MostrarError();
         return false;
 
     }else{
-        inputNombre.classList.remove("error")
+        inputNombre.classList.remove("rError")
     }
     if (sApellido == null || sApellido == undefined || sApellido == ""){
-        inputApellido.classList.add("error")
+        inputApellido.classList.add("rError")
         MostrarError();
         return false;
     }else{
-        inputApellido.classList.remove("error")
+        inputApellido.classList.remove("rError")
     }
     if (sCedula == null || sCedula == undefined || sCedula == ""){
-        inputCedula.classList.add("error")
+        inputCedula.classList.add("rError")
         MostrarError();
         return false;
     }else{
-        inputCedula.classList.remove("error")
+        inputCedula.classList.remove("rError")
     }
     if (sEmail == null || sEmail == undefined || sEmail == ""){
-        inputEmail.classList.add("error")
+        inputEmail.classList.add("rError")
         MostrarError();
         return false;
     }else{
-        inputEmail.classList.remove("error")
+        inputEmail.classList.remove("rError")
     }
     if (sUsuario == null || sUsuario == undefined || sUsuario == ""){
-        inputUsuario.classList.add("error")
+        inputUsuario.classList.add("rError")
         MostrarError();
         return false;
     }else{
-        inputUsuario.classList.remove("error")
+        inputUsuario.classList.remove("rError")
     }
     if (pwContrasenha == null || pwContrasenha == undefined || pwContrasenha == ""){
-        inputContrasenha1.classList.add("error")
+        inputContrasenha1.classList.add("rError")
         MostrarError();
         return false;
     }else{
-        inputContrasenha1.classList.remove("error")
+        inputContrasenha1.classList.remove("rError")
     }
     if (pwContrasenha2 == null || pwContrasenha2 == undefined || pwContrasenha2 == "" || pwContrasenha != pwContrasenha2){
-        inputContrasenha2.classList.add("error")
+        inputContrasenha2.classList.add("rError")
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -84,14 +84,14 @@ function ValidarDatos(){
         return false;
         
     }else{
-        inputContrasenha2.classList.remove("error")
+        inputContrasenha2.classList.remove("rError")
     }
     if (sDireccion == null || sDireccion == undefined || sDireccion == ""){
-        inputDireccion.classList.add("error")
+        inputDireccion.classList.add("rError")
         MostrarError();
         return false;
     }else{
-        inputDireccion.classList.remove("error")
+        inputDireccion.classList.remove("rError")
     }
     return true;
 }

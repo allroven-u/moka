@@ -695,6 +695,7 @@ textarea {
 
 .lError {
     border: 2px solid var(--Roj1);
+    border-left: 10px solid var(--Rojo2);
 }
 
 @keyframes modal-login {
@@ -786,6 +787,7 @@ textarea {
 
 .rError {
     border: 2px solid var(--Rojo2);
+    border-left: 10px solid var(--Rojo2);
 }
 
 @keyframes modal-signin {

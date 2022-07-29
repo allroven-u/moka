@@ -22,22 +22,22 @@ function ValidarDatosLogin() {
   let sUsuario = inputUsuarioLogin.value;
   let pwContrasenha = inputContrasenha1Login.value;
   if (sUsuario == null || sUsuario == undefined || sUsuario == "") {
-    inputUsuarioLogin.classList.add("error");
+    inputUsuarioLogin.classList.add("lError");
     MostrarErrorLogin();
     return false;
   } else {
-    inputUsuarioLogin.classList.remove("error");
+    inputUsuarioLogin.classList.remove("lError");
   }
   if (
     pwContrasenha == null ||
     pwContrasenha == undefined ||
     pwContrasenha == ""
   ) {
-    inputContrasenha1Login.classList.add("error");
+    inputContrasenha1Login.classList.add("lError");
     MostrarErrorLogin();
     return false;
   } else {
-    inputContrasenha1Login.classList.remove("error");
+    inputContrasenha1Login.classList.remove("lError");
   }
   return true;
 }
