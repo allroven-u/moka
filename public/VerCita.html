@@ -153,12 +153,13 @@
             <div class="tblCaja">
                 <div class="tituloCaja">
                     <h2>Cita Numero: </h2>
+                    <div id="numCita"> </div>
                 </div>
     
                 <div class="h3">
-                    <h2>Mascota Nombre
-                    </h2>
-                    <input id="txtNombreMascota" class="cajas" type="text" name="txtNombreMascota" value="">
+                    <label for="txtNombreMascota">Nombre Mascota</label>
+                    <output id="txtNombreMascota" name="txtNombreMascota" class="cajasOut" for="txtNombreMascota"></output>
+                    
                 </div>
                 <h2>Calificación Mascota</h2>
                 <div class="stars">
@@ -178,7 +179,8 @@
                 </div>
     
                 <div class="DescripcionParrafo">
-                    <input id="txtDescripcion" class="cajas" type="text" name="txtDescripcion" value="">
+                    <textarea name="" id="txtDescripcion" class="cajas" cols="30" rows="10"></textarea>
+                    
     
                 </div>
     
@@ -192,7 +194,8 @@
     
     
                 <div class="DescripcionParrafo">
-                    <input id="txtObservaciones" class="cajas" type="text" name="txtObservaciones" value="">
+                    <textarea name="" id="txtObservaciones" class="cajas" cols="30" rows="10"></textarea>
+                    
     
                 </div>
     
@@ -202,7 +205,8 @@
                 </div>
     
                 <div class="DescripcionParrafo">
-                    <input id="txtDiagnostico" class="cajas" type="text" name="txtDiagnostico" value="">
+                    <textarea name="" id="txtDiagnostico" class="cajas" cols="30" rows="10"></textarea>
+                    
     
     
                 </div>
@@ -213,13 +217,12 @@
                 </div>
     
                 <div class="PagoFacura">
-                    <input id="txtCobro" class="cajas" type="number" name="txtCobro" value="">
+                    <textarea name="" id="txtCobro" class="cajas" cols="30" rows="10"></textarea>
     
     
                 </div>
                 <div class="btns">
                     <input type="button" class="btnCancelar" value="Cancelar" onclick="location.href='./AppVerCitas.html'">
-                    <input type="button" id="Pagar" class="btn" value="Factura" onclick="location.href='./Factura.html'">
                     <input type="button" id="Enviar" class="btnEnviar" value="Enviar" >
                 </div>
     
