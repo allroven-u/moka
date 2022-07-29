@@ -7,7 +7,10 @@
     <title>Reporte Reservaciones</title>
     <link rel="stylesheet" href="css/VerCitas.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/CrearCita.css">
+    <link rel="stylesheet" href="css/CrearReservacion.css">
     <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/CancelarReserva.css">
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -155,20 +158,27 @@
                     <input type="text" title="Nombre Veterinario">
                     <button id="btnFiltrarCitas" onclick="ImprimirListaCitas()"> filtar</button>
                 </div>
-                <table class="tblCitas">
-                    <thead class="thTitle">
-                        <tr>
-                            <th class="tblTitle">No.Cita</th>
-                            <th class="tblTitle">Mascota</th>
-                            <th class="tblTitle">Veterinario(a)</th>
-                            <th class="tblTitle">Fecha</th>
-                            <th class="tblTitle">Estado</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbdCitas">
-                    </tbody>
-                </table>
-            </div>
+
+                <div class="tblCaja">
+                    <div class="tituloCaja">
+                        <h2>Mis Reservaciones</h2>
+                    </div>
+                    <table class="tblCitas">
+                        <thead class="thTitle">
+                            <tr>
+                                <th class="tblTitle">No.Reserva</th>
+                                <th class="tblTitle">Mascota</th>
+                                <th class="tblTitle">check-in</th>
+                                <th class="tblTitle">check-out</th>
+                                <th class="tblTitle">Estado</th>
+                                <th class="tblTitle">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbdReservas">
+        
+                        </tbody>
+                    </table>
+                </div>
 
             <!--  -->
             <div class="home">
@@ -242,7 +252,7 @@
         
             <div class="overlay hidden"></div>
         </div>
-            <script src="./js/services/CitaService.js"></script>
+            <script src="./js/services/ReservaService.js"></script>
             <script src="./js/services/SessionService.js"></script>
             <script src="./js/services/UsuarioService.js"></script>
             <script src="./js/controllers/RepReservacionesController.js"></script>

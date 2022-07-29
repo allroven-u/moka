@@ -10,5 +10,42 @@
         "Estado":"AGENDADA",
         "IdentificacionVeterinario":"289348309",
         "ObservacionesReservacion":""
+    },
+    {
+        "NumeroReservacion":2,
+        "IdentificacionUsurio": "113000436",
+        "IdMascota":1,
+        "NombreMascota": "Pinto",
+        "FechaHoraIngreso":"01/08/2022 14:00",
+        "FechaHoraSalida":"01/08/2022 14:00",
+        "Calificacion":3,
+        "Estado":"TERMINADA",
+        "IdentificacionVeterinario":"289348309",
+        "ObservacionesReservacion":""
+    },
+    {
+        "NumeroReservacion":3,
+        "IdentificacionUsurio": "113000436",
+        "IdMascota":1,
+        "NombreMascota": "Pinto",
+        "FechaHoraIngreso":"01/08/2022 14:00",
+        "FechaHoraSalida":"01/08/2022 14:00",
+        "Calificacion":3,
+        "Estado":"CONFIRMADA",
+        "IdentificacionVeterinario":"289348309",
+        "ObservacionesReservacion":""
+    },
+    {
+        "NumeroReservacion":4,
+        "IdentificacionUsurio": "113000436",
+        "IdMascota":1,
+        "NombreMascota": "Pinto",
+        "FechaHoraIngreso":"01/08/2022 14:00",
+        "FechaHoraSalida":"01/08/2022 14:00",
+        "Calificacion":3,
+        "Estado":"CANCELADA",
+        "IdentificacionVeterinario":"289348309",
+        "ObservacionesReservacion":""
     }
+
 ]
