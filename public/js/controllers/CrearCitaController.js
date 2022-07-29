@@ -13,6 +13,8 @@ window.addEventListener('load', () =>{
 });
 
 let inputNombreMascota = document.querySelector('#selectMascotaCita');
+let sIdentificacion = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
+
 let inputFecha = document.getElementById('txtFecha');
 let inputTipoIdentificacion = document.querySelector('#selectVeterinario');
 let inputDireccion = document.getElementById('txtDireccion');
@@ -22,7 +24,7 @@ btnCrear.addEventListener('click',CrearCita);
 var numCita= 0;//guardar base de datos
 
 function CrearCita(){
-    
+
     if(ValidarDatosCita() == true){
         ConfirmarDatos();
         numCita++;
@@ -30,6 +32,7 @@ function CrearCita(){
         let pendCalif = 0;
         let EstadoInicial = "AGENDADA";
         let sNombreMascota = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
+        
         let dFecha = inputFecha.value;
         let sIdentificacion = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
         let sDireccion = inputDireccion.value; 
@@ -44,8 +47,10 @@ function ValidarDatosCita(){
     let dFecha = inputFecha.value;
     let sIdentificacion = inputTipoIdentificacion.value;
     let sDireccion = inputDireccion.value;
-
+    
+    
     if (sNombreMascota == null || sNombreMascota == undefined || sNombreMascota == ""){
+        
        
         inputNombreMascota.classList.add("error")
         MostrarError();
@@ -160,6 +165,21 @@ function ImprimirListaVeterinarios(){
         Select.appendChild(opcion);
     }
 
+    function AsignarNombreOtro(){
+        let sIdentificacion = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
+        let divNombreOtro = document.getElementById('NombreOtro');
+
+        if(sIdentificacion == 'Otro' ){
+            let input = document.createElement('input');
+        input.classList.add('cajas');
+        input.setAttribute('id',"txtNombreOtro");
+        input.setAttribute('placeholder',"Nombre mascota (opcional)");
+        divNombreOtro.appendChild(input);
+        }
+    }
+
     function limpiarFormCita(){
         document.getElementById('formCrearCita').reset();
     }
+
+
