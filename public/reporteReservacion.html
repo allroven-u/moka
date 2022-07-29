@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reporte Citas</title>
+    <title>Reporte Reservaciones</title>
     <link rel="stylesheet" href="css/VerCitas.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/estilosGenerales.css">
@@ -142,27 +142,43 @@
                 </ul>
             </nav>
         
-            <!-- Aqui se agrega el contenido de la pagina -->
-        
-            <div class="tblCaja">
-                <div class="tituloCaja">
-                    <h2>Reservaciones</h2>
-                </div>
-                <table class="tblCitas">
-                    <thead class="thTitle">
-                        <tr>
-                            <th class="tblTitle">No.Reservación</th>
-                            <th class="tblTitle">Fecha de ingreso</th>
-                            <th class="tblTitle">Fecha de salida</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbdCitas">
-                    </tbody>
-                </table>
-            </div>
-
-            <!--  -->
+            
             <div class="home">
+
+
+<!-- Aqui se agrega el contenido de la pagina -->
+        
+<div class="tblCaja">
+    <div class="tituloCaja">
+        <h2>Reservaciones</h2>
+    </div>
+    <div class="filtro">
+        <input type="date" title="Fecha Inicio" >
+        <input type="date" title="Fecha Final"> 
+        <span>Nombre Mascota</span>
+        <input type="text" title="Nombre Mascota">
+        <span>Nombre Veterinario</span>
+        <input type="text" title="Nombre Veterinario">
+        <button id="btnFiltrarCitas" onclick="ImprimirListaReservas()"> filtar</button>
+    </div>
+    <table class="tblCitas">
+        <thead class="thTitle">
+            <tr>
+                <th class="tblTitle">No.Cita</th>
+                <th class="tblTitle">Mascota</th>
+                <th class="tblTitle">Veterinario(a)</th>
+                <th class="tblTitle">Fecha Ingreso</th>
+                <th class="tblTitle">Fecha Salida</th>
+                <th class="tblTitle">Estado</th>
+            </tr>
+        </thead>
+        <tbody id="tbdCitas">
+        </tbody>
+    </table>
+</div>
+
+<!--  -->
+
                 <!-------------CREAR CITA--------->
                 <div class="cuerpoCita hidden">
                     <form class="formCita">
