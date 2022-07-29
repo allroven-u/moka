@@ -77,7 +77,9 @@
 
 .box-info-usuario p{
     color: #333;
-    font-family: Roboto400;
+    font-family: Roboto500;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .calificacion {
@@ -151,4 +153,28 @@ td{
 }
 .edit-icon:hover{
     color: var(--verdeagua);
+}
+
+.fa-star{
+    color: var(--amarillo);
+}
+
+.tblTitle {
+    background-color: var(--azul2);
+    color: var(--blanco);
+    cursor: default;
+    border-radius: 5px;
+    width: 180px;
+    margin: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+.thTitle {
+    border: 1px solid var(--azul2);
+    background-color: var(--azul2);
+    border-radius: 5px;
+    padding: 5px;
+}
+.thTitle th{
+    padding: 5px;
 }
