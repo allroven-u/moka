@@ -31,7 +31,7 @@ function CrearReserva(){
         let dFechaS = inputSalida.value;
         let sDireccion = inputCuidadosReserva.value; 
         RegistrarReserva(pendID,numReserva,sNombreMascota,dFechaE,dFechaS,EstadoInicial,pendCalif,sDireccion);
-        limpiarForm();
+        limpiarFormReserva();
     }
 }
 
@@ -113,6 +113,6 @@ function ImprimirListaMascotasReserva(user){
         }
     }
 
-    function limpiarForm(){
+    function limpiarFormReserva(){
         document.getElementById('formCrearReserva').reset();
     }

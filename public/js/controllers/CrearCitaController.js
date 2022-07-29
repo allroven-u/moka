@@ -34,7 +34,7 @@ function CrearCita(){
         let sIdentificacion = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
         let sDireccion = inputDireccion.value; 
         RegistrarCita(pendID,numCita,sNombreMascota,sIdentificacion,dFecha,EstadoInicial,pendCalif,sDireccion);
-        limpiarForm();
+        limpiarFormCita();
     }
 }
 
@@ -150,6 +150,6 @@ function ImprimirListaVeterinarios(){
         Select.appendChild(opcion);
     }
 
-    function limpiarForm(){
+    function limpiarFormCita(){
         document.getElementById('formCrearCita').reset();
     }
