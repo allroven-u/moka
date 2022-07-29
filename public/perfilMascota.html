@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="css/CrearCita.css">
     <link rel="stylesheet" href="css/CrearReservacion.css">
     <link rel="stylesheet" href="css/RegistroMascota.css">
+    <link rel="stylesheet" href="css/perfilMascota.css">
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="ImprimirListaMascotas();">
+<body>
     <header>
         <div class="menuBars">
             <a href="App.html" class="menuBars logo">
-                <img src="../public/assets/img/moka-logo.png" alt="">
+                <img src="../public/assets/img/moka-logo.png" alt="foto de usuario" width="200">
             </a>
             <div class="profile">
                 <a id="TxtUsuarioLogueado" class="name" href="#"> </a>
@@ -144,14 +145,74 @@
                 </li>
             </ul>
         </nav>
-        
-
 
 
         <div class="home">
+
+            <div class="perfil-main">
+                <div class="perfil-contenido">
+                    <div class="box-usuario_img">
+                        <div class="box-img border-radius shadow">
+                            <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                        </div>
+                        <div class="usuario border-radius name-mascota">
+
+                            <p id="TxtMascotaM">Pinto</p>
+                        </div>
+                        <button class="usuario border-radius annadir">Añadir mascota</button>
+                        <button class="usuario border-radius remover">Remover mascota</button>
+
+                    </div>
+                    <div class="informacion-personal border-radius shadow">
+                        <div class="titulo-info-usario">
+                            <h2>Informacion General</h2>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                            <p>Dueño: <span id="txtDuennoM"></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                            <p>Direccion: <span id="txtDireccionM"></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                            <p>Edad: <span id="txtEdadM">4 años</span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                            <p>Calificacion: <span id="txtCalificacionM"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius observaciones">
+                            <p>Observaciones: <span id="txtObservacionesM">Tiene Pulgas y garrapatas</span></p>
+                        </div>
+
+                        <button class="btn-editar border-radius" type="button">Editar Informacion</button>
+                    </div>
+                    <div class="historial-mascota border-radius shadow">
+                        <div class="titulo-lastCitas">
+                            <h2>Ultimas citas</h2>
+                        </div>
+                        <table>
+                            <thead class="thTitle">
+                                <tr>
+                                    <th class="tblTitle">No.Cita</th>
+                                    <th class="tblTitle">Mascota</th>
+                                    <th class="tblTitle">Veterinario(a)</th>
+                                    <th class="tblTitle">Fecha</th>
+                                    <th class="tblTitle">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbbody-ultimas-citas">
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--PERFIL USUSARIO-->
+
             <!-------------CREAR CITA--------->
             <div class="cuerpoCita hidden">
-                <form id="formCrearCita"  class="formCita">
+                <form id="formCrearCita" class="formCita">
                     <h1 class="titulo">Nueva Cita</h1>
 
                     <select class="cajas select" id="selectMascotaCita" onblur="AsignarNombreOtro();">
@@ -186,15 +247,14 @@
             </div>
 
             <!---------------CREAR RESERVACION------------------------>
-            <div class="cuerpoReserva hidden">
-                <form id="formCrearReserva"  class="formReserva">
+            <div id="formCrearReserva" class="cuerpoReserva hidden">
+                <form class="formReserva">
                     <h1 class="titulo">Nueva Reservación</h1>
 
-                    <select class="cajas select" id="selectMacota"  >
+                    <select class="cajas select" id="selectMacota">
                         <option value="">------Seleccionar mascota------</option>
 
                     </select>
-                    
                     <div>
                         <label for="dateCheckIn">Fecha de ingreso</label>
                         <input class="cajas" id="dateCheckIn" type="datetime-local" value="" />
@@ -220,26 +280,7 @@
 
                 </form>
             </div>
-
         </div>
-
-        <!--
-            <form class="form">
-        
-        <h1 class="titulo">Registrar Mascota</h1>
-        
-        <div class="formFoto">
-            <label for="imgFotoMascota" class="lblFotoMascota">Foto Mascota</label>
-            <input type="file" id="imgFotoMascota" name="fotoPerfil" placeholder="Foto" capture>
-        </div>
-        
-        <input class="cajas" id="txtNombre" type="text" placeholder="Nombre mascota*"  maxlength="30">
-        <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Dirección exacta*"></textarea>
-      
-        <input type="button" class="btn" id="btnRegistroMascota" value="REGISTRAR">
-
-    </form>
-        -->
 
 
     </div>
@@ -249,12 +290,15 @@
 
     <div class="overlay hidden"></div>
     <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/services/demoService.js"></script>
+    <!-- <script src="./js/services/demoService.js"></script>-->
+    <script src="./js/services/CitaService.js"></script>
+    <script src="./js/services/UsuarioService.js"></script>
+    <script src="./js/services/MascotasService.js"></script>
     <script src="./js/controllers/CrearCitaController.js"></script>
     <script src="./js/controllers/CrearReservaController.js"></script>
     <script src="./js/controllers/ControllerPerfilMascota.js"></script>
-    <script src="./js/controllers/ControllerRegistroMascota.js"></script>   
     <script src="./js/controllers/appController.js"></script>
+
     <script src="./js/services/SessionService.js"></script>
 </body>
 
