@@ -7,7 +7,6 @@ let txtEmailP = document.getElementById('txtEmailP');
 let txtUsuarioP = document.getElementById('txtUsuarioP');
 let txtContraseniaP = document.getElementById('txtContraseniaP');
 let txtDireccionP = document.getElementById('txtDireccionP');
-let txtCalificacionP = document.getElementById('txtCalificacionP');
 window.addEventListener('load', () => {
     let usuario = GetSesion();
     console.log(usuario.Identificacion);
