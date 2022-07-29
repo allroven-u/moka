@@ -1,5 +1,7 @@
 'use strict'
 
+var listaReservas;
+
 window.addEventListener('load', () =>{
      cargaJsonReservas();
      cargaJson();   
@@ -50,7 +52,7 @@ window.addEventListener('load', () =>{
 function ImprimirListaReservas(){
     let tbody = document.getElementById('tbdReservas');
 
-    let listaReservas = getReservasArray();
+ listaReservas = getReservasArray();
 
     tbody.innerHTML = '';
 

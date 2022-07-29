@@ -18,7 +18,7 @@ function ImprimirListaCitas(){
     for (let i = 0; i < listaCitas.length; i++) {
 
       let  cita = listaCitas[i];
-      let veterinario = buscaUsuario(cita.IdentificacionVeterinario);
+      let veterinario = buscaUsuarioID(cita.IdentificacionVeterinario);
 
         let fila = tbody.insertRow();
         let celdaNumCita = fila.insertCell();
