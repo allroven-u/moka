@@ -241,10 +241,10 @@
 
             <!-------------CREAR CITA--------->
             <div class="cuerpoCita hidden">
-                <form class="formCita">
+                <form id="formCrearCita" class="formCita">
                     <h1 class="titulo">Nueva Cita</h1>
 
-                    <select class="cajas select" id="selectMacota">
+                    <select class="cajas select" id="selectMascotaCita">
                         <option value="">------Seleccionar mascota------</option>
 
                     </select>
@@ -273,7 +273,7 @@
             </div>
 
             <!---------------CREAR RESERVACION------------------------>
-            <div class="cuerpoReserva hidden">
+            <div id="formCrearReserva" class="cuerpoReserva hidden">
                 <form class="formReserva">
                     <h1 class="titulo">Nueva Reservación</h1>
 
@@ -293,7 +293,7 @@
 
 
 
-                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
+                    <textarea class="cajas" name="Dirección" id="txtCuidadosEsp" cols="30" rows="5"
                         placeholder="Cuidados Especiales*"></textarea>
 
 
@@ -301,7 +301,7 @@
                     <div class="btnsR">
                         <input type="button" class="btnCancelarR" value="Cancelar">
 
-                        <input type="button" id="btnIniciar" class="btnR" value="Crear Cita">
+                        <input type="button" id="btnReserva" class="btnR" value="Crear Cita">
                     </div>
 
                 </form>
@@ -323,3 +323,4 @@
     <script src="./js/controllers/appController.js"></script>
     <script src="./js/services/SessionService.js"></script>
 </body>
+</html>
