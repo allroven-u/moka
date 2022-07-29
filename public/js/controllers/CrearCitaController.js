@@ -54,12 +54,22 @@ function ValidarDatosCita(){
         inputNombreMascota.classList.remove("error")
     }
 
-    if (dFecha == null || dFecha == undefined || dFecha == ""){
+    if (dFecha == null || dFecha == undefined || dFecha == "" ){
         inputFecha.classList.add("error")
         MostrarError();
         return false;
     }else{
         inputFecha.classList.remove("error")
+    }
+    if(new Date() > new Date(dFecha) == true ){
+        
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'la fecha no pueder ser menor al dia de hoy!',
+        })
+        inputFecha.classList.add("error")
+        return false;
     }
 
     if (sIdentificacion == null || sIdentificacion == undefined || sIdentificacion == ""){

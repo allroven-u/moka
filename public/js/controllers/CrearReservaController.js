@@ -56,7 +56,30 @@ function ValidarDatos(){
         return false;
     }else{
         inputEntrada.classList.remove("error")
+        
     }
+    if(new Date() > new Date(dFechaEnt) == true ){
+        
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'la fecha no pueder ser menor al dia de hoy!',
+        })
+        inputFecha.classList.add("error")
+        return false;
+    }
+    //fecha sumada
+    var res = new Date();
+        res.setDate(res.getDate() + 15);
+     if( res < new Date(dFechaEnt) == true){
+         Swal.fire({
+             icon: 'error',
+             title: 'Oops...',
+             text: 'No se pueden hacer reservas con mas de 15 días de anticipación!',
+         })
+         inputFecha.classList.add("error")
+         return false;
+     }
     
     if (dFechaSalida == null || dFechaSalida == undefined || dFechaSalida == ""){
         inputSalida.classList.add("error")
@@ -64,6 +87,16 @@ function ValidarDatos(){
         return false;
     }else{
         inputSalida.classList.remove("error")
+    }
+
+    if (new Date(dFechaEnt) > new Date(dFechaSalida)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'La fecha de salida no puede ser menor a la de entrada',
+        })
+        inputSalida.classList.add("error")
+        return false;
     }
 
     if (sDireccion == null || sDireccion == undefined || sDireccion == ""){
