@@ -47,3 +47,7 @@ function buscaMascotasPorDuenio(pIdentificacion) {
   return result;
 }
 
+function getMascotasArray(){
+  return mascotasArray;
+  };
+

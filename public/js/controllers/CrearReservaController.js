@@ -1,4 +1,4 @@
-// 'use strict'
+'use strict'
 
 // let inputNombreMascotaReserva = document.querySelector('#selectMacota');
 // let inputEntrada = document.getElementById('dateCheckIn');
@@ -118,22 +118,22 @@ window.addEventListener('load', () =>{
 let inputNombreMascotaReserva = document.querySelector('#selectMacota');
 let inputEntrada = document.getElementById('dateCheckIn');
 let inputSalida = document.getElementById('dateCheckOut');
-let inputDireccionReserva = document.getElementById('txtDireccion');
+let inputCuidadosReserva = document.getElementById('txtCuidadosEsp');
 
-let btnCrearReserva = document.getElementById('btnIniciar');
+let btnCrearReserva = document.getElementById('btnReserva');
 btnCrearReserva.addEventListener('click',CrearReserva);
 var numReserva = 0;
 function CrearReserva(){
     if(ValidarDatos() ==true){
         ConfirmarDatos();
         numReserva++;
-        let pendID= 206790172;
+        let pendID= userSession.Identificacion;
         let pendCalif = 0;
-        let EstadoInicial = "Pendiete";
+        let EstadoInicial = "AGENDADA";
         let sNombreMascota = inputNombreMascotaReserva.options[inputNombreMascotaReserva.selectedIndex].text;
         let dFechaE = inputEntrada.value;
         let dFechaS = inputSalida.value;
-        let sDireccion = inputDireccionReserva.value; 
+        let sDireccion = inputCuidadosReserva.value; 
         RegistrarReserva(pendID,numReserva,sNombreMascota,dFechaE,dFechaS,EstadoInicial,pendCalif,sDireccion);
         console.log(ObtenerListaReservas());
     }
@@ -141,11 +141,10 @@ function CrearReserva(){
 
 
 function ValidarDatos(){
-    console.log(ObtenerListaReservas());
     let sNombreMascota = inputNombreMascotaReserva.value;
     let dFechaEnt = inputEntrada.value;
     let dFechaSalida = inputSalida.value;
-    let sDireccion = inputDireccionReserva.value;
+    let sDireccion = inputCuidadosReserva.value;
 
     if (sNombreMascota == null || sNombreMascota == undefined || sNombreMascota == ""){
         inputNombreMascotaReserva.classList.add("error")
@@ -172,11 +171,11 @@ function ValidarDatos(){
     }
 
     if (sDireccion == null || sDireccion == undefined || sDireccion == ""){
-        inputDireccionReserva.classList.add("error")
+        inputCuidadosReserva.classList.add("error")
         MostrarError();
         return false;
     }else{
-        inputDireccionReserva.classList.remove("error")
+        inputCuidadosReserva.classList.remove("error")
     }
     return true;
 }
