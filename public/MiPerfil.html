@@ -153,7 +153,7 @@
                 <form class="formCita">
                     <h1 class="titulo">Nueva Cita</h1>
 
-                    <select class="cajas select" id="selectMacota">
+                    <select class="cajas select" id="selectMascotaCita">
                         <option value="">------Seleccionar mascota------</option>
 
                     </select>
@@ -162,10 +162,7 @@
 
                     <select class="cajas select" id="selectVeterinario">
                         <option value="">------Seleccionar Veterinario------</option>
-                        <option value="1" title="primerVeterinario">Luis</option>
-                        <option value="2" title="segundoVeterinario">Denis</option>
-                        <option value="3" title="tercerVeterinario">Allan</option>
-                        <option value="3" title="tercerVeterinario">Aleatorio</option>
+                        
                     </select>
 
                     <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
@@ -202,7 +199,7 @@
 
 
 
-                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
+                    <textarea class="cajas" name="Dirección" id="txtCuidadosEsp" cols="30" rows="5"
                         placeholder="Cuidados Especiales*"></textarea>
 
 
@@ -210,7 +207,7 @@
                     <div class="btnsR">
                         <input type="button" class="btnCancelarR" value="Cancelar">
 
-                        <input type="button" id="btnIniciar" class="btnR" value="Crear Cita">
+                        <input type="button" id="btnReserva" class="btnR" value="Crear Reserva">
                     </div>
 
                 </form>
@@ -226,7 +223,9 @@
 
     <div class="overlay hidden"></div>
     <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/services/MascotasService.js"></script>
     <script src="./js/services/demoService.js"></script>
+    <script src="./js/services/UsuarioService.js"></script>
     <script src="./js/controllers/CrearCitaController.js"></script>
     <script src="./js/controllers/CrearReservaController.js"></script>
     <script src="./js/controllers/appController.js"></script>

@@ -49,3 +49,7 @@ function validarLogin(pUsuario, pClave) {
     return false;
   }
 }
+
+function getUsuariosArray(){
+  return usuariosArray;
+  };

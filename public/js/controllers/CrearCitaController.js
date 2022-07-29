@@ -116,15 +116,17 @@
 var userSession;
 window.addEventListener('load', () =>{
     userSession=GetSesion();
+    cargaJson();
     cargaJsonMascota();
 
     setTimeout(function(){
     
     ImprimirListaMascotasCita(userSession.Identificacion);
+    ImprimirListaVeterinarios();
     },3000)
 });
 
-let inputNombreMascota = document.querySelector('#selectMacota');
+let inputNombreMascota = document.querySelector('#selectMascotaCita');
 let inputFecha = document.getElementById('txtFecha');
 let inputTipoIdentificacion = document.querySelector('#selectVeterinario');
 let inputDireccion = document.getElementById('txtDireccion');
@@ -134,12 +136,13 @@ btnCrear.addEventListener('click',CrearCita);
 var numCita= 0;//guardar base de datos
 
 function CrearCita(){
-    if(ValidarDatos() ==true){
+    
+    if(ValidarDatosCita() == true){
         ConfirmarDatos();
         numCita++;
-        let pendID= 206790172;
-        let pendCalif = 3;
-        let EstadoInicial = "Pendiete";
+        let pendID= userSession.Identificacion;
+        let pendCalif = 0;
+        let EstadoInicial = "AGENDADA";
         let sNombreMascota = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
         let dFecha = inputFecha.value;
         let sIdentificacion = inputNombreMascota.options[inputNombreMascota.selectedIndex].text
@@ -149,14 +152,15 @@ function CrearCita(){
     }
 }
 
-function ValidarDatos(){
-    console.log(ObtenerListaCitas());
+function ValidarDatosCita(){
+    
     let sNombreMascota = inputNombreMascota.value;
     let dFecha = inputFecha.value;
     let sIdentificacion = inputTipoIdentificacion.value;
     let sDireccion = inputDireccion.value;
 
     if (sNombreMascota == null || sNombreMascota == undefined || sNombreMascota == ""){
+       
         inputNombreMascota.classList.add("error")
         MostrarError();
         return false;
@@ -214,7 +218,7 @@ function ImprimirListaMascotasCita(user){
     let listaMascotas = getMascotasArray();
     
     let opcion;
-    let valor;
+    let valor = 0;
 
     
     for (let i = 0; i < listaMascotas.length; i++) {
@@ -222,14 +226,40 @@ function ImprimirListaMascotasCita(user){
         
         if(idCliente == listaMascotas[i].IdentificacionDuenio){
             opcion = document.createElement('option');
-            valor = (i+1);
+            valor+=1;
             opcion.value = valor;
             opcion.text = listaMascotas[i].NombreMascota;
             Select.appendChild(opcion);
             }
         }
         opcion = document.createElement('option');
-        opcion.value = valor+2;
+        opcion.value = ++valor;
         opcion.text = 'Otro' ;
+        Select.appendChild(opcion);
+    }
+
+    //carga Veterinarios
+function ImprimirListaVeterinarios(){
+    let listaUsers = getUsuariosArray();
+    let Select = document.getElementById('selectVeterinario');
+    let opcion;
+    let valor = 0;
+
+    
+    for (let i = 0; i < listaUsers.length; i++) {
+
+        if(listaUsers[i].Rol == 3){
+            opcion = document.createElement('option');
+            valor+=1;
+            opcion.value = valor;
+            opcion.text = listaUsers[i].Nombre;
+            Select.appendChild(opcion);
+        }
+        
+    
+        }
+        opcion = document.createElement('option');
+        opcion.value = ++valor;
+        opcion.text = 'Aleatorio';
         Select.appendChild(opcion);
     }
