@@ -26,7 +26,7 @@ var numCita= 0;//guardar base de datos
 function CrearCita(){
 
     if(ValidarDatosCita() == true){
-        ConfirmarDatos();
+        ConfirmarDatosC();
         numCita++;
         let pendID= userSession.Identificacion;
         let pendCalif = 0;
@@ -53,7 +53,7 @@ function ValidarDatosCita(){
         
        
         inputNombreMascota.classList.add("error")
-        MostrarError();
+        MostrarErrorC();
         return false;
     }else{
         inputNombreMascota.classList.remove("error")
@@ -61,7 +61,7 @@ function ValidarDatosCita(){
 
     if (dFecha == null || dFecha == undefined || dFecha == "" ){
         inputFecha.classList.add("error")
-        MostrarError();
+        MostrarErrorC();
         return false;
     }else{
         inputFecha.classList.remove("error")
@@ -79,7 +79,7 @@ function ValidarDatosCita(){
 
     if (sIdentificacion == null || sIdentificacion == undefined || sIdentificacion == ""){
         inputTipoIdentificacion.classList.add("error")
-        MostrarError();
+        MostrarErrorC();
         return false;
     }else{
         inputTipoIdentificacion.classList.remove("error")
@@ -87,21 +87,21 @@ function ValidarDatosCita(){
 
     if (sDireccion == null || sDireccion == undefined || sDireccion == ""){
         inputDireccion.classList.add("error")
-        MostrarError();
+        MostrarErrorC();
         return false;
     }else{
         inputDireccion.classList.remove("error")
     }
     return true;
 }
-function MostrarError(){
+function MostrarErrorC(){
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Dato Requerido!',
     })
 }
-function ConfirmarDatos(){
+function ConfirmarDatosC(){
     Swal.fire({
         position: 'center',
         icon: 'success',
