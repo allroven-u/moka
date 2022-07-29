@@ -2,14 +2,18 @@
 *{
   font-family: Roboto300;
 }
-.form{
+.form-registro-mascota{
   width: 450px;
   padding: 30px;
   margin: auto;
   margin-top: 25px;
   background-color: var(--blanco);
   border-radius: 5px;
-  ;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
 
 }
 /*--TITULO-----------------------*/
@@ -30,8 +34,6 @@
   border-left: 10px solid var(--silver);
   transition: all .5s ease;
   
-  
-  
 }
 
 .cajas:hover, .cajas:focus{
@@ -39,12 +41,12 @@
 }
 
 /*--BOTON-DE-REGISTRARSE---------*/
-.btn{
+.btn-registro-m{
   width: 100%;
   padding: 15px;
   border-radius: 5px;
   border: none;
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 15px;
   background-color: var(--verdeagua);
   color: var(--blanco);
@@ -52,9 +54,28 @@
   transition: all .5s ease;
   
 }
-.btn:hover{
+.btn-registro-m:hover{
   background-color: var(--turquesa);
 }
+.btn-cancerlar-m {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 0;
+  font-size: 15px;
+  background-color: var(--Rojo2);
+  color: var(--blanco);
+  cursor: pointer;
+  transition: all .5s ease;
+
+}
+
+.btn-cancerlar-m:hover {
+  background-color: var(--Roj1);
+}
+
+
 /*--YA-TENGO-CUENTA--------------*/
 .tengo-cuenta{
   text-align: center;
