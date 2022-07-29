@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="ImprimirListaMascotas();">
+<body  onload="ImprimirListaCitas();">
     <header>
         <div class="menuBars">
             <a href="App.html" class="menuBars logo">
@@ -156,7 +156,7 @@
                             <i class="fa-solid fa-pen-to-square edit-icon"></i>
                         </div>
                         <div class="usuario border-radius">
-                            <p>Jose Jimenez</p>
+                            <p id="TxtUsuarioLogueado2"></p>
                         </div>
                     </div>
                     <div class="informacion-personal border-radius shadow">
@@ -164,30 +164,31 @@
                             <h2>Informacion Personal</h2>
                         </div>
                         <div class="box-info-usuario border-radius">
-                            <p>Nombre: <span></span></p>
+                            <p>Nombre: <span id="txtNombreP"></span></p>
                         </div>
                         <div class="box-info-usuario border-radius">
-                             <p>Nombre: <span></span></p>
+                            <p>Apellidos: <span id="txtApellidosP"></span></p>
                         </div>
                         <div class="box-info-usuario border-radius">
-                             <p>Apellidos: <span></span></p>
+                            <p>Identificación: <span id="txtCedulaP"></span></p>
                         </div>
                         <div class="box-info-usuario border-radius">
-                             <p>Identificación: <span></span></p>
+                            <p>Email: <span id="txtEmailP"></span></p>
                         </div>
                         <div class="box-info-usuario border-radius">
-                             <p>Email: <span></span></p>
+                            <p>Nombre de Usuario: <span id="txtUsuarioP"></span></p>
                         </div>
                         <div class="box-info-usuario border-radius">
-                             <p>Nombre de Usuario: <span></span></p>
+                            <p>Contraseña: <span id="txtContraseniaP"></span></p>
                         </div>
                         <div class="box-info-usuario border-radius">
-                             <p>Contraseña: <span></span></p>
+                            <p>Direccion: <span id="txtDireccionP"></span></p>
                         </div>
                         <div class="box-info-usuario border-radius">
-                             <p>Direccion: <span></span></p>
+                            <p>Calificacion: <span id="txtCalificacionP"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></span></p>
                         </div>
-                        <div class="box-info-usuario border-radius calificacion"></div>
                         <button class="btn-editar border-radius" type="button">Editar Informacion</button>
                     </div>
                     <div class="historial-de-pagos border-radius shadow">
@@ -222,26 +223,16 @@
                             <h2>Ultimas citas de Mascotas</h2>
                         </div>
                         <table>
-                            <tr>
-                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-                                </td>
-                            </tr>
+                            <thead class="thTitle">
+                                <tr>
+                                    <th class="tblTitle">Mascota</th>
+                                    <th class="tblTitle">Veterinario(a)</th>
+                                    <th class="tblTitle">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbbody-ultimas-citas">
+                            </tbody>
+                            
                         </table>
                     </div>
                 </div>
@@ -317,24 +308,6 @@
             </div>
         </div>
 
-        <!--
-            <form class="form">
-        
-        <h1 class="titulo">Registrar Mascota</h1>
-        
-        <div class="formFoto">
-            <label for="imgFotoMascota" class="lblFotoMascota">Foto Mascota</label>
-            <input type="file" id="imgFotoMascota" name="fotoPerfil" placeholder="Foto" capture>
-        </div>
-        
-        <input class="cajas" id="txtNombre" type="text" placeholder="Nombre mascota*"  maxlength="30">
-        <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Dirección exacta*"></textarea>
-      
-        <input type="button" class="btn" id="btnRegistroMascota" value="REGISTRAR">
-
-    </form>
-        -->
-
 
     </div>
 
@@ -347,9 +320,6 @@
     <script src="./js/controllers/CrearCitaController.js"></script>
     <script src="./js/controllers/CrearReservaController.js"></script>
     <script src="./js/controllers/ControllerMiPerfil.js"></script>
-    <script src="./js/controllers/ControllerRegistroMascota.js"></script>
     <script src="./js/controllers/appController.js"></script>
     <script src="./js/services/SessionService.js"></script>
 </body>
-
-<
