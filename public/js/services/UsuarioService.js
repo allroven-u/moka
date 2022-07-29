@@ -39,6 +39,10 @@ function buscaUsuarioID(pUsuarioID) {
 
 }
 
+function getListaUsuarios(){
+  return usuariosArray;
+}
+
 //Esta funcion valida si el login es correcto devuelve un booleano.
 function validarLogin(pUsuario, pClave) {
   let usuario = buscaUsuario(pUsuario);
