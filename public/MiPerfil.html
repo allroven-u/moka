@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/CrearCita.css">
     <link rel="stylesheet" href="css/CrearReservacion.css">
+    <link rel="stylesheet" href="css/RegistroMascota.css">
+    <link rel="stylesheet" href="css/MiPerfil.css">
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -143,9 +145,107 @@
                 </li>
             </ul>
         </nav>
-        <p>soon</p>
+
 
         <div class="home">
+
+            <div class="perfil-main">
+                <div class="perfil-contenido">
+                    <div class="box-usuario_img">
+                        <div class="box-img border-radius shadow">
+                            <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                        </div>
+                        <div class="usuario border-radius">
+                            <p>Jose Jimenez</p>
+                        </div>
+                    </div>
+                    <div class="informacion-personal border-radius shadow">
+                        <div class="titulo-info-usario">
+                            <h2>Informacion Personal</h2>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                            <p>Nombre: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                             <p>Nombre: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                             <p>Apellidos: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                             <p>Identificación: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                             <p>Email: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                             <p>Nombre de Usuario: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                             <p>Contraseña: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius">
+                             <p>Direccion: <span></span></p>
+                        </div>
+                        <div class="box-info-usuario border-radius calificacion"></div>
+                        <button class="btn-editar border-radius" type="button">Editar Informacion</button>
+                    </div>
+                    <div class="historial-de-pagos border-radius shadow">
+                        <div class="titulo-historial">
+                            <h2>Historial de Pagos</h2>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="detalle">Lorem</td>
+                                <td class="precio">5000</td>
+                            </tr>
+                            <tr>
+                                <td class="detalle">Lorem</td>
+                                <td class="precio">5000</td>
+                            </tr>
+                            <tr>
+                                <td class="detalle">Lorem</td>
+                                <td class="precio">5000</td>
+                            </tr>
+                            <tr>
+                                <td class="detalle">Lorem</td>
+                                <td class="precio">5000</td>
+                            </tr>
+                            <tr>
+                                <td class="detalle">Lorem</td>
+                                <td class="precio">5000</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="historial-mascota border-radius shadow">
+                        <div class="titulo-lastCitas">
+                            <h2>Ultimas citas de Mascotas</h2>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="h-citas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
             <!--PERFIL USUSARIO-->
 
             <!-------------CREAR CITA--------->
@@ -153,7 +253,7 @@
                 <form class="formCita">
                     <h1 class="titulo">Nueva Cita</h1>
 
-                    <select class="cajas select" id="selectMascotaCita">
+                    <select class="cajas select" id="selectMacota">
                         <option value="">------Seleccionar mascota------</option>
 
                     </select>
@@ -162,7 +262,10 @@
 
                     <select class="cajas select" id="selectVeterinario">
                         <option value="">------Seleccionar Veterinario------</option>
-                        
+                        <option value="1" title="primerVeterinario">Luis</option>
+                        <option value="2" title="segundoVeterinario">Denis</option>
+                        <option value="3" title="tercerVeterinario">Allan</option>
+                        <option value="3" title="tercerVeterinario">Aleatorio</option>
                     </select>
 
                     <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
@@ -199,7 +302,7 @@
 
 
 
-                    <textarea class="cajas" name="Dirección" id="txtCuidadosEsp" cols="30" rows="5"
+                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
                         placeholder="Cuidados Especiales*"></textarea>
 
 
@@ -207,13 +310,30 @@
                     <div class="btnsR">
                         <input type="button" class="btnCancelarR" value="Cancelar">
 
-                        <input type="button" id="btnReserva" class="btnR" value="Crear Reserva">
+                        <input type="button" id="btnIniciar" class="btnR" value="Crear Cita">
                     </div>
 
                 </form>
             </div>
         </div>
 
+        <!--
+            <form class="form">
+        
+        <h1 class="titulo">Registrar Mascota</h1>
+        
+        <div class="formFoto">
+            <label for="imgFotoMascota" class="lblFotoMascota">Foto Mascota</label>
+            <input type="file" id="imgFotoMascota" name="fotoPerfil" placeholder="Foto" capture>
+        </div>
+        
+        <input class="cajas" id="txtNombre" type="text" placeholder="Nombre mascota*"  maxlength="30">
+        <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Dirección exacta*"></textarea>
+      
+        <input type="button" class="btn" id="btnRegistroMascota" value="REGISTRAR">
+
+    </form>
+        -->
 
 
     </div>
@@ -223,13 +343,13 @@
 
     <div class="overlay hidden"></div>
     <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/services/MascotasService.js"></script>
     <script src="./js/services/demoService.js"></script>
-    <script src="./js/services/UsuarioService.js"></script>
     <script src="./js/controllers/CrearCitaController.js"></script>
     <script src="./js/controllers/CrearReservaController.js"></script>
+    <script src="./js/controllers/ControllerMiPerfil.js"></script>
+    <script src="./js/controllers/ControllerRegistroMascota.js"></script>
     <script src="./js/controllers/appController.js"></script>
     <script src="./js/services/SessionService.js"></script>
 </body>
 
-</html>
+<

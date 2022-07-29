@@ -256,7 +256,7 @@ tr {
     margin-bottom: 20px;
     border-radius: 5px;
     border: none;
-    border-left: 10px solid var(--silver);
+    border-left: 10px solid var(--blanco);
     transition: all .5s ease;
 }
 
@@ -274,4 +274,7 @@ tr {
     width: 80%;
     padding: 20px;
     margin-top: 0%;
+}
+.error {
+    border: 2px solid var(--Rojo2);
 }
