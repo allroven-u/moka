@@ -591,6 +591,14 @@ h2 {
     width: 80%;
 }
 
+.social-contact a, .social-maps a{
+    transition: all 300ms linear;
+}
+
+.social-contact a:hover, .social-maps a:hover{
+    color: var(--azul1) !important;
+}
+
 #footer {
     background-color: var(--azul2);
 }
