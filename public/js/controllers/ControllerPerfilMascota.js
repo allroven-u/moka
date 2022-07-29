@@ -81,3 +81,35 @@ function VerEstado(EstadoCita){
     }   
     }
 }
+
+
+const btnAnnadirMascota = document.getElementById('annadir-mascota');
+const modalRegisMascot = document.querySelector('.form-registro-mascota');
+const overlayRegistroM = document.querySelector('.overlay');
+const closeModalMascota = document.getElementById('btnCancelarRegistroM');
+
+
+
+
+const hiddenRegistroM = function () {
+    modalRegisMascot.classList.add('hidden');
+    overlayRegistroM.classList.add('hidden');
+};
+
+// start function show modal
+function ShowModalRegistroM() {
+    modalRegisMascot.classList.remove('hidden');
+    overlayRegistroM.classList.remove('hidden');
+
+    closeModalMascota.addEventListener('click', hiddenRegistroM);
+    overlayRegistroM.addEventListener('click', hiddenRegistroM);
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !modalRegisMascot.classList.contains('hidden')) {
+            hiddenRegistroM();
+        }
+    });
+};
+
+btnAnnadirMascota.addEventListener('click', function () {
+    ShowModalRegistroM();
+});
