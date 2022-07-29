@@ -1,16 +1,27 @@
 'use strict'
 
+var listaCitas;
+
+window.addEventListener('load', () =>{
+     cargaJsonCitas();
+     cargaJson(); 
+     
+     setInterval(() => {ImprimirListaCitas();}, 1000);
+});
 
 
 function ImprimirListaCitas(){
     let tbody = document.getElementById('tbdCitas');
 
-    let listaCitas = ObtenerListaCitas();
+    let listaCitas = getCitasArray();
 
     tbody.innerHTML = '';
 
     for (let i = 0; i < listaCitas.length; i++) {
         
+        let  cita = listaCitas[i];
+        let veterinario = buscaUsuarioID(cita.IdentificacionVeterinario);  
+
         let fila = tbody.insertRow();
         let celdaNumCita = fila.insertCell();
         let celdaMascota = fila.insertCell();
@@ -19,15 +30,15 @@ function ImprimirListaCitas(){
         let celdaEstado = fila.insertCell();
         let celdaBoton = fila.insertCell();
 
-        celdaNumCita.innerHTML = listaCitas[i][1];
+        celdaNumCita.innerHTML = cita.NumeroCita;
         celdaNumCita.classList.add('infoTd');
-        celdaMascota.innerHTML = listaCitas[i][2];
+        celdaMascota.innerHTML = cita.NombreMascota;
         celdaMascota.classList.add('infoTd');
-        celdaVeterinario.innerHTML = listaCitas[i][3];
+        celdaVeterinario.innerHTML = veterinario.Nombre + ' ' + veterinario.Apellido1;
         celdaVeterinario.classList.add('infoTd');
-        celdaFecha.innerHTML = listaCitas[i][4];
+        celdaFecha.innerHTML = cita.FechaHora;
         celdaFecha.classList.add('infoTd');
-        celdaEstado.innerHTML = listaCitas[i][5];
+        celdaEstado.innerHTML = cita.Estado;
         celdaEstado.classList.add('Estado');
         celdaEstado.classList.add('infoTd');
         
