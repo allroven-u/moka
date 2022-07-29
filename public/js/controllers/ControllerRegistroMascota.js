@@ -1,18 +1,18 @@
 'use strict'
 
 
-let btnRegistrar = document.getElementById("btnRegistrar");
+let btnRegistroMascota = document.getElementById("btnRegistroMascota");
 let inputNombre = document.getElementById("txtNombre");
-let inputDireccion = document.getElementById("txtDireccion");
+let inputDireccionRegistroM = document.getElementById("txtDireccionRegistroM");
 
-btnRegistrar.addEventListener("click",Registrar);
+btnRegistroMascota.addEventListener("click",Registrar);
 
 function Registrar(){
     if(ValidarDatos() == true){
         ConfirmarDatos();
         let IDcliente = '206790172'
         let sNombre = inputNombre.value;
-        let sDireccion = inputDireccion.value;
+        let sDireccion = inputDireccionRegistroM.value;
         RegistrarMascota(IDcliente,sNombre,sDireccion)
         console.log(ObtenerListaMascotas())
     }
@@ -21,7 +21,7 @@ function Registrar(){
 function ValidarDatos(){
     console.log(ObtenerListaMascotas())
     let sNombre = inputNombre.value;
-    let sDireccion = inputDireccion.value;
+    let sDireccion = inputDireccionRegistroM.value;
 
     
 
@@ -34,11 +34,11 @@ function ValidarDatos(){
         inputNombre.classList.remove("error")
     }
     if (sDireccion == null || sDireccion == undefined || sDireccion == ""){
-        inputDireccion.classList.add("error")
+        inputDireccionRegistroM.classList.add("error")
         MostrarError();
         return false;
     }else{
-        inputDireccion.classList.remove("error")
+        inputDireccionRegistroM.classList.remove("error")
     }
     return true;
 }
