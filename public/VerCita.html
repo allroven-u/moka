@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/VerCita.css">
     <link rel="stylesheet" href="./css/estilosGenerales.css">
+
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -154,12 +155,24 @@
         </nav>
         <div class="tblCaja">
             <div class="tituloCaja">
-                <h2>Mis citas</h2>
+                <h2>Cita Numero: </h2>
             </div>
 
             <div class="h3">
                 <h2>Mascota Nombre
                 </h2>
+                <input class="cajas" type="text" name="txtNombreMascota" value="">
+            </div>
+            <h2>Calificación Mascota</h2>
+            <div class="stars">
+
+
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+
             </div>
             <div class="h2">
                 <h2>Descripción de Cita
@@ -167,15 +180,21 @@
             </div>
 
             <div class="DescripcionParrafo">
+                <input class="cajas" type="text" name="txtDescripcion" value="">
 
             </div>
 
             <div class="h2">
+
                 <h2>Observaciones
                 </h2>
+
+
             </div>
 
+
             <div class="DescripcionParrafo">
+                <input class="cajas" type="text" name="txtObservaciones" value="">
 
             </div>
 
@@ -185,6 +204,19 @@
             </div>
 
             <div class="DescripcionParrafo">
+                <input class="cajas" type="text" name="txtDiagnostico" value="">
+
+
+            </div>
+
+            <div class="h2">
+                <h2>Monto Factura
+                </h2>
+            </div>
+
+            <div class="PagoFacura">
+                <input class="cajas" type="number" name="txtDiagnostico" value="">
+
 
             </div>
             <div class="btns">
@@ -201,8 +233,13 @@
 
 
     <script src="./js/services/demoService.js"></script>
+    <script src="./js/controllers/VerCitas.js"></script>
     <script src="./js/controllers/ControllerVerCitas.js"></script>
+
     <script src="./js/controllers/appController.js"></script>
+
+
+
 </body>
 
 </html>

@@ -1,12 +1,11 @@
 @import url(./estilosGenerales.css);
-
-*{
+* {
     font-family: Roboto300;
-    margin: 0px auto;  
+    margin: 0px auto;
     padding: 0px;
 }
 
-.infoTd{
+.infoTd {
     border: 1px solid var(--silver);
     border-radius: 5px;
     text-align: center;
@@ -15,9 +14,9 @@
     cursor: default;
     width: 180px;
     margin: 5px;
-    
 }
-.tblTitle{
+
+.tblTitle {
     background-color: var(--azul2);
     color: var(--blanco);
     cursor: default;
@@ -26,8 +25,8 @@
     margin: 5px;
     text-align: center;
     font-size: 18px;
-    
 }
+
 
 /* .btn{
     text-align: center;
@@ -68,62 +67,60 @@
     transform: scale(1,1);
 } */
 
-.btnV, .btnEd, .btnCa{
+.btnV,
+.btnEd,
+.btnCa {
     color: var(--turquesa);
     margin: 21px;
     transform: scale(1.5);
     transition: all 200ms linear;
-
 }
-.btnV:hover, .btnEd:hover, .btnCa:hover{
+
+.btnV:hover,
+.btnEd:hover,
+.btnCa:hover {
     transform: scale(1.6);
 }
 
-.btnEd{
+.btnEd {
     color: var(--naranja);
 }
 
-.btnCa{
+.btnCa {
     color: var(--Rojo2);
-
 }
 
-
-.thTitle{
-    
+.thTitle {
     border: 1px solid var(--azul2);
     background-color: var(--azul2);
     border-radius: 5px;
     padding: 5px;
     width: fit-content;
-    
-    
-}
-#tbdCitas{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
 }
 
-#tbdReservas{
+#tbdCitas {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-tr{
+
+#tbdReservas {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+tr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    
-   
-} 
+}
 
-.tblCitas{
+.tblCitas {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -131,7 +128,8 @@ tr{
     border-radius: 5px;
     width: 100%;
 }
-.tituloCaja{
+
+.tituloCaja {
     width: 90%;
     text-align: center;
     margin-bottom: 10px;
@@ -140,10 +138,11 @@ tr{
     color: var(--blanco);
 }
 
-.tituloCaja h2{
+.tituloCaja h2 {
     padding: 10px;
 }
-.tblCaja{
+
+.tblCaja {
     display: flex;
     width: 90%;
     flex-direction: column;
@@ -151,21 +150,23 @@ tr{
     justify-content: flex-start;
     align-items: center;
 }
-.AGENDADA{
+
+.AGENDADA {
     background-color: var(--naranja);
 }
-.CANCELADA{
+
+.CANCELADA {
     background-color: var(--Rojo2);
 }
-.FINALIZADA{
+
+.FINALIZADA {
     background-color: var(--verdeagua);
 }
 
-.filtro{
+.filtro {
     width: 90%;
     text-align: center;
     margin-bottom: 10px;
-
     padding: 20px;
     background-color: var(--silver);
     border-radius: 5px 5px 5px 5px;
