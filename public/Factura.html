@@ -4,23 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./CSS/Facturas.css">
+        <link rel="stylesheet" href="css/Facturas.css">
+        <link rel="stylesheet" href="css/PagoTarjeta.css">
         <title>Factura</title>
     </head>
     <body>
     
         <div class="btns">
-            <input type="button" class="btnCancelar" value="Cancelar" onclick="location.href='./IniciarSesion.html'">
-            <input type="button" id="Pagar" class="btn" value="Pagar" onclick="location.href='./PagoTarjeta.html'">
-            <input  type="button" id="Enviar" class="btnEnviar" value="Enviar" onclick="location.href='./PagoTarjeta.html'">
+            <input type="button" class="btnCancelar" value="Cancelar" onclick="location.href='App.html'">
+            <input type="button" id="Pagar" class="btnPagar" value="Pagar">
+            <input  type="button" id="Enviar" class="btnEnviar" value="Enviar" onclick="alert('Enviado al correo');">
         </div>
 
         <header>
             <h1>Factura</h1>
+            <img width="100" src="./assets/img/MOKA Logo.png">
         </header>
 
         <div class="cajaPrincipal">
-                <img height="200" src="./assets/img/MOKA Logo.png" style="text-align: center; width: 400px">
+               
                 <table class="tblinfo1">
                     <tr>
                         <td>Nombre Empresa: </td>
@@ -74,12 +76,12 @@
             </table>  
 
             <table class="tblCliente">
-                <th class="infoTd1">Servicio</th>
-                <th class="infoTd1">No.</th>
-                <th class="infoTd1">Fecha</th>
-                <th class="infoTd1">Descripción</th>
-                <th class="infoTd1">Descuento</th>
-                <th class="infoTd1">Precio</th>
+                <th class="infoTh1">Servicio</th>
+                <th class="infoTh1">No.</th>
+                <th class="infoTh1">Fecha</th>
+                <th class="infoTh1">Descripción</th>
+                <th class="infoTh1">Descuento</th>
+                <th class="infoTh1">Precio</th>
                 <tbody>
                     <tr>
                         <td class="infoTd2">Veterinaria</td>
@@ -138,7 +140,7 @@
                         <tr>
                             
                             <td class="infoTotales">Total Dolares</td>
-                            <td class="infoTotales">$5.27</td>
+                            <td class="infoTotales">$11.27</td>
                         </tr> 
                     </tbody>
                      
@@ -148,7 +150,7 @@
             
         
         </div>
-        <form class="form-pago-tarjeta">
+        <form class="form-pago-tarjeta hidden">
             <h1 class="titulo">Pago</h1>
             <img height="25" src="https://shoplineimg.com/assets/footer/card_visa.png" style="text-align: center; width: 10%">
             <img height="25" src="https://shoplineimg.com/assets/footer/card_master.png" style="text-align: center; width: 10%">
@@ -195,7 +197,12 @@
                 </div>
                 
             <input type="button" class="btn-pago-tarjeta" id="btnPagar" value="Pagar">
-            <p class="tengo-cuenta"><a href="./Factura.html" class="tengo-cuenta">Regresar</a></p>
+            <input type="button" class="btn-cancerlar-tarjeta" id="btnCancelar" value="Cancelar">
         </form>
+
+        <div class="overlay hidden"></div>
+
+        <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/controllers/controllerFactura.js"></script>
     </body>
 </html>
