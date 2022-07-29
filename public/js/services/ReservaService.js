@@ -5,7 +5,6 @@ let reservaArray = []; // arreglo de usuarios
 
 // Esta funcion carga un archivo tipo json y lo carga a un array utilizando un promesa de js
 function cargaJsonReservas() {
-//   console.log("Empezando carga de Mascotas....");
 
   fetch("/public/assets/data/infoReservaciones.json")
     .then((response) => response.json())

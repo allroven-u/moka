@@ -4,7 +4,6 @@ let usuariosArray = []; // arreglo de usuarios
 
 // Esta funcion carga un archivo tipo json y lo carga a un array utilizando un promesa de js
 function cargaJson() {
-  console.log("Empezando carga de usuarios....");
 
   fetch("/public/assets/data/infoUsuarios.json")
     .then((response) => response.json())

@@ -5,7 +5,6 @@ let citasArray = []; // arreglo de usuarios
 
 // Esta funcion carga un archivo tipo json y lo carga a un array utilizando un promesa de js
 function cargaJsonCitas() {
-//   console.log("Empezando carga de Mascotas....");
 
   fetch("/public/assets/data/infoCitas.json")
     .then((response) => response.json())
