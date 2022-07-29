@@ -48,7 +48,7 @@ function ImprimirListaCitas(){
         // Boton.classList.add('btn');
         // celdaBoton.appendChild(Boton);
         let EstadoCitaif = document.querySelectorAll('.Estado');
-        if (EstadoCitaif[i].innerHTML == 'Pendiente' ) {
+        if (EstadoCitaif[i].innerHTML == 'AGENDADA' ) {
         let BotonV = document.createElement('a');
         BotonV.setAttribute('href','#')
         let iconoV =document.createElement('i');
