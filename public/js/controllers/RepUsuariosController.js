@@ -48,20 +48,18 @@ function ImprimirListaUsuarios(){
         }
         celdaActivo.classList.add('infoTd');
         switch (usuario.Rol) {
-            case value: 1
+            case 1:
                 celdaRol.innerHTML = 'Administrador';
                 break;
-            case value:2
+            case 2:
                 celdaRol.innerHTML = 'Usuario';
                 break;
-            case value:3
+            case 3:
                 celdaRol.innerHTML = 'Veterinario(a)';
             break;
-            case value:4
+            case 4:
                 celdaRol.innerHTML = 'Secretario(a)';
             break;
-            default:
-                break;
         }
         celdaRol.classList.add('infoTd');
     }
