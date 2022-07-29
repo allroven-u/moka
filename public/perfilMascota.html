@@ -121,12 +121,11 @@
                         </li>
 
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Listado de citas</a>
+                            <a href="reporteReservacion.html" class="nav__link nav__link--inside">Listado de reservaciones</a>
                         </li>
 
                         <li class="list__inside">
-                            <a href="reporteVeterinario.html" class="nav__link nav__link--inside">Calificaciones
-                                Promedio</a>
+                            <a href="reporteVeterinario.html" class="nav__link nav__link--inside">Calificaciones</a>
                         </li>
 
                         <li class="list__inside">
@@ -137,9 +136,6 @@
                             <a href="reporteUsuario.html" class="nav__link nav__link--inside">Usuarios Registrados</a>
                         </li>
 
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Reporte 6</a>
-                        </li>
                     </ul>
 
                 </li>
@@ -159,8 +155,8 @@
 
                             <p id="TxtMascotaM">Pinto</p>
                         </div>
-                        <button class="usuario border-radius annadir">Añadir mascota</button>
-                        <button class="usuario border-radius remover">Remover mascota</button>
+                        <button class="usuario border-radius annadir" id="annadir-mascota">Añadir mascota</button>
+                        <button class="usuario border-radius remover" id="remover-mascota">Remover mascota</button>
 
                     </div>
                     <div class="informacion-personal border-radius shadow">
@@ -214,11 +210,10 @@
             <div class="cuerpoCita hidden">
                 <form id="formCrearCita" class="formCita">
                     <h1 class="titulo">Nueva Cita</h1>
-
                     <select class="cajas select" id="selectMascotaCita" onblur="AsignarNombreOtro();">
                         <option value="">------Seleccionar mascota------</option>
-
                     </select>
+
                     <div id="NombreOtro">
 
                     </div>
@@ -227,14 +222,14 @@
 
                     <select class="cajas select" id="selectVeterinario">
                         <option value="">------Seleccionar Veterinario------</option>
-                        <option value="1" title="primerVeterinario">Luis</option>
-                        <option value="2" title="segundoVeterinario">Denis</option>
-                        <option value="3" title="tercerVeterinario">Allan</option>
-                        <option value="3" title="tercerVeterinario">Aleatorio</option>
+                        
                     </select>
 
                     <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
                         placeholder="Descripción de la Cita*"></textarea>
+
+
+
 
                     <div class="btnsC">
                         <input type="button" class="btnCancelarC" value="Cancelar">
@@ -247,8 +242,8 @@
             </div>
 
             <!---------------CREAR RESERVACION------------------------>
-            <div id="formCrearReserva" class="cuerpoReserva hidden">
-                <form class="formReserva">
+            <div class="cuerpoReserva hidden">
+                <form id="formCrearReserva" class="formReserva">
                     <h1 class="titulo">Nueva Reservación</h1>
 
                     <select class="cajas select" id="selectMacota">
@@ -275,11 +270,34 @@
                     <div class="btnsR">
                         <input type="button" class="btnCancelarR" value="Cancelar">
 
-                        <input type="button" id="btnReserva" class="btnR" value="Crear Cita">
+                        <input type="button" id="btnReserva" class="btnR" value="Crear Reserva">
                     </div>
 
                 </form>
             </div>
+
+            <form class="form-registro-mascota hidden">
+        
+                <!--TITULO------------------------>
+                <h1 class="titulo">Registrar Mascota</h1>
+                
+                <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
+                <div class="formFoto">
+                    <label for="imgFotoMascota" class="lblFotoMascota">Foto Mascota</label>
+                    <input type="file" id="imgFotoMascota" name="fotoPerfil" placeholder="Foto" capture>
+                </div>
+                
+                <input class="cajas" id="txtNombre" type="text" placeholder="Nombre mascota*"  maxlength="30">
+                <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Dirección exacta*"></textarea>
+              
+                
+               
+                
+                <!--BOTON-DE-REGISTRARSE-------------------------->
+                <input type="button" class="btn-registro-m" id="btnRegistroMascota" value="Registrar">
+                <input type="button" class="btn-cancerlar-m" id="btnCancelarRegistroM" value="Cancelar">
+                
+            </form>
         </div>
 
 
@@ -291,6 +309,7 @@
     <div class="overlay hidden"></div>
     <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- <script src="./js/services/demoService.js"></script>-->
+    <script src="./js/controllers/ControllerRegistroMascota.js"></script>  
     <script src="./js/services/CitaService.js"></script>
     <script src="./js/services/UsuarioService.js"></script>
     <script src="./js/services/MascotasService.js"></script>
