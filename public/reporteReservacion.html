@@ -11,14 +11,14 @@
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
-        <body>
+        <body onload="ImprimirListaReservaciones();">
             <header>
                 <div class="menuBars">
                     <a href="App.html" class="menuBars logo">
                         <img src="../public/assets/img/moka-logo.png" alt="">
                     </a>
                     <div class="profile">
-                        <a id="TxtUsuarioLogueado" class="name" href="#"> .../a>
+                        <a class="name" href="#"> Allan Rodriguez</a>
                         <a class="logout" href="./landing.html">
                             <i class="fa-solid fa-right-to-bracket fa-2x "></i>
                         </a>
@@ -142,36 +142,43 @@
                 </ul>
             </nav>
         
-            <!-- Aqui se agrega el contenido de la pagina -->
-        
-            <div class="tblCaja">
-                <div class="tituloCaja">
-                    <h2>Listado de citas</h2>
-                </div>
-                <div class="filtro">
-                    <input type="date" title="Fecha Inicio" >
-                    <input type="date" title="Fecha Final"> 
-                    <input type="text" title="Nombre Mascota">
-                    <input type="text" title="Nombre Veterinario">
-                    <button id="btnFiltrarCitas" onclick="ImprimirListaCitas()"> filtar</button>
-                </div>
-                <table class="tblCitas">
-                    <thead class="thTitle">
-                        <tr>
-                            <th class="tblTitle">No.Cita</th>
-                            <th class="tblTitle">Mascota</th>
-                            <th class="tblTitle">Veterinario(a)</th>
-                            <th class="tblTitle">Fecha</th>
-                            <th class="tblTitle">Estado</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbdCitas">
-                    </tbody>
-                </table>
-            </div>
-
-            <!--  -->
+            
             <div class="home">
+
+
+<!-- Aqui se agrega el contenido de la pagina -->
+        
+<div class="tblCaja">
+    <div class="tituloCaja">
+        <h2>Reservaciones</h2>
+    </div>
+    <div class="filtro">
+        <input type="date" title="Fecha Inicio" >
+        <input type="date" title="Fecha Final"> 
+        <span>Nombre Mascota</span>
+        <input type="text" title="Nombre Mascota">
+        <span>Nombre Veterinario</span>
+        <input type="text" title="Nombre Veterinario">
+        <button id="btnFiltrarCitas" onclick="ImprimirListaReservas()"> filtar</button>
+    </div>
+    <table class="tblCitas">
+        <thead class="thTitle">
+            <tr>
+                <th class="tblTitle">No.Cita</th>
+                <th class="tblTitle">Mascota</th>
+                <th class="tblTitle">Veterinario(a)</th>
+                <th class="tblTitle">Fecha Ingreso</th>
+                <th class="tblTitle">Fecha Salida</th>
+                <th class="tblTitle">Estado</th>
+            </tr>
+        </thead>
+        <tbody id="tbdCitas">
+        </tbody>
+    </table>
+</div>
+
+<!--  -->
+
                 <!-------------CREAR CITA--------->
                 <div class="cuerpoCita hidden">
                     <form class="formCita">
@@ -242,10 +249,8 @@
         
             <div class="overlay hidden"></div>
         </div>
-            <script src="./js/services/CitaService.js"></script>
-            <script src="./js/services/SessionService.js"></script>
-            <script src="./js/services/UsuarioService.js"></script>
-            <script src="./js/controllers/RepReservacionesController.js"></script>
+            <script src="./js/services/demoService.js"></script>
+            <script src="./js/controllers/reporteController.js"></script>
             <script src="./js/controllers/appController.js"></script>
         </body>
         

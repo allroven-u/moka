@@ -27,14 +27,16 @@ function buscaUsuario(pUsuario) {
 }
 
 //Esta funcion busca un objeto dentro del arreglo de usuario segun el campo de id usuario y lo devuelve en formato object.
-function buscaUsuarioXIdentificacion(pUsuarioID) {
-  let result = null;
-  for (let i = 0; i < usuariosArray.length; i++) {
-    if (usuariosArray[i].Identificacion === pUsuarioID) {
-      result = usuariosArray[i];
-    }
-  }
-  return result;
+function buscaUsuarioID(pUsuarioID) {
+ let result = null;
+ for (let i = 0; i < usuariosArray.length; i++) {
+   if (usuariosArray[i].Identificacion === pUsuarioID) {
+     result = usuariosArray[i];
+   }
+ }
+ console.log(result)
+ return result;
+
 }
 
 //Esta funcion valida si el login es correcto devuelve un booleano.

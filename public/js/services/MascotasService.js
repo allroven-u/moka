@@ -3,7 +3,7 @@
 let mascotasArray = []; // arreglo de usuarios
 
 // Esta funcion carga un archivo tipo json y lo carga a un array utilizando un promesa de js
-function cargaJson() {
+function cargaJsonMascota() {
   console.log("Empezando carga de Mascotas....");
 
   fetch("/public/assets/data/infoMascotas.json")

@@ -119,23 +119,24 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Reporte 1</a>
+                            <a href="reporteCitas.html" class="nav__link nav__link--inside">Listado de citas</a>
                         </li>
 
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Reporte 2</a>
+                            <a href="#" class="nav__link nav__link--inside">Listado de citas</a>
                         </li>
 
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Reporte 3</a>
+                            <a href="reporteVeterinario.html" class="nav__link nav__link--inside">Calificaciones
+                                Promedio</a>
                         </li>
 
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Reporte 4</a>
+                            <a href="reporteGanancia.html" class="nav__link nav__link--inside">Ganacias</a>
                         </li>
 
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Reporte 5</a>
+                            <a href="reporteUsuario.html" class="nav__link nav__link--inside">Usuarios Registrados</a>
                         </li>
 
                         <li class="list__inside">
@@ -147,29 +148,32 @@
             </ul>
         </nav>
 
-        <div class="tblCaja">
-            <div class="tituloCaja">
-                <h2>Mis citas</h2>
-            </div>
-            <table class="tblCitas">
-                <thead class="thTitle">
-                    <tr>
-                        <th class="tblTitle">No.Cita</th>
-                        <th class="tblTitle">Mascota</th>
-                        <th class="tblTitle">Veterinario(a)</th>
-                        <th class="tblTitle">Fecha</th>
-                        <th class="tblTitle">Estado</th>
-                        <th class="tblTitle">Acciones</th>
 
-                    </tr>
-                </thead>
-                <tbody id="tbdCitas">
-                </tbody>
-            </table>
-        </div>
 
 
         <div class="home">
+            
+            <div class="tblCaja">
+                <div class="tituloCaja">
+                    <h2>Mis citas</h2>
+                </div>
+                <table class="tblCitas">
+                    <thead class="thTitle">
+                        <tr>
+                            <th class="tblTitle">No.Cita</th>
+                            <th class="tblTitle">Mascota</th>
+                            <th class="tblTitle">Veterinario(a)</th>
+                            <th class="tblTitle">Fecha</th>
+                            <th class="tblTitle">Estado</th>
+                            <th class="tblTitle">Acciones</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbdCitas">
+                    </tbody>
+                </table>
+            </div>
+         
 
             <!-------------CREAR CITA--------->
             <div class="cuerpoCita hidden">
@@ -203,7 +207,6 @@
                     </div>
 
                 </form>
-
             </div>
 
             <!---------------CREAR RESERVACION------------------------>
@@ -236,8 +239,8 @@
 
                 </form>
             </div>
-              <!--FORMULARIO---->
-              <form class="form-cancelar-cita hidden">
+            <!--FORMULARIO---->
+            <form class="form-cancelar-cita hidden">
                 <!--TITULO------------------------>
                 <h1 class="titulo">Cancelar Cita</h1>
 
@@ -256,7 +259,8 @@
                 </div>
 
                 <!--BOTON-DE-Cancelar-------------------------->
-                <input type="button" class="btn-cancelar-cita" id="btnRegistrar" value="Cancelar" onclick="CancelarCita();">
+                <input type="button" class="btn-cancelar-cita" id="btnRegistrar" value="Cancelar"
+                    onclick="CancelarCita();">
             </form>
             <div class="overlay hidden"></div>
         </div>
