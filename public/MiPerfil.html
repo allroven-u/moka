@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
-<body  onload="ImprimirListaCitas();">
+<body>
     <header>
         <div class="menuBars">
             <a href="App.html" class="menuBars logo">
@@ -246,6 +246,7 @@
                     <div id="NombreOtro">
 
                     </div>
+
                     <input class="cajas" id="txtFecha" type="datetime-local" value="" />
 
                     <select class="cajas select" id="selectVeterinario">
@@ -313,7 +314,9 @@
 
     <div class="overlay hidden"></div>
     <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/services/demoService.js"></script>
+   <!-- <script src="./js/services/demoService.js"></script>-->
+    <script src="./js/services/CitaService.js"></script>
+    <script src="./js/services/UsuarioService.js"></script>
     <script src="./js/controllers/CrearCitaController.js"></script>
     <script src="./js/controllers/CrearReservaController.js"></script>
     <script src="./js/controllers/ControllerMiPerfil.js"></script>
