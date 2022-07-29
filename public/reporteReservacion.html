@@ -11,14 +11,14 @@
     <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
 
-        <body onload="ImprimirListaReservaciones();">
+        <body>
             <header>
                 <div class="menuBars">
                     <a href="App.html" class="menuBars logo">
                         <img src="../public/assets/img/moka-logo.png" alt="">
                     </a>
                     <div class="profile">
-                        <a class="name" href="#"> Allan Rodriguez</a>
+                        <a id="TxtUsuarioLogueado" class="name" href="#"> Allan Rodriguez</a>
                         <a class="logout" href="./landing.html">
                             <i class="fa-solid fa-right-to-bracket fa-2x "></i>
                         </a>
@@ -172,7 +172,7 @@
                 <th class="tblTitle">Estado</th>
             </tr>
         </thead>
-        <tbody id="tbdCitas">
+        <tbody id="tbdReservas">
         </tbody>
     </table>
 </div>
@@ -249,8 +249,10 @@
         
             <div class="overlay hidden"></div>
         </div>
-            <script src="./js/services/demoService.js"></script>
-            <script src="./js/controllers/reporteController.js"></script>
+            <script src="./js/services/ReservaService.js"></script>
+            <script src="./js/services/SessionService.js"></script>
+            <script src="./js/services/UsuarioService.js"></script>
+            <script src="./js/controllers/RepReservacionesController.js"></script>
             <script src="./js/controllers/appController.js"></script>
         </body>
         

@@ -7,7 +7,7 @@ let reservaArray = []; // arreglo de usuarios
 function cargaJsonReservas() {
 //   console.log("Empezando carga de Mascotas....");
 
-  fetch("/public/assets/data/infoReservaciones.json.json")
+  fetch("/public/assets/data/infoReservaciones.json")
     .then((response) => response.json())
     .then((response) => {
         reservaArray = response;

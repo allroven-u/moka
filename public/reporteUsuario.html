@@ -5,208 +5,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reporte Usuario</title>
-    <link rel="stylesheet" href="./css/reportes.css">
+    <link rel="stylesheet" href="css/VerCitas.css">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/estilosGenerales.css">
-    
+    <script src="https://kit.fontawesome.com/c1ba3b44a4.js" crossorigin="anonymous"></script>
 </head>
-<body onload="ImprimirListaCitas();">
+<body >
     <header>
         <div class="menuBars">
-            <a href="#" class="menuBars logo" >
-                <!-- <i class="fa-solid fa-shield-dog fa-2x"></i> -->
-                <img src="../public/assets/img/logo.png" alt="">
+            <a href="App.html" class="menuBars logo">
+                <img src="../public/assets/img/moka-logo.png" alt="">
             </a>
-            <a href="#" class="menuBars bars">
-                <i id="toggle" onclick="cerrar()" class="fa-solid fa-bars fa-xl "></i>
-            </a>
+            <div class="profile">
+                <a id="TxtUsuarioLogueado" class="name" href="#"> </a>
+                <a class="logout" href="./landing.html">
+                    <i class="fa-solid fa-right-to-bracket fa-2x "></i>
+                </a>
+            </div>
         </div>
-
-        <div class="profile">
-            <a class="name" href="#"></a>
-        </div>
-
-
     </header>
     <div class="bodyContainer">
-    <nav class="nav">
+        <nav class="nav">
+            <ul class="list">
 
-        <ul class="list">
+                <li class="list__item">
+                    <div class="list__button">
+                        <i class="fa-solid fa-angle-right fa-2x list__img "></i>
+                        <a href="App.html" class="nav__link">Inicio</a>
+                    </div>
+                </li>
 
-            <li class="list__item">
-                <div class="list__button">
-                    <i class="fa-solid fa-angle-right fa-2x list__img "></i>
-                    <a href="#" class="nav__link">Inicio</a>
-                    
-                </div>
-            </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <i class="fa-solid fa-user list__img"></i>
+                        <a href="#" class="nav__link">Cuenta</a>
+                        <i class="fa-solid fa-angle-right list__arrow "></i>
+                    </div>
 
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <i class="fa-solid fa-user list__img" ></i>
-                    <a href="#" class="nav__link">Cuenta</a>
-                    <i class="fa-solid fa-angle-right list__arrow "></i>
-                    
-                </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="MiPerfil.html" class="nav__link nav__link--inside">
+                                <i class="fa-solid fa-address-card" list__arrow></i>
+                                Mi perfil</a>
+                        </li>
 
-                <ul class="list__show">
-                    <li class="list__inside">
-                        
-                        <a href="#" class="nav__link nav__link--inside">
-                            <i class="fa-solid fa-address-card" list__arrow></i>
-                            Mi perfil</a>
-                    </li>
+                        <li class="list__inside">
+                            <a href="perfilMascota.html" class="nav__link nav__link--inside">
+                                <i class="fa-solid fa-paw" list__arrow></i>
+                                Mis Mascotas</a>
+                        </li>
+                    </ul>
 
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <i class="fa-solid fa-paw" list__arrow></i>
-                            Mis Mascotas</a>
-                    </li>
-                </ul>
+                </li>
 
-            </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <i class="fa-solid fa-house-chimney-medical list__img"></i>
+                        <a href="#" class="nav__link">Veterinaria</a>
+                        <i class="fa-solid fa-angle-right list__arrow "></i>
+                    </div>
 
+                    <ul class="list__show">
+                        <li class="list__inside">
 
-            <li class="list__item list__item--click">
-                   <div class="list__button list__button--click">
-                    <i class="fa-solid fa-house-chimney-medical list__img"></i>
-                    <a href="#" class="nav__link">Veterinaria</a>
-                    <i class="fa-solid fa-angle-right list__arrow "></i>
-                </div>
+                            <a class="nav__link nav__link--inside" id="show-crear-cita">
+                                <i class="fa-solid fa-plus list__arrow"></i>
+                                Crear nueva Cita</a>
+                        </li>
 
-                <ul class="list__show">
-                    <li class="list__inside">
-                        
-                        <a href="#" class="nav__link nav__link--inside">
-                            <i class="fa-solid fa-plus list__arrow"></i>
-                            Crear nueva Cita</a>
-                    </li>
-
-                    <li class="list__inside">
-                        <a href="/public/VerCitas.html" class="nav__link nav__link--inside">
-                            <i class="fa-solid fa-rectangle-list list__arrow"></i>
-                            Ver Citas</a>
-                    </li>
-                </ul>
+                        <li class="list__inside">
+                            <a href="AppVerCitas.html" class="nav__link nav__link--inside">
+                                <i class="fa-solid fa-rectangle-list list__arrow"></i>
+                                Ver Citas</a>
+                        </li>
+                    </ul>
 
 
-            </li>
+                </li>
 
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <i class="fa-solid fa-hotel list__img"></i>
-                    <a href="#" class="nav__link">Hotel</a>
-                    <i class="fa-solid fa-angle-right list__arrow "></i>
-                </div>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <i class="fa-solid fa-hotel list__img"></i>
+                        <a href="#" class="nav__link">Hotel</a>
+                        <i class="fa-solid fa-angle-right list__arrow "></i>
+                    </div>
 
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <i class="fa-solid fa-plus list__arrow"></i>
-                            Crear Reservación</a>
-                    </li>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a class="nav__link nav__link--inside" id="show-crear-reservacion">
+                                <i class="fa-solid fa-plus list__arrow"></i>
+                                Crear Reservación</a>
+                        </li>
 
-                    <li class="list__inside">
-                        
-                        <a href="/public/VerReservacion.html" class="nav__link nav__link--inside">
-                            <i class="fa-solid fa-list-check list__arrow"></i>
-                            Reservaciones</a>
-                    </li>
-                </ul>
+                        <li class="list__inside">
 
-            </li>
+                            <a href="AppVerReservas.html" class="nav__link nav__link--inside">
+                                <i class="fa-solid fa-list-check list__arrow"></i>
+                                Reservaciones</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <i class="fa-solid fa-file-contract list__img"></i>
+                        <a href="#" class="nav__link">Reportes</a>
+                        <i class="fa-solid fa-angle-right list__arrow "></i>
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="reporteCitas.html" class="nav__link nav__link--inside">Listado de citas</a>
+                        </li>
 
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <i class="fa-solid fa-file-contract list__img"></i>
-                    <a href="#" class="nav__link">Reportes</a>
-                    <i class="fa-solid fa-angle-right list__arrow "></i>
-                </div>
+                        <li class="list__inside">
+                            <a href="reporteReservacion.html" class="nav__link nav__link--inside">Listado de reservaciones</a>
+                        </li>
 
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reporte 1</a>
-                    </li>
+                        <li class="list__inside">
+                            <a href="reporteVeterinario.html" class="nav__link nav__link--inside">Calificaciones
+                                Promedio</a>
+                        </li>
 
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reporte 2</a>
-                    </li>
+                        <li class="list__inside">
+                            <a href="reporteGanancia.html" class="nav__link nav__link--inside">Ganacias</a>
+                        </li>
 
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reporte 3</a>
-                    </li>
+                        <li class="list__inside">
+                            <a href="reporteUsuario.html" class="nav__link nav__link--inside">Usuarios Registrados</a>
+                        </li>
 
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reporte 4</a>
-                    </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">Reporte 6</a>
+                        </li>
+                    </ul>
 
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reporte 5</a>
-                    </li>
+                </li>
+            </ul>
+        </nav>
 
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reporte 6</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <div class="tblCaja">
-        <div class="tituloCaja">
-            <h2>Reporte Usuario</h2>
-    
-            <span>Fecha Inicio</span> 
-            <input type="date">
-    
-            <span>Fecha Final</span> 
-            <input type="date">
-    
-            <span>Mascota</span> 
-            <input type="text">
-    
-            <span>Usuario</span> 
-            <input type="text">
-    
-            <button>Filtrar</button>           
+
+        <div class="home">
+
+        <!-- Aqui se agrega el contenido de la pagina -->
+       
+        <div class="tblCaja">
+            <div class="tituloCaja">
+                <h2>Listado Usuarios Software</h2>
+            </div>
+            <div class="filtro">
+                <span>Nombre Usuario</span>
+                <input type="text" title="Nombre Usuario">
+
+                <button id="btnFiltrarCitas" onclick="ImprimirListaUsuarios()"> Filtar</button>
+            </div>
+            <table class="tblCitas">
+                <thead class="thTitle">
+                    <tr>
+                        <th class="tblTitle">Usuario</th>
+                        <th class="tblTitle">Nombre</th>
+                        <th class="tblTitle">Primer Apellido</th>
+                        <th class="tblTitle">Segundo Apellido</th>
+                        <th class="tblTitle">Identificación</th>
+                        <th class="tblTitle">Email</th>
+                        <th class="tblTitle">Estado</th>
+                        <th class="tblTitle">Rol</th>
+                    </tr>
+                </thead>
+                <tbody id="tbdListaUsuarios">
+                </tbody>
+            </table>
         </div>
-        <table class="tblReporte">
-            <thead class="thTitle">
-                <tr>
-                    <th class="tblTitulo">Nombre</th>
-                    <th class="tblTitulo">Apellido</th>   
-                    <th class="tblTitulo">Número de cédula</th> 
-                    <th class="tblTitulo">Email</th>   
-                    <th class="tblTitulo">Dirección</th>
-                    <th class="tblTitulo">Rol</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="tblContenido">Catalina</td>
-                    <td class="tblContenido">Quesada</td>
-                    <td class="tblContenido">117850512</td> 
-                    <td class="tblContenido">cquesada@gmail.com</td>
-                    <td class="tblContenido">Zapote, San josé</td>  
-                    <td class="tblContenido">Usuario</td> 
-                </tr>
-                <tr>
-                    <td class="tblContenido">David</td>
-                    <td class="tblContenido">Lobo</td>
-                    <td class="tblContenido">115850814</td> 
-                    <td class="tblContenido">dlobo14@gmail.com</td>
-                    <td class="tblContenido">Desamparados, San josé</td>  
-                    <td class="tblContenido">Usuario</td> 
-                </tr>
-                <tr>
-                    <td class="tblContenido">Valeria</td>
-                    <td class="tblContenido">Bonilla</td>
-                    <td class="tblContenido">207500407</td> 
-                    <td class="tblContenido">valebon29@gmail.com</td>
-                    <td class="tblContenido">Sabanilla, Alajuela</td>  
-                    <td class="tblContenido">Usuario</td>  
-                </tr>    
-            </tbody>
-        </table> 
+        
+
+        <!--  -->
+
+
+            <!-------------CREAR CITA--------->
+            <div class="cuerpoCita hidden">
+                <form class="formCita">
+                    <h1 class="titulo">Nueva Cita</h1>
+                    <select class="cajas select" id="selectMacota">
+                        <option value="">------Seleccionar mascota------</option>
+
+                    </select>
+
+                    <input class="cajas" id="txtFecha" type="datetime-local" value="" />
+
+                    <select class="cajas select" id="selectVeterinario">
+                        <option value="">------Seleccionar Veterinario------</option>
+                        <option value="1" title="primerVeterinario">Luis</option>
+                        <option value="2" title="segundoVeterinario">Denis</option>
+                        <option value="3" title="tercerVeterinario">Allan</option>
+                        <option value="3" title="tercerVeterinario">Aleatorio</option>
+                    </select>
+
+                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
+                        placeholder="Descripción de la Cita*"></textarea>
+
+
+
+
+                    <div class="btnsC">
+                        <input type="button" class="btnCancelarC" value="Cancelar">
+
+                        <input type="button" id="btnIniciar" class="btnC" value="Crear Cita">
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!---------------CREAR RESERVACION------------------------>
+            <div class="cuerpoReserva hidden">
+                <form class="formReserva">
+                    <h1 class="titulo">Nueva Reservación</h1>
+
+                    <select class="cajas select" id="selectMacota">
+                        <option value="">------Seleccionar mascota------</option>
+
+                    </select>
+                    <div>
+                        <label for="dateCheckIn">Fecha de ingreso</label>
+                        <input class="cajas" id="dateCheckIn" type="datetime-local" value="" />
+                    </div>
+
+                    <div>
+                        <label for="dateCheckOut">Fecha de Salida</label>
+                        <input class="cajas" id="dateCheckOut" type="datetime-local" value="" />
+                    </div>
+
+
+
+                    <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5"
+                        placeholder="Cuidados Especiales*"></textarea>
+
+
+
+                    <div class="btnsR">
+                        <input type="button" class="btnCancelarR" value="Cancelar">
+
+                        <input type="button" id="btnIniciar" class="btnR" value="Crear Cita">
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="overlay hidden"></div>
     </div>
+
+
+ 
+    <script src="./js/services/SessionService.js"></script>
+    <script src="./js/services/UsuarioService.js"></script>
+    <script src="./js/controllers/RepUsuariosController.js"></script>
+    <script src="./js/controllers/appController.js"></script>
+
 </body>
 </html>

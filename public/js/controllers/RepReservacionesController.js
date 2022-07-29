@@ -8,46 +8,6 @@ window.addEventListener('load', () =>{
 });
 
 
-// function ImprimirListaCitas(){
-
-//     listaCitas = getCitasArray();
-//     let tbody = document.getElementById('tbdCitas');
-
-//     tbody.innerHTML = '';
-
-//     for (let i = 0; i < listaCitas.length; i++) {
-
-//       let  cita = listaCitas[i];
-//       let veterinario = buscaUsuario(cita.IdentificacionVeterinario);
-
-//         let fila = tbody.insertRow();
-//         let celdaNumCita = fila.insertCell();
-//         let celdaMascota = fila.insertCell();
-//         let celdaVeterinario = fila.insertCell();
-//         let celdaFecha= fila.insertCell();
-//         let celdaEstado = fila.insertCell();
-//         let celdaBoton = fila.insertCell();
-
-//          celdaNumCita.innerHTML = cita.NumeroCita;
-//          celdaNumCita.classList.add('infoTd');
-//          celdaMascota.innerHTML = cita.NombreMascota;
-//          celdaMascota.classList.add('infoTd');
-//          celdaVeterinario.innerHTML = veterinario.Nombre + ' ' + veterinario.Apellido1;
-//          celdaVeterinario.classList.add('infoTd');
-//          celdaFecha.innerHTML = cita.FechaHora;
-//          celdaFecha.classList.add('infoTd');
-//          celdaEstado.innerHTML = cita.Estado;
-//          celdaEstado.classList.add('Estado');
-//          celdaEstado.classList.add('infoTd');
-        
-//     }
-//      let EstadoCita = document.querySelectorAll('.Estado');
-//          console.log(EstadoCita.length);
-//          VerEstado(EstadoCita);
-// }
-
-
-
 
 function ImprimirListaReservas(){
     let tbody = document.getElementById('tbdReservas');
@@ -59,7 +19,6 @@ function ImprimirListaReservas(){
     for (let i = 0; i < listaReservas.length; i++) {
         
         let reserva = listaReservas[i];
-        let veterinario = buscaUsuario(cita.IdentificacionVeterinario);
 
         let fila = tbody.insertRow();
         let celdaNumReserva = fila.insertCell();
@@ -67,28 +26,28 @@ function ImprimirListaReservas(){
         let celdafechaEnt = fila.insertCell();
         let celdaFecha= fila.insertCell();
         let celdaEstado = fila.insertCell();
-        let celdaBoton = fila.insertCell();
+      
 
-        celdaNumReserva.innerHTML = listaReservas[i][1];
+        celdaNumReserva.innerHTML = reserva.NumeroReservacion;
         celdaNumReserva.classList.add('infoTd');
-        celdaMascota.innerHTML = listaReservas[i][2];
+        celdaMascota.innerHTML = reserva.NombreMascota;
         celdaMascota.classList.add('infoTd');
-        celdafechaEnt.innerHTML = listaReservas[i][3];
+        celdafechaEnt.innerHTML = reserva.FechaHoraIngreso;
         celdafechaEnt.classList.add('infoTd');
-        celdaFecha.innerHTML = listaReservas[i][4];
+        celdaFecha.innerHTML = reserva.FechaHoraSalida;
         celdaFecha.classList.add('infoTd');
-        celdaEstado.innerHTML = listaReservas[i][5];
+        celdaEstado.innerHTML = reserva.Estado;
         celdaEstado.classList.add('Estado');
         celdaEstado.classList.add('infoTd');
         
     }
     let EstadoCita = document.querySelectorAll('.Estado');
         console.log(EstadoCita.length);
-        VerEstado(EstadoCita);
+        VerEstadoReservas(EstadoCita);
 }
 
 
- function VerEstado(EstadoCita){
+ function VerEstadoReservas(EstadoCita){
     
      for (let i = 0; i < EstadoCita.length; i++) {
      let sEstadoCita = EstadoCita[i].innerHTML;    
