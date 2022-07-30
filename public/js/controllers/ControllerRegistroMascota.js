@@ -8,18 +8,18 @@ let inputDireccionRegistroM = document.getElementById("txtDireccionRegistroM");
 btnRegistroMascota.addEventListener("click",Registrar);
 
 function Registrar(){
-    if(ValidarDatos() == true){
+    if(ValidarDatosRegMascota() == true){
         ConfirmarDatos();
-        let IDcliente = '206790172'
-        let sNombre = inputNombre.value;
-        let sDireccion = inputDireccionRegistroM.value;
-        RegistrarMascota(IDcliente,sNombre,sDireccion)
-        console.log(ObtenerListaMascotas())
+        // let IDcliente = '206790172'
+        // let sNombre = inputNombre.value;
+        // let sDireccion = inputDireccionRegistroM.value;
+        // RegistrarMascota(IDcliente,sNombre,sDireccion)
+        limpiarFormRegMascota();
     }
 }
 
-function ValidarDatos(){
-    console.log(ObtenerListaMascotas())
+function ValidarDatosRegMascota(){
+
     let sNombre = inputNombre.value;
     let sDireccion = inputDireccionRegistroM.value;
 
@@ -57,4 +57,7 @@ function ConfirmarDatos(){
         showConfirmButton: false,
         timer: 1500
       })
+}
+function limpiarFormRegMascota(){
+    document.getElementById('FormRegistroMascota').reset();
 }
