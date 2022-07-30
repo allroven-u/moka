@@ -33,8 +33,13 @@ function buscaUsuarioID(pUsuarioID) {
      result = usuariosArray[i];
    }
  }
- console.log(result)
- return result;
+ console.log(result);
+
+ if (result != null) {
+  return result;
+ } else {
+  return '';
+ }
 
 }
 
@@ -45,7 +50,7 @@ function getListaUsuarios(){
 //Esta funcion valida si el login es correcto devuelve un booleano.
 function validarLogin(pUsuario, pClave) {
   let usuario = buscaUsuario(pUsuario);
-  if (usuario.Contrasenia === pClave) {
+  if (usuario != null && usuario.Contrasenia === pClave ){
     SetSesion(usuario);
     return true;
   } else {
