@@ -1,4 +1,20 @@
 [
+
+    {
+        "Nombre": "Admin",
+        "Apellido1": "General",
+        "Apellido2": "Moka",
+        "Identificacion": "113040446",
+        "Email": "admin@ucenfotec.ac.cr",
+        "Usuario": "admin",
+        "Contrasenia": "Admin123",
+        "Contrasenia2": "Admin123",
+        "Direccion": "San Jose",
+        "CalificacionPromedio": 3,
+        "Foto":"",
+        "Activo":1,
+        "Rol":1
+    },
     {
         "Nombre": "Allan",
         "Apellido1": "Rodriguez",
