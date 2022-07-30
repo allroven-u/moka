@@ -1,11 +1,11 @@
 //Cancelar Cita
 const modalCancelarCita = document.querySelector('.form-cancelar-cita');
 const overlayCancelar = document.querySelector('.overlay');
-const closeCancelarCita  = document.querySelector('.btn-cancelar-cita');
+const closeCancelarCita = document.querySelector('.btn-cancelar-cita');
 
 
 //SHOW CREAR CITA
-const hiddenCancelModal = function () {
+const hiddenCancelModal = function() {
     modalCancelarCita.classList.add('hidden');
     overlayCancelar.classList.add('hidden');
 };
@@ -17,7 +17,7 @@ function ShowModalCancelFunct() {
 
     closeCancelarCita.addEventListener('click', hiddenCancelModal);
     overlayCancelar.addEventListener('click', hiddenCancelModal);
-    document.addEventListener('keydown', function (e) {
+    document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && !modalCancelarCita.classList.contains('hidden')) {
             hiddenCancelModal();
         }
@@ -60,11 +60,11 @@ function CancelarCita() {
 //Cancelar Reserva
 const modalCancelarReserva = document.querySelector('.form-cancelar-reserva');
 const overlayCancelarReserva = document.querySelector('.overlay');
-const closeCancelarReserva  = document.querySelector('.btn-cancelar-reserva');
+const closeCancelarReserva = document.querySelector('.btn-cancelar-reserva');
 
 
 // start function show modal
-const hiddenCancelModalReserva = function () {
+const hiddenCancelModalReserva = function() {
     modalCancelarReserva.classList.add('hidden');
     overlayCancelarReserva.classList.add('hidden');
 };
@@ -76,7 +76,7 @@ function ShowModalCancelReservaFunct() {
 
     closeCancelarReserva.addEventListener('click', hiddenCancelModalReserva);
     overlayCancelarReserva.addEventListener('click', hiddenCancelModalReserva);
-    document.addEventListener('keydown', function (e) {
+    document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && !modalCancelarReserva.classList.contains('hidden')) {
             hiddenCancelModalReserva();
         }
@@ -86,8 +86,8 @@ function ShowModalCancelReservaFunct() {
 
 function CancelarReserva() {
     let listaReservas = ObtenerListaReservas();
-    let numReserva = 0;//llamar datos
-    let nombreMascota = 'bobo';//llamar datos
+    let numReserva = 0; //llamar datos
+    let nombreMascota = 'bobo'; //llamar datos
     let inputCancelar = document.getElementById('motivoCancelar');
     let sMotivoCancelar = inputCancelar.value;
     if (sMotivoCancelar == null || sMotivoCancelar == undefined || sMotivoCancelar == "") {
@@ -119,6 +119,7 @@ function MostrarError() {
         text: 'Debe ingresar motivo de cancelación',
     })
 }
+
 function ConfirmarDatos() {
     Swal.fire({
         position: 'center',
