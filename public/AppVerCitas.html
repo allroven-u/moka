@@ -179,28 +179,32 @@
             <div class="cuerpoCita hidden">
                 <form id="formCrearCita" class="formCita">
                     <h1 class="titulo">Nueva Cita</h1>
+
+
+                    <label for="selectMascotaCita">Seleccione Mascota</label>
                     <select class="cajas select" id="selectMascotaCita" onblur="AsignarNombreOtro();">
-                      <div>
-                        
+                      
 
                         <option value="">------Seleccionar mascota------</option>
 
-                      </div>
+                  
 
                     </select>
                     <div id="NombreOtro">
 
                     </div>
-                    <div>
 
-                        <input class="cajas" id="txtFecha" type="datetime-local" value="" />
-                    </div>
+                    <label for="txtFecha">Seleccione Fecha y Hora</label>
 
+                    <input class="cajas" id="txtFecha" type="datetime-local" value="" />
+
+                    <label for="selectVeterinario">Seleccione Veterinario</label>
 
                     <select class="cajas select" id="selectVeterinario">
                         <option value="">------Seleccionar Veterinario------</option>
                         
                     </select>
+                    <label for="txtDireccion">Descripción de la Cita</label>
 
                     <textarea class="cajas" name="Dirección" id="txtDireccion" cols="30" rows="5" placeholder="Descripción de la Cita*"></textarea>
 
