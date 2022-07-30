@@ -637,18 +637,65 @@ textarea {
 
 /*--TITULO-----------------------*/
 .lTitulo {
-    text-align: center;
+    padding:0 80px 0 ;
     color: var(--verdeagua);
     margin-bottom: 20px;
+}
+/*--Cerrar Modal Inicio--------------*/
+.cerrarModalInicio{
+    color: var(--Rojo2);
+    
+    transform: scale(1.5);
+    transition: all 200ms linear;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    cursor:pointer;
+}
+.cerrarModalInicio:hover{
+    transform: scale(1.6);
+}
+
+.InicioSesion-titleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     border-bottom: 2px solid var(--silver);
-    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+label{
+    color: var(--gris);
+    
+}
+
+.footContainer{
+    display: flex;
+    align-items: center;
+
+}
+.linkModal{
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.linkModal:hover{
+    color: var(--turquesa);
+    
+}
+input::placeholder , textarea::placeholder{
+    color: var(--gris);
+    opacity: 60%;
 }
 
 /*--CAJAS-DE-DATOS---------------*/
 .lCajas {
     width: 100%;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: none;
     border-left: 10px solid var(--silver);
@@ -725,7 +772,7 @@ textarea {
 .rModal-form {
     position: absolute;
     z-index: 11;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
@@ -739,18 +786,17 @@ textarea {
 
 /*--TITULO-----------------------*/
 .rTitulo {
-    text-align: center;
+    padding:0 95px 0 ;
     color: var(--verdeagua);
     margin-bottom: 20px;
-    border-bottom: 2px solid var(--silver);
-    padding-bottom: 10px;
 }
 
 /*--CAJAS-DE-DATOS---------------*/
 .rCajas {
     width: 100%;
+    margin-top: 5px;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: none;
     border-left: 10px solid var(--silver);
@@ -783,10 +829,11 @@ textarea {
 /*--YA-TENGO-CUENTA--------------*/
 .rBtnCancelar {
     text-align: center;
-    color: #000000;
-    font-weight: bold;
+    color: var(--gris);
     text-decoration: none;
     font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .rBtnCancelar:hover {
