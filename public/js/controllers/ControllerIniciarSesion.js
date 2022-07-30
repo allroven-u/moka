@@ -11,7 +11,7 @@ function IniciarSesion() {
   if (ValidarDatosLogin()) {
     if (validarLogin(inputUsuarioLogin.value.toUpperCase(), inputContrasenha1Login.value) == true) {
       ConfirmarDatosLogin();
-      location.href = './App.html'
+      location.href = './AppVerCitas.html'
     } else {
       ErrorDatosLogin();
     }
