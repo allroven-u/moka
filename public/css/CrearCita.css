@@ -158,3 +158,8 @@
 label {
     color: var(--gris);
 }
+
+#txtCuidadosEsp,
+#selectMacota #txtCuidadosEsp {
+    margin: 3px;
+}
