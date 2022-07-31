@@ -1,5 +1,4 @@
 @import url('estilosGenerales.css');
-
 body {
     background-image: url('../assets/img/imagen-golden-header.jpeg');
     background-repeat: no-repeat;
@@ -32,7 +31,6 @@ h2 {
     transition: all 600ms linear;
 }
 
-
 #nav-bar {
     transition: all 800ms ease;
     transition-delay: 400ms;
@@ -41,7 +39,9 @@ h2 {
     z-index: 10;
 }
 
+
 /*class for change background color nav when the user scroll*/
+
 .nav-bar-scroll {
     background-color: var(--blanco);
     box-shadow: 1px 0px 4px var(--gris);
@@ -70,14 +70,12 @@ h2 {
     transition: background 400ms linear;
 }
 
-
 .nav-right a:hover {
     background-color: rgba(11, 11, 11, 0.2);
     border-bottom: 4px solid var(--turquesa);
     border-radius: 5px;
     cursor: pointer;
 }
-
 
 #nav-bar-left {
     background-color: var(--blanco);
@@ -140,13 +138,9 @@ h2 {
     border: 3px solid var(--verdeagua)
 }
 
-
-
-
 #header {
     display: flex;
     align-items: center;
-
     margin: 0 auto;
     width: 70%;
     height: 600px;
@@ -207,14 +201,12 @@ h2 {
     background-color: var(--verdeagua);
 }
 
-
 .info {
     width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .content-center {
@@ -340,7 +332,6 @@ h2 {
     padding-bottom: 10px;
     border-bottom: 2px solid var(--silver);
 }
-
 
 .cards-teams {
     margin: 30px 10px 0px 10px;
@@ -544,13 +535,11 @@ h2 {
     height: 300px;
     background-image: url('../assets/img/mascotas-portada.png');
     background-size: cover;
-
 }
 
 .main-maps iframe {
     box-shadow: -4px 4px 15px var(--silver);
     border-radius: 5px;
-
 }
 
 .info-maps {
@@ -591,11 +580,13 @@ h2 {
     width: 80%;
 }
 
-.social-contact a, .social-maps a{
+.social-contact a,
+.social-maps a {
     transition: all 300ms linear;
 }
 
-.social-contact a:hover, .social-maps a:hover{
+.social-contact a:hover,
+.social-maps a:hover {
     color: var(--azul1) !important;
 }
 
@@ -617,6 +608,7 @@ input,
 textarea {
     font-family: Roboto300;
 }
+
 
 /*INICIAR SESION ESTILOS*/
 
@@ -652,35 +644,38 @@ textarea {
 
 
 /*--TITULO-----------------------*/
+
 .lTitulo {
-    padding:0 80px 0 ;
+    padding: 0 80px 0;
     color: var(--verdeagua);
     margin-bottom: 20px;
 }
 
 .cTitulo {
-    padding:0 10px 0 10px ;
+    padding: 0 10px 0 10px;
     color: var(--verdeagua);
     margin-bottom: 20px;
     margin-right: 45px;
 }
 
+
 /*--Cerrar Modal Inicio--------------*/
-.cerrarModalInicio{
+
+.cerrarModalInicio {
     color: var(--Rojo2);
-    
     transform: scale(1.5);
     transition: all 200ms linear;
     margin-bottom: 20px;
     padding-bottom: 25px;
     padding-left: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.cerrarModalInicio:hover{
+
+.cerrarModalInicio:hover {
     transform: scale(1.6);
 }
 
-.InicioSesion-titleContainer{
+.InicioSesion-titleContainer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -688,34 +683,37 @@ textarea {
     border-bottom: 2px solid var(--silver);
     margin-bottom: 20px;
 }
-label{
+
+label {
     color: var(--gris);
-    
 }
 
-.footContainer{
+.footContainer {
     display: flex;
     align-items: center;
-
 }
-.linkModal{
+
+.linkModal {
     color: var(--gris);
     font-size: 17px;
     padding: 5px;
     margin-left: 10px;
-    cursor:pointer;
+    cursor: pointer;
+}
 
-}
-.linkModal:hover{
+.linkModal:hover {
     color: var(--turquesa);
-    
 }
-input::placeholder , textarea::placeholder{
+
+input::placeholder,
+textarea::placeholder {
     color: var(--gris);
     opacity: 60%;
 }
 
+
 /*--CAJAS-DE-DATOS---------------*/
+
 .lCajas {
     width: 100%;
     padding: 15px;
@@ -789,6 +787,7 @@ input::placeholder , textarea::placeholder{
     background-color: var(--Roj1);
 }
 
+
 .lBtnPassword {
     width: 100%;
     padding: 10px;
@@ -835,7 +834,6 @@ input::placeholder , textarea::placeholder{
         top: 50%;
         transform: translate(-50%, -250%);
     }
-
     100% {
         left: 50%;
         top: 50%;
@@ -845,6 +843,7 @@ input::placeholder , textarea::placeholder{
 
 
 /*REGISTRARSE ESTILOS*/
+
 .rModal-form {
     position: absolute;
     z-index: 11;
@@ -860,14 +859,18 @@ input::placeholder , textarea::placeholder{
     animation: modal-signin 500ms ease;
 }
 
+
 /*--TITULO-----------------------*/
+
 .rTitulo {
-    padding:0 95px 0 ;
+    padding: 0 95px 0;
     color: var(--verdeagua);
     margin-bottom: 20px;
 }
 
+
 /*--CAJAS-DE-DATOS---------------*/
+
 .rCajas {
     width: 100%;
     margin-top: 5px;
@@ -884,7 +887,9 @@ input::placeholder , textarea::placeholder{
     border-left: 10px solid var(--verdeagua);
 }
 
+
 /*--BOTON-DE-REGISTRARSE---------*/
+
 .rBtn {
     width: 100%;
     padding: 15px;
@@ -902,7 +907,9 @@ input::placeholder , textarea::placeholder{
     background-color: var(--turquesa);
 }
 
+
 /*--YA-TENGO-CUENTA--------------*/
+
 .rBtnCancelar {
     text-align: center;
     color: var(--gris);
@@ -927,7 +934,6 @@ input::placeholder , textarea::placeholder{
         top: 50%;
         transform: translate(-50%, -250%);
     }
-
     100% {
         left: 50%;
         top: 50%;

@@ -1,5 +1,4 @@
 @import url(./estilosGenerales.css);
-
 * {
     font-family: Roboto;
 }
@@ -23,6 +22,7 @@
     border-radius: 5px;
 }
 
+
 /* .Veterinario {
     width: 450px;
     padding: 30px;
@@ -43,6 +43,7 @@
     display: flex;
     color: grey;
 }
+
 
 /* .tituloPrincipal {
     margin: 10px 10px;
@@ -123,4 +124,37 @@
 
 .error {
     border: 2px solid var(--Rojo2);
+}
+
+.CrearCitaTitulo {
+    padding: 0 88px 0;
+    color: var(--verdeagua);
+    margin-bottom: 20px;
+}
+
+.cerrarModalInicio {
+    color: var(--Rojo2);
+    transform: scale(1.5);
+    transition: all 200ms linear;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.cerrarModalInicio:hover {
+    transform: scale(1.6);
+}
+
+.InicioSesion-titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid var(--silver);
+    margin-bottom: 5px;
+}
+
+label {
+    color: var(--gris);
 }
