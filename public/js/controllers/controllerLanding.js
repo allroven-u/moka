@@ -33,7 +33,7 @@ const passwordModal = document.querySelector('.cModal-form');
 
 const showModalLogin = document.querySelectorAll(".show-modal-login");
 const showModalSignin = document.querySelectorAll(".show-modal-signin");
-const showModalPassword = document.querySelector(".show-modal-Password");
+
 
 const closeModalLogin = document.querySelector('.lBtnCancelar');
 const closeModalPassword = document.getElementById('cancelPassword');
@@ -65,7 +65,30 @@ for (let i = 0; i < showModalLogin.length; i++) {
     location.href = "#top-page";
     window.addEventListener('scroll', disableScroll);
 
+    // start function show modal
+  function ShowModalSigninFunct() {
+    signinModal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+    location.href = "#top-page";
+    window.addEventListener('scroll', disableScroll);
+  }
+
+  const hiddenModalPassword = function () {
+    passwordModal.classList.add('hidden');
+    overlay.classList.add('hidden');
+    window.removeEventListener('scroll', disableScroll);
+  };
+
+
+  closeModalPassword.addEventListener('click', function () {
+    hiddenModalPassword();
+    ShowModalLoginFunct();
+  });
     closeModalLogin.addEventListener('click', hiddenModalLogin);
+    redirectModalSiging.addEventListener('click', function () {
+      hiddenModalLogin();
+      ShowModalSigninFunct();
+    });
     overlay.addEventListener('click', hiddenModalLogin);
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && !loginModal.classList.contains('hidden')) {
@@ -113,50 +136,38 @@ for (let i = 0; i < showModalSignin.length; i++) {
   });
 }
 
-// ///////////////// SHOW AND HIDE MODAL PASSWORD ///////////////////////////////
+///////////////// SHOW AND HIDE MODAL PASSWORD ///////////////////////////////
 
-// for (let i = 0; i < showModalPassword.length; i++) {
-//   const hiddenpasswordFunct = function () {
-//     loginModal.classList.add('hidden');
-//     overlay.classList.add('hidden');
-//     window.removeEventListener('scroll', disableScroll);
-//   };
+   const hiddenModallogin = function () {
+    loginModal.classList.add('hidden');
+     overlay.classList.add('hidden');
+     window.removeEventListener('scroll', disableScroll);
+   };
 
-//   // start function show modal
-//   var ShowModalPasswordFunct = function () {
-//     passwordModal.classList.remove('hidden');
-//     overlay.classList.remove('hidden');
-//     location.href = "#top-page";
-//     window.addEventListener('scroll', disableScroll);
-//   }
-//     // start function show modal
-//   var ShowModalLoginFunct = function () {
-//     loginModal.classList.remove('hidden');
-//     overlay.classList.remove('hidden');
-//     location.href = "#top-page";
-//     window.addEventListener('scroll', disableScroll);
-//   }
-//   const hiddenModalLogin = function () {
-//     loginModal.classList.add('hidden');
-//     overlay.classList.add('hidden');
-//     window.removeEventListener('scroll', disableScroll);
-//   };
-//   closeModalPassword.addEventListener('click',function (){
-//     hiddenpasswordFunct();
-//     ShowModalLoginFunct
-//     } );
-//     overlay.addEventListener('click', hiddenpasswordFunct);
-//     document.addEventListener('keydown', function (e) {
-//       if (e.key === 'Escape' && !loginModal.classList.contains('hidden')) {
-//         hiddenpasswordFunct();
-//       }
-//     });
+  // start function show modal
+  function ShowModalPasswordFunct() {
+    passwordModal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+    location.href = "#top-page";
+    window.addEventListener('scroll', disableScroll);
+  }
 
-//   showModalPassword[i].addEventListener('click', function () {
-//     ShowModalPasswordFunct();
-//     hiddenModalLogin();
+    redirectModalPassword.addEventListener('click', function () {
+      hiddenModallogin();
+      ShowModalPasswordFunct();
+    });
+    overlay.addEventListener('click', hiddenModallogin);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !hiddenModallogin.classList.contains('hidden')) {
+        hiddenModallogin();
+      }
+    });
+  
+
+//   showModalSignin[i].addEventListener('click', function () {
+//     ShowModalSigninFunct();
 //   });
-// };
+
 
 
  
