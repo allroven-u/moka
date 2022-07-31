@@ -64,12 +64,11 @@ function ImprimirListaCitas(){
 };
 
 function VerEstado(EstadoCita){
-    
+ 
     for (let i = 0; i < EstadoCita.length; i++) {
     let sEstadoCita = EstadoCita[i].innerHTML;    
     if (sEstadoCita == 'AGENDADA'){
-        EstadoCita[i].classList.add("AGENDADA")
-        
+        EstadoCita[i].classList.add("AGENDADA")  
     }
     if (sEstadoCita == 'CANCELADA'){
         EstadoCita[i].classList.add("CANCELADA")

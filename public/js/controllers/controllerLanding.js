@@ -192,3 +192,80 @@ btnLeftNav.addEventListener('click', toggleMenu);
 btnLeftNav2.addEventListener('click', toggleMenu);
 aboutRedi.addEventListener('click', toggleMenu);
 contactRedi.addEventListener('click', toggleMenu);
+
+
+//LUIS S
+let btnEnviarCorreo = document.getElementById("btn-contact")
+btnEnviarCorreo.addEventListener('click', EnviarDatosCorreo)
+
+let inputContName = document.getElementById("cont-name");
+let inputContEmail = document.getElementById("cont-mail");
+let inputContPhone = document.getElementById("cont-phone");
+let inputContDescrip = document.getElementById("cont-descrip");
+
+function EnviarDatosCorreo(){
+  if (ValidarDatosContactenos() == true){
+    ConfirmarDatosLogin();
+  }
+}
+
+function ValidarDatosContactenos() {
+  let sContName = inputContName.value;
+  let sContEmail = inputContEmail.value;
+  let sContPhone = inputContPhone.value;
+  let sContDescip = inputContDescrip.value;
+
+  if (sContName == null || sContName == undefined || sContName == "") {
+    resaltarInputInvalido("cont-name");
+    MostrarErrorContactenos();
+    return false;
+  }
+
+  if (sContEmail == null || sContEmail == undefined || sContEmail == "") {
+    resaltarInputInvalido("cont-mail");
+    MostrarErrorContactenos();
+    return false;
+  }
+
+  if (sContPhone == null || sContPhone == undefined || sContPhone == "") {
+    resaltarInputInvalido("cont-phone");
+    MostrarErrorContactenos();
+    return false;
+  }
+
+  if (sContDescip == null || sContDescip == undefined || sContDescip == "") {
+    resaltarInputInvalido("cont-descrip");
+    MostrarErrorContactenos();
+    return false;
+  }
+
+  return true;
+}
+
+function MostrarErrorContactenos() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Dato Requerido!",
+  });
+}
+
+function resaltarInputInvalido(pinputID) {
+  var obj = document.getElementById(pinputID);
+  var orig = obj.style;
+  obj.style = 'border: 2px solid red; border-left: 10px solid var(--Rojo2);'
+
+  setTimeout(function () {
+      obj.style = orig;
+  }, 5000);
+}
+
+function ConfirmarDatosLogin() {
+  Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Datos Enviados!",
+    showConfirmButton: false,
+    timer: 1500,
+  });
+}
