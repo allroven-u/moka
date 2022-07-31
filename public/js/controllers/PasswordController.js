@@ -5,8 +5,8 @@ let inputContrasenha1C = document.getElementById('txtContrasenha-c');
 let inputContrasenha2C = document.getElementById('txtContrasenha2-c');
 
 
-let btnCambiarC = document.getElementById('btnPassword');
-btnCambiarC.addEventListener('click',CrearReserva);
+// let btnCambiar = document.getElementById('btnPassword');
+// btnCambiar.addEventListener('click',CambiarContrasenha);
 
 function CambiarContrasenha(){
    if(ValidarCambioContrsenha() == true) {
@@ -15,28 +15,28 @@ function CambiarContrasenha(){
 }
 
 function ValidarCambioContrsenha(){
-    let sNombre = inputNombre.value;
-    let pwContrasenha = inputContrasenha1.value;
-    let pwContrasenha2 = inputContrasenha2.value;
+    let sNombre = inputNombreC.value;
+    let pwContrasenha = inputContrasenha1C.value;
+    let pwContrasenha2 = inputContrasenha2C.value;
 
     if (sNombre == null || sNombre == undefined || sNombre == ""){
-        inputNombre.classList.add("rError")
+        inputNombreC.classList.add("rError")
         MostrarErrorC();
         return false;
 
     }else{
-        inputNombre.classList.remove("rError")
+        inputNombreC.classList.remove("rError")
     }
 
     if (pwContrasenha == null || pwContrasenha == undefined || pwContrasenha == ""){
-        inputContrasenha1.classList.add("rError")
+        inputContrasenha1C.classList.add("rError")
         MostrarErrorC();
         return false;
     }else{
-        inputContrasenha1.classList.remove("rError")
+        inputContrasenha1C.classList.remove("rError")
     }
     if (pwContrasenha2 == null || pwContrasenha2 == undefined || pwContrasenha2 == "" || pwContrasenha != pwContrasenha2){
-        inputContrasenha2.classList.add("rError")
+        inputContrasenha2C.classList.add("rError")
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -45,7 +45,7 @@ function ValidarCambioContrsenha(){
         return false;
         
     }else{
-        inputContrasenha2.classList.remove("rError")
+        inputContrasenha2C.classList.remove("rError")
     }
 }
 function MostrarErrorC(){
