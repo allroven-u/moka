@@ -635,12 +635,36 @@ textarea {
     animation: modal-login 500ms ease;
 }
 
+.cModal-form {
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: var(--blanco);
+    border-radius: 5px;
+    animation: modal-login 500ms ease;
+}
+
+
 /*--TITULO-----------------------*/
 .lTitulo {
     padding:0 80px 0 ;
     color: var(--verdeagua);
     margin-bottom: 20px;
 }
+
+.cTitulo {
+    padding:0 10px 0 10px ;
+    color: var(--verdeagua);
+    margin-bottom: 20px;
+    margin-right: 45px;
+}
+
 /*--Cerrar Modal Inicio--------------*/
 .cerrarModalInicio{
     color: var(--Rojo2);
@@ -676,10 +700,11 @@ label{
 }
 .linkModal{
     color: var(--gris);
-    text-decoration: none;
     font-size: 17px;
     padding: 5px;
     margin-left: 10px;
+    cursor:pointer;
+
 }
 .linkModal:hover{
     color: var(--turquesa);
@@ -704,6 +729,22 @@ input::placeholder , textarea::placeholder{
 
 .lCajas:hover,
 .lCajas:focus {
+    border-left: 10px solid var(--verdeagua);
+}
+
+.cCajas {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border-left: 10px solid var(--silver);
+    transition: all .5s ease;
+}
+
+.cCajas:hover,
+.cCajas:focus {
     border-left: 10px solid var(--verdeagua);
 }
 
@@ -746,6 +787,23 @@ input::placeholder , textarea::placeholder{
 
 .lBtnCancelar:hover {
     background-color: var(--Roj1);
+}
+.cBtn {
+    background-color: var(--verdeagua);
+    width: 170px;
+    padding: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.cBtn:hover {
+    background-color: var(--turquesa);
 }
 
 .lError {
@@ -861,6 +919,7 @@ input::placeholder , textarea::placeholder{
 
 .rBtn:hover,
 .lBtn:hover,
-.lBtnCancelar:hover {
+.lBtnCancelar:hover,
+.cBtn:hover {
     box-shadow: -2px 2px 10px var(--gris);
 }
