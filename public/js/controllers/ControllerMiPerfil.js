@@ -20,14 +20,10 @@ window.addEventListener('load', () => {
     txtDireccionP.textContent = usuario.Direccion;
     txtCedulaP.textContent = usuario.Identificacion;
 
-
     cargaJsonCitas();
     cargaJson(); 
      setTimeout(() => {ImprimirListaCitas();}, 1000);
 });
-
-
-
 
 function ImprimirListaCitas(){
     let tbody = document.getElementById('tbbody-ultimas-citas');
@@ -48,16 +44,12 @@ function ImprimirListaCitas(){
         let celdaVeterinario = fila.insertCell();
         let celdaFecha= fila.insertCell();
 
-
         celdaMascota.innerHTML = cita.NombreMascota;
         celdaMascota.classList.add('h-citas');
         celdaVeterinario.innerHTML = veterinario.Nombre + ' ' + veterinario.Apellido1;
         celdaVeterinario.classList.add('h-citas');
         celdaFecha.innerHTML = cita.FechaHora;
         celdaFecha.classList.add('h-citas');
-
-
-        
     };
    
 };
