@@ -1,5 +1,4 @@
 @import url(./estilosGenerales.css);
-
 * {
     font-family: Roboto;
 }
@@ -23,6 +22,7 @@
     border-radius: 5px;
 }
 
+
 /* .Veterinario {
     width: 450px;
     padding: 30px;
@@ -43,6 +43,7 @@
     display: flex;
     color: grey;
 }
+
 
 /* .tituloPrincipal {
     margin: 10px 10px;
@@ -123,7 +124,6 @@
 
 .error {
     border: 2px solid var(--Rojo2);
-<<<<<<< HEAD
 }
 
 .CrearCitaTitulo {
@@ -162,6 +162,4 @@ label {
 #txtCuidadosEsp,
 #selectMacota #txtCuidadosEsp {
     margin: 3px;
-=======
->>>>>>> parent of 7d0d850 (Merge branch 'main' of https://github.com/allroven-u/moka)
 }
