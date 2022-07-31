@@ -127,7 +127,7 @@
 }
 
 .CrearCitaTitulo {
-    padding: 0 80px 0;
+    padding: 0 95px 0;
     color: var(--verdeagua);
     margin-bottom: 20px;
 }
@@ -136,9 +136,9 @@
     color: var(--Rojo2);
     transform: scale(1.5);
     transition: all 200ms linear;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-bottom: 25px;
-    padding-left: 35px;
+    padding-left: 25px;
     cursor: pointer;
 }
 
